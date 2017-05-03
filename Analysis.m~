@@ -34,9 +34,9 @@ bins=@(omega) round((pi+omega)/bin)+1;
 %filter=@(dC_CA,dN_CA,dP_plane)1;
 filter=@(dC_CA,dN_CA,dP_plane,Bfactor) 1;
 
-aminos={'PHE'; 'ASP'; 'THR'; 'ARG'; 'TRP'; 'VAL'; 'CYS'; 'SER'; 'ALA'; 'GLY'; 'MET'; 'TYR'; 'ASN'; 'PRO'; 'LYS'; 'HIS'; 'GLN'; 'ILE'; 'LEU'; 'GLU'};
-%aminos={'ARG'}
-%aminos={'THR'}
+%aminos={'PHE'; 'ASP'; 'THR'; 'ARG'; 'TRP'; 'VAL'; 'CYS'; 'SER'; 'ALA'; 'GLY'; 'MET'; 'TYR'; 'ASN'; 'PRO'; 'LYS'; 'HIS'; 'GLN'; 'ILE'; 'LEU'; 'GLU'};
+% aminos={'ARG'}
+aminos={'THR'}
 
 % Attributes extrated from the protein db:
 % dihedral angles............. phi, psi
@@ -83,7 +83,7 @@ for i=1:length(aminos)
         %%axis([-180 180 -180 180]);
         colorbar;
        
-        print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_phipsi.jpg'));
+        print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama.jpg'));
                     
         figure
         
@@ -95,7 +95,7 @@ for i=1:length(aminos)
         %%axis([-180 180 -180 180]);
         colorbar;
              
-        print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_phipsiGrad.jpg'))
+        print(gcf,'-djpeg',strcat('images/',aminoName,'Rama_Grad.jpg'))
         
         %aminoCont.dphi_psi=d1p:            
         %aminoCont.phi_dpsi=d2p:
@@ -116,7 +116,7 @@ for i=1:length(aminos)
                     %%axis([-180 180 -180 180]);
                     colorbar;
                     
-                    print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_phichi1.jpg'))
+                    print(gcf,'-djpeg',strcat('images/',aminoName,'Rama_phi_chi1.jpg'))
                     
         
                     figure
@@ -129,7 +129,7 @@ for i=1:length(aminos)
                     %%axis([-180 180 -180 180]);
                     colorbar;
                                      
-                    print(gcf,'-dpsc2',strcat('images/',aminoName,'_Rama_Grad_psichi1.jpg'))
+                    print(gcf,'-dpsc2',strcat('images/Rama_Grad_psichi1',aminoName,'.jpg'))
 
                     
                     figure
@@ -145,7 +145,7 @@ for i=1:length(aminos)
                     %%axis([-180 180 -180 180]);
                     colorbar;
                     
-                    print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_psichi1.jpg'))
+                    print(gcf,'-djpeg',strcat('images/Rama_psi_chi1',aminoName,'.jpg'))
                     
         
                     figure
@@ -162,7 +162,7 @@ for i=1:length(aminos)
                     colorbar;
                     
                     
-                    print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_Grad_phichi1.jpg'))
+                    print(gcf,'-djpeg',strcat('images/Rama_Grad_phichi1',aminoName,'.jpg'))
 
                     
                     if col > 9                        
@@ -183,7 +183,7 @@ for i=1:length(aminos)
                         %%axis([-180 180 -180 180]);
                         colorbar;    
                         
-                        print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_chi1chi2.jpg'))
+                        print(gcf,'-djpeg',strcat('images/Rama_chi2',aminoName,'.jpg'))
                    
 
                         figure
@@ -197,7 +197,7 @@ for i=1:length(aminos)
                         %%axis([-180 180 -180 180]);
                         colorbar;
                         
-                        print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_Gradchi1chi2.jpg'))
+                        print(gcf,'-djpeg',strcat('images/Rama_Gradchi2',aminoName,'.jpg'))
                     
                     
                         if col > 10
@@ -218,7 +218,7 @@ for i=1:length(aminos)
                             %%axis([-180 180 -180 180]);
                             colorbar;
                             
-                            print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_chsi2chi3.jpg'))
+                            print(gcf,'-djpeg',strcat('images/Rama_chi3',aminoName,'.jpg'))
                     
 
                             figure
@@ -232,7 +232,7 @@ for i=1:length(aminos)
                             %%axis([-180 180 -180 180]);
                             colorbar;    
                             
-                            print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_Gradchsi2chi3.jpg'))
+                            print(gcf,'-djpeg',strcat('images/Rama_Gradchi3',aminoName,'.jpg'))
                     
                             
                             if col > 11
@@ -251,7 +251,7 @@ for i=1:length(aminos)
                                 %%axis([-180 180 -180 180]);
                                 colorbar;
                                 
-                                print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_chi4.jpg'))
+                                print(gcf,'-djpeg',strcat('images/Rama_chi4',aminoName,'.jpg'))
                     
 
 
@@ -266,7 +266,7 @@ for i=1:length(aminos)
                                 %%axis([-180 180 -180 180]);
                                 colorbar;
                                 
-                                print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_Gradchi4.jpg'))
+                                print(gcf,'-djpeg',strcat('images/Rama_Gradchi4',aminoName,'.jpg'))
                     
                                 
                             end
