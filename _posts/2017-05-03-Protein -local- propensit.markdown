@@ -12,19 +12,19 @@ categories: jekyll update
 The method described in this work will be evaluated for the kinematic analysis of polypeptide chains. Biological proteins are polymeric chains build from amino acid monomers. These amino acids contain five chemical components: a central $$\alpha$$-carbon ($$C_\alpha$$), an $$\alpha$$-proton ($$H$$), an amino functional group ($$-NH$$), a carboxylic acid functional group ($$-COOH$$), a side chain group ($$R$$) 
 
 
-![Image](../../../../../images/aminoAcid.eps)
+![Image](../../../../../images/AminoAcid.png)
 *Figure  1: Amino acid.*
 
 Amino acids are molecules containing an amine group ($$H_2N$$-), a carboxylic acid group (-$$COOH$$), and a side chain ($$R$$) that is pecific to each amino acide. The first carbon that attaches to a functional group is named apha-carbon ($$C_\alpha$$).
 
 The residual side chain group differentiates the common biological amino acids, and is the main factor of the peptide chains local stable conformations. These amino acids combine to become proteins through an energy-driven combination. This result in the creation of a peptide bond between the two amino acids, and repeating the process creates a polypeptide containing several peptide bonds. These peptide bonds behave like a partial double bond, which have restricted rotation about the bond. This restriction results in a stable peptide plane. These peptide planes are repeating units that exhibit constant structures in the protein and reduce the number of degrees of freedom. The polypeptide chain is intrinsically flexible because many of the covalent bonds that occur in its backbone and side chains are rotationally permissible. A protein can be defined by one or more polypeptide chains.
 
-![Image](../../../../../images/peptide.eps)
+![Image](../../../../../images/peptide1.gif)
 *[2] "Figure 2: Every peptide has a $$N$$-terminus residue and a $$C$$-terminus residue on the ends of the peptide (Source Wikipedia).*
 
 Geometric relationship involving atoms in the polypeptide fully define a thee-dimensional proteins stable conformation. The relationships consist of bond lengths, bond angles, dihedral angles and improper dihedral angles. The primary contributions from these parameters, which determine overall polypeptide structure, are the dihedral angles. Typically, the peptide plane remains relatively rigid during protein dynamics such that the bond lengths and bond angles remain constant, due the large energy cost for its deformation. As a result, the dihedral angles are the essential degrees of freedom that dictate the position of the polypeptide backbone atoms, defining the protein secondary structure. 
 
-!Image[Trialanine.eps]
+![Image](../../../../../images/trialanine.jpg)
 *Figure  3:Backbone dihedral angles in the molecular structure of trialanine (Altis 2008).*
 
 # Coarse-grained models
