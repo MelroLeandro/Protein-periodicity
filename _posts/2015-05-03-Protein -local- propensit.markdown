@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Protein local propensity"
-date:   2015-05-03 15:03:31 +0100
+date:   2017-05-03 15:03:31 +0100
 categories: jekyll update
----
+--- 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
@@ -23,7 +23,7 @@ The residual side chain group differentiates the common biological amino acids, 
 
 *Figure 2: Every peptide has a $$N$$-terminus residue and a $$C$$-terminus residue on the ends of the peptide (Source Wikipedia).*
 
-Geometric relationship involving atoms in the polypeptide fully define a thee-dimensional proteins stable conformation. The relationships consist of bond lengths, bond angles, dihedral angles and improper dihedral angles. The primary contributions from these parameters, which determine overall polypeptide structure, are the dihedral angles. Typically, the peptide plane remains relatively rigid during protein dynamics such that the bond lengths and bond angles remain constant, due the large energy cost for its deformation. As a result, the dihedral angles are the essential degrees of freedom that dictate the position of the polypeptide backbone atoms, defining the protein secondary structure.
+Geometric relationship involving atoms in the polypeptide fully define a thee-dimensional proteins stable conformation. The relationships consist of bond lengths, bond angles, dihedral angles and improper dihedral angles. The primary contributions from these parameters, which determine overall polypeptide structure, are the dihedral angles. Typically, the peptide plane remains relatively rigid during protein dynamics such that the bond lengths and bond angles remain constant, due the large energy cost for its deformation. As a result, the dihedral angles are the essential degrees of freedom that dictate the position of the polypeptide backbone atoms, defining the protein secondary structure. 
 
 ![Image](../../../../../images/trialanine.jpg ){:width="500px"}
 
@@ -31,13 +31,13 @@ Geometric relationship involving atoms in the polypeptide fully define a thee-di
 
 # Coarse-grained models
 
-In a polypeptide chain the torsional motion is predominantly local in character. Therefore its model is here simplified as a constrained multibody system, and the overall dynamic is described by backbone dihedral angles, and possible linear elastic deformation allowing only covalent bonds lengths fluctuations. This type of model is not new, it have been used on molecular coarse-grained simulations, e.g. in systems like GROMACS,  widely used for long time simulations, where however the system dynamics is constrain by force fields like MARTINI force field. The most important feature of this type of approach is the possibility of modelling protein dynamics without explicitly treating every atom in the problem. Using this quasi-continuum approach, must degrees of freedom are eliminate, and force or energy calculations are largely expedited. Here however we are interested in analysing the possible advantages of imposing kinematic constrains on the system using kinematic joints. Since the definition of such constrains increase the simulation computational complexity, we are concern on its numerical stability for long time simulations.
+In a polypeptide chain the torsional motion is predominantly local in character. Therefore its model is here simplified as a constrained multibody system, and the overall dynamic is described by backbone dihedral angles, and possible linear elastic deformation allowing only covalent bonds lengths fluctuations. This type of model is not new, it have been used on molecular coarse-grained simulations, e.g. in systems like GROMACS,  widely used for long time simulations, where however the system dynamics is constrain by force fields like MARTINI force field. The most important feature of this type of approach is the possibility of modelling protein dynamics without explicitly treating every atom in the problem. Using this quasi-continuum approach, must degrees of freedom are eliminate, and force or energy calculations are largely expedited. Here however we are interested in analysing the possible advantages of imposing kinematic constrains on the system using kinematic joints. Since the definition of such constrains increase the simulation computational complexity, we are concern on its numerical stability for long time simulations. 
 
 ![Image](../../../../../images/multibody.jpg){:width="500px"}
 
 *Figure  4:Refinement for a protein with $$n$$ amino acids split in $$2n+1$$ bodies, with its $$2n$$ dihedral angles identified with $$\beta_1,\cdots,\beta_{2n}$$*
 
-The methodology described bellow was evaluated on two types of  coarse-grained models, defined using different kinematic joints. The first is defined by an open chain of rigid bodies, linked together using revolute joints. For the second model we used the same open chain system but, to allow some fluctuations in the system structure, the components of the system are linked using cylindrical joints. In Fig. \ref{fig3}, presents the coarse-grained model for a generic polypeptide chain defined by $$n$$ amino acid, using a constrained multibody system with $$N=2n+1$$ bodies $$b_1,b_2,\dots,b_{2n+1}$$, with dihedral angles $$\beta_1,\beta_2,\dots,\beta_{2n}$$. Note that, each amino acid is split between three bodies, and each body is linked to the next by a covalent bonds. This gives great flexibility to them and its conformation can be characterized by dihedral angles on this bonds. The values of these angles are not uniformly distributed, they have strong local propensity  and are highly correlated.
+The methodology described bellow was evaluated on two types of  coarse-grained models, defined using different kinematic joints. The first is defined by an open chain of rigid bodies, linked together using revolute joints. For the second model we used the same open chain system but, to allow some fluctuations in the system structure, the components of the system are linked using cylindrical joints. In Fig. \ref{fig3}, presents the coarse-grained model for a generic polypeptide chain defined by $$n$$ amino acid, using a constrained multibody system with $$N=2n+1$$ bodies $$b_1,b_2,\dots,b_{2n+1}$$, with dihedral angles $$\beta_1,\beta_2,\dots,\beta_{2n}$$. Note that, each amino acid is split between three bodies, and each body is linked to the next by a covalent bonds. This gives great flexibility to them and its conformation can be characterized by dihedral angles on this bonds. The values of these angles are not uniformly distributed, they have strong local propensity  and are highly correlated. 
 
 The use of simplified models reduces the complexity of the interactions and hence reduces the amount of computation involved. This shouldn't be seen as a limitation. Software tools for reconstructing all-atoms structure from backbone structures (e.q. PHOENIX [cbsu.tc.cornell.edu/software/photarch}  and Maxsprout [www.ebi.ac.uk/maxsprout] ) are often employed to complete folding trajectory with side chain information.
 
@@ -51,16 +51,16 @@ Ramachandran maps play a central role in developing empirical energy functions f
 \begin{equation}
 P(\phi,\psi | aa)=\frac{1}{4\pi^2N_r}\sum_{i=1}^{N_r}\frac{1}{I_0(\kappa)^2}\exp(\kappa \cos(\phi-\phi_i)+\kappa \cos(\psi-\psi_i))
 \end{equation}
-In this case, $$\sqrt{\frac{1}{\kappa}}$$ defines a radius of the two dimensional hump covering $$60\%$$ of the kernel density, $$I_0$$ is the Bessel function of the first kind of order $$0$$, normalizing the kernel to $$1$$.
+In this case, $$\sqrt{\frac{1}{\kappa}}$$ defines a radius of the two dimensional hump covering $$60\%$$ of the kernel density, $$I_0$$ is the Bessel function of the first kind of order $$0$$, normalizing the kernel to $$1$$. 
 
 ![Image](../../../../../images/Rama_testALA.jpg ){:width="500px"}
 
-*Figure  5:Amino acid Mises propensity distributions ALA*
+*Figure  5:Amino acid Mises propensity distributions ALA* 
 
 
 ![Image](../../../../../images/Rama_testPHE.jpg){:width="500px"}
 
-*Figure  6:Amino acid Mises propensity distributions PHE*
+*Figure  6:Amino acid Mises propensity distributions PHE* 
 
 To reduce the amount of computation involved on the protein kinematics analysis, the library of conformational propensities was completed with directional gradients, for each distribution. For that the central difference method was used.
 
