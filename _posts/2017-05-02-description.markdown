@@ -25,7 +25,7 @@ much attention over the past 60 years, and attempts to build coarse-grained mode
 of folding, which can yield general insights without sacrificing predictive power, is
 an ongoing collective work [7].
 
-![Image](../../../../images/image1_semwater.jpg)
+![Image](../../../images/image1_semwater.jpg)
 
 Constructing coarse-grained force fields is a much greater challenge than constructing
 all-atom force fields; the physical foundations of coarse-grained force fields
