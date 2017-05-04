@@ -24,7 +24,7 @@ time scales for folding. Both aspects of the protein folding problem have receiv
 much attention over the past 60 years, and attempts to build coarse-grained models
 of folding, which can yield general insights without sacrificing predictive power, is
 an ongoing collective work [7].
-![Image](../../../../images/Rama_testALA.jpg)
+
 ![Image](../../../../images/image1_semwater.jpg)
 
 Constructing coarse-grained force fields is a much greater challenge than constructing
@@ -51,7 +51,7 @@ rotamer libraries. Those are defined as a  set of discrete probability
 distributions, and used to generate internal forces on multibody systems.
 
 Examples of statistical potentials generated from two dihedral angles on a protein main chain:
-![Image](../../../images/IAGE2.gif)
+![Image](../../../../images/IAGE2.gif)
 
 Examples of statistical potentials generated between dihedral angles and rotamers in an amino acid:
-![Image](../../../images/IAGE1.gif)
+![Image](../../../../images/IAGE1.gif)
