@@ -51,17 +51,7 @@ rotamer libraries. Those are defined as a  set of discrete probability
 distributions, and used to generate internal forces on multibody systems.
 
 Examples of statistical potentials generated from two dihedral angles on a protein main chain:
-![Image](../../../../../images/IAGE2.gif)
+![Image](../../../images/IAGE2.gif)
 
 Examples of statistical potentials generated between dihedral angles and rotamers in an amino acid:
-![Image](../../../../../images/IAGE1.gif)
-
-
-[7] C. Clementi. Coarse-grained models of protein folding. Curr. Opin. Struct.
-Biol., pages 10–15, 2008.  
-
-[1] Fernández A. C. J. Phys.: Condens. Matter, (26):202101, 2014.
-[46]
-[4]
-[13]
-[38]
+![Image](../../../images/IAGE1.gif)
