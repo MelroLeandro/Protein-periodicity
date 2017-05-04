@@ -24,8 +24,8 @@ time scales for folding. Both aspects of the protein folding problem have receiv
 much attention over the past 60 years, and attempts to build coarse-grained models
 of folding, which can yield general insights without sacrificing predictive power, is
 an ongoing collective work [7].
-![Image](../../../../../images/Rama_testALA.jpg)
-![Image](../../../../../images/image1_semwater.jpg)
+![Image](../../../../images/Rama_testALA.jpg)
+![Image](../../../../images/image1_semwater.jpg)
 
 Constructing coarse-grained force fields is a much greater challenge than constructing
 all-atom force fields; the physical foundations of coarse-grained force fields
