@@ -50,8 +50,7 @@ P(\phi,\psi | aa)=\frac{1}{4\pi^2N_r}\sum_{i=1}^{N_r}\frac{1}{I_0(\kappa)^2}\exp
 \end{equation}
 In this case, $$\sqrt{\frac{1}{\kappa}}$$ defines a radius of the two dimensional hump covering $$60\%$$ of the kernel density, $$I_0$$ is the Bessel function of the first kind of order $$0$$, normalizing the kernel to $$1$$. 
 
-![Image](../../../../../images/Rama_testALA.jpg)
-## [5] "Figure  5:Amino acid Mises propensity distributions ALA"
+{% include image.html url="../../../../../images/Rama_testALA.jpg" description="Figure  5:Amino acid Mises propensity distributions ALA" %}
 
 
 ![Image](../../../../../images/Rama_testPHE.jpg)
