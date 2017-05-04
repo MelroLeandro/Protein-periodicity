@@ -9,11 +9,9 @@ categories: jekyll update
 
 # Protein structure
 
-The method described in this work will be evaluated for the kinematic analysis of polypeptide chains. Biological proteins are polymeric chains build from amino acid monomers. These amino acids contain five chemical components: a central $$\alpha$$-carbon ($$C_\alpha$$), an $$\alpha$$-proton ($$H$$), an amino functional group ($$-NH$$), a carboxylic acid functional group ($$-COOH$$), a side chain group ($$R$$) http://www.ipaddress-finder.com/?ip=
-
+The method described in this work will be evaluated for the kinematic analysis of polypeptide chains. Biological proteins are polymeric chains build from amino acid monomers. These amino acids contain five chemical components: a central $$\alpha$$-carbon ($$C_\alpha$$), an $$\alpha$$-proton ($$H$$), an amino functional group ($$-NH$$), a carboxylic acid functional group ($$-COOH$$), a side chain group ($$R$$)
 
 ![Image](../../../../../images/AminoAcid.png =250x)
-
 *Figure  1: Amino acid.*
 
 Amino acids are molecules containing an amine group ($$H_2N$$-), a carboxylic acid group (-$$COOH$$), and a side chain ($$R$$) that is pecific to each amino acide. The first carbon that attaches to a functional group is named apha-carbon ($$C_\alpha$$).
@@ -26,7 +24,6 @@ The residual side chain group differentiates the common biological amino acids, 
 Geometric relationship involving atoms in the polypeptide fully define a thee-dimensional proteins stable conformation. The relationships consist of bond lengths, bond angles, dihedral angles and improper dihedral angles. The primary contributions from these parameters, which determine overall polypeptide structure, are the dihedral angles. Typically, the peptide plane remains relatively rigid during protein dynamics such that the bond lengths and bond angles remain constant, due the large energy cost for its deformation. As a result, the dihedral angles are the essential degrees of freedom that dictate the position of the polypeptide backbone atoms, defining the protein secondary structure. 
 
 ![Image](../../../../../images/trialanine.jpg =250x)
-
 *Figure  3:Backbone dihedral angles in the molecular structure of trialanine (Altis 2008).*
 
 # Coarse-grained models
