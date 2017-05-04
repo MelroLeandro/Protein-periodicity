@@ -33,7 +33,7 @@ Geometric relationship involving atoms in the polypeptide fully define a thee-di
 
 In a polypeptide chain the torsional motion is predominantly local in character. Therefore its model is here simplified as a constrained multibody system, and the overall dynamic is described by backbone dihedral angles, and possible linear elastic deformation allowing only covalent bonds lengths fluctuations. This type of model is not new, it have been used on molecular coarse-grained simulations, e.g. in systems like GROMACS,  widely used for long time simulations, where however the system dynamics is constrain by force fields like MARTINI force field. The most important feature of this type of approach is the possibility of modelling protein dynamics without explicitly treating every atom in the problem. Using this quasi-continuum approach, must degrees of freedom are eliminate, and force or energy calculations are largely expedited. Here however we are interested in analysing the possible advantages of imposing kinematic constrains on the system using kinematic joints. Since the definition of such constrains increase the simulation computational complexity, we are concern on its numerical stability for long time simulations. 
 
-![Image](../../../../../images/multibody.eps = 250x){:width="500px"}
+![Image](../../../../../images/multibody.jpg){:width="500px"}
 
 *Figure  4:Refinement for a protein with $$n$$ amino acids split in $$2n+1$$ bodies, with its $$2n$$ dihedral angles identified with $$\beta_1,\cdots,\beta_{2n}$$*
 
