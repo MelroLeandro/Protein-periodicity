@@ -24,7 +24,7 @@ categories: update
 
 
 
- SAMPLE SIZE having B-factor <= 15: 779 
+SAMPLE SIZE having B-factor <= 15: 779 
 
 |     | C-CA | N-CA | peptid plane |
 | --- | --- | --- | --- |
@@ -39,7 +39,9 @@ categories: update
 | corrcoef | 0.18 | 0.21 | 1.00 |
 
 
-|    | PHI | PSI |
+
+
+|     | PHI | PSI |
 | --- | --- | --- |
 | Mean | -84.98 | 131.42 |
 | Median | -81.53 | 121.30 |

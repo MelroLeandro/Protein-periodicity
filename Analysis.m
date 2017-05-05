@@ -36,7 +36,7 @@ bins=@(omega) round((pi+omega)/bin)+1;
 filter=@(dC_CA,dN_CA,dP_plane,Bfactor)not(Bfactor>15);
 
 %aminos={'PHE'; 'ASP'; 'THR'; 'ARG'; 'TRP'; 'VAL'; 'CYS'; 'SER'; 'ALA'; 'GLY'; 'MET'; 'TYR'; 'ASN'; 'PRO'; 'LYS'; 'HIS'; 'GLN'; 'ILE'; 'LEU'; 'GLU'};
-aminos={'PHE'; 'ASP'}
+aminos={'PHE'}
 
 
 % Attributes extrated from the protein db:
@@ -93,11 +93,12 @@ for i=1:length(aminos)
         fprintf(file,'| Skewness | %.2f |\n',skewness(BFactor));
         fprintf(file,'| Kurtosis | %.2f |\n\n',kurtosis(BFactor));
 
+        fprintf(file,'\n\n\n');
         % Filter Data
         data=removenan(Data,filter); % clean and select data
         
         [c2,att]=size(data);
-        fprintf(file,'\n\n\n SAMPLE SIZE having B-factor <= 15: %d \n\n',c2);
+        fprintf(file,'SAMPLE SIZE having B-factor <= 15: %d \n\n',c2);
         
         % query points
         phi= data(:,1);
@@ -131,8 +132,9 @@ for i=1:length(aminos)
         fprintf(file,'| corrcoef | %.2f | %.2f | %.2f |\n\n',R(3,1),R(3,2),R(3,3));
         
         %% part 1: descriptive statistics
+        fprintf(file,'\n\n\n');
 
-        fprintf(file,'\n|    | PHI | PSI |\n');
+        fprintf(file,'|     | PHI | PSI |\n');
         fprintf(file,'| --- | --- | --- |\n');
 
         alpha_bar = circ_mean(phi);
@@ -171,7 +173,7 @@ for i=1:length(aminos)
 
         fprintf(file,'| Kurtosis | %.2f | %.2f |\n',[k_alpha k_beta]);
 
-        fprintf('\n\n')
+        fprintf('\n\n\n')
         
         %% part 4: inferential statistics
 
