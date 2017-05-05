@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Amino PHE"
+date:   2015-05-03 15:03:1 +0100
+categories: update
+---
+# Amino PHE
+
+
+ ## PHI & PSI
+![Image](../../../../images/PHE_Rama_phipsi.jpg)
+![Image](../../../../images/PHE_Rama_phipsiGrad.jpg)
+
+
+## CHI_1
+![Image](../../../../images/PHE_Rama_phichi1.jpg)
+![Image](../../../../images/PHE_Rama_Grad_psichi1.jpg)
+![Image](../../../../images/PHE_Rama_psichi1.jpg)
+![Image](../../../../images/PHE_Rama_Grad_phichi1.jpg)
+
+
+## CHI_2
+![Image](../../../../images/PHE_Rama_chi1chi2.jpg)
+![Image](../../../../images/PHE_Rama_Gradchi1chi2.jpg)

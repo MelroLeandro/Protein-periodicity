@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Amino TYR"
+date:   2015-05-03 15:03:12 +0100
+categories: update
+---
+# Amino TYR
+
+
+ ## PHI & PSI
+![Image](../../../../images/TYR_Rama_phipsi.jpg)
+![Image](../../../../images/TYR_Rama_phipsiGrad.jpg)
+
+
+## CHI_1
+![Image](../../../../images/TYR_Rama_phichi1.jpg)
+![Image](../../../../images/TYR_Rama_Grad_psichi1.jpg)
+![Image](../../../../images/TYR_Rama_psichi1.jpg)
+![Image](../../../../images/TYR_Rama_Grad_phichi1.jpg)
+
+
+## CHI_2
+![Image](../../../../images/TYR_Rama_chi1chi2.jpg)
+![Image](../../../../images/TYR_Rama_Gradchi1chi2.jpg)

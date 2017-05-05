@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Amino GLN"
+date:   2015-05-03 15:03:17 +0100
+categories: update
+---
+# Amino GLN
+
+
+ ## PHI & PSI
+![Image](../../../../images/GLN_Rama_phipsi.jpg)
+![Image](../../../../images/GLN_Rama_phipsiGrad.jpg)
+
+
+## CHI_1
+![Image](../../../../images/GLN_Rama_phichi1.jpg)
+![Image](../../../../images/GLN_Rama_Grad_psichi1.jpg)
+![Image](../../../../images/GLN_Rama_psichi1.jpg)
+![Image](../../../../images/GLN_Rama_Grad_phichi1.jpg)
+
+
+## CHI_2
+![Image](../../../../images/GLN_Rama_chi1chi2.jpg)
+![Image](../../../../images/GLN_Rama_Gradchi1chi2.jpg)
+
+
+## CHI_3
+![Image](../../../../images/GLN_Rama_chsi2chi3.jpg)
+![Image](../../../../images/GLN_Rama_Gradchsi2chi3.jpg)

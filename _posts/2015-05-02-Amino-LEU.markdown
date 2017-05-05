@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Amino LEU"
+date:   2015-05-03 15:03:19 +0100
+categories: update
+---
+# Amino LEU
+
+
+ ## PHI & PSI
+![Image](../../../../images/LEU_Rama_phipsi.jpg)
+![Image](../../../../images/LEU_Rama_phipsiGrad.jpg)
+
+
+## CHI_1
+![Image](../../../../images/LEU_Rama_phichi1.jpg)
+![Image](../../../../images/LEU_Rama_Grad_psichi1.jpg)
+![Image](../../../../images/LEU_Rama_psichi1.jpg)
+![Image](../../../../images/LEU_Rama_Grad_phichi1.jpg)
+
+
+## CHI_2
+![Image](../../../../images/LEU_Rama_chi1chi2.jpg)
+![Image](../../../../images/LEU_Rama_Gradchi1chi2.jpg)

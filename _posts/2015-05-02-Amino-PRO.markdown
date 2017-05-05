@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Amino PRO"
+date:   2015-05-03 15:03:14 +0100
+categories: update
+---
+# Amino PRO
+
+
+ ## PHI & PSI
+![Image](../../../../images/PRO_Rama_phipsi.jpg)
+![Image](../../../../images/PRO_Rama_phipsiGrad.jpg)
+
+
+## CHI_1
+![Image](../../../../images/PRO_Rama_phichi1.jpg)
+![Image](../../../../images/PRO_Rama_Grad_psichi1.jpg)
+![Image](../../../../images/PRO_Rama_psichi1.jpg)
+![Image](../../../../images/PRO_Rama_Grad_phichi1.jpg)
+
+
+## CHI_2
+![Image](../../../../images/PRO_Rama_chi1chi2.jpg)
+![Image](../../../../images/PRO_Rama_Gradchi1chi2.jpg)

@@ -40,17 +40,12 @@ dplane= data(:,6);
 fprintf('\t\t\t\t Prossecing phi,psi\n');
 [p nbins]=circ_vmpdf2(binAng, phi, psi, w1, w2);
 
-%[p nbins]=circ_vmpdf2(binAng, phi, psi, w1, w2,p);
+
 
 aminoCont.f(1,:,:)=-log(p);
 
 
 fprintf('\t\t\t\t Prossecing Grad(phi,psi)\n');
-%[d1 nbins] = circ_d1vmpdf2(binAng, phi,psi, w1,w2);
-%[d1 nbins] = circ_d1vmpdf2(binAng, phi,psi, w1,w2,p);
-
-%[d2 nbins] = circ_d2vmpdf2(binAng, phi,psi, w1,w2);
-%[d2 nbins] = circ_d2vmpdf2(binAng, phi,psi, w1,w2,p);
 
 [d1p,d2p] = imgradientxy(-log(p));
 aminoCont.dfx(1,:,:)=d1p;
@@ -67,10 +62,6 @@ if col> 8
             aminoCont.f(2,:,:)=-log(p);
             
             fprintf('\t\t\t\t Prossecing Grad(phi,chsi1)\n');
-            %[d1 nbins] = circ_d1vmpdf2(binAng, phi, chsi1, w1,w3);
-            %[d1 nbins] = circ_d1vmpdf2(binAng, phi, chsi1, w1,w3,p);
-            %[d2 nbins] = circ_d2vmpdf2(binAng, phi, chsi1, w1,w3);
-            %[d2 nbins] = circ_d2vmpdf2(binAng, phi, chsi1, w1,w3,p);
             
             [d1p,d2p] = imgradientxy(-log(p));
             aminoCont.dfx(2,:,:)=d1p;
@@ -78,15 +69,9 @@ if col> 8
             
             fprintf('\t\t\t\t Prossecing psi,chsi1\n');
             [p nbins]=circ_vmpdf2(binAng, psi, chsi1, w2,w3);
-            %[p nbins]=circ_vmpdf2(binAng, psi, chsi1, w2,w3,p);
             aminoCont.f(3,:,:)=-log(p);
             
             fprintf('\t\t\t\t Prossecing Grad(psi,chsi1)\n');
-            %[d1 nbins] = circ_d1vmpdf2(binAng, psi, chsi1, w2,w3);
-            %[d1 nbins] = circ_d1vmpdf2(binAng, psi, chsi1, w2,w3,p);
-            
-            %[d2 nbins] = circ_d2vmpdf2(binAng, psi, chsi1, w2,w3);
-            %[d2 nbins] = circ_d2vmpdf2(binAng, psi, chsi1, w2,w3,p);
             
             [d1p,d2p] = imgradientxy(-log(p));
             aminoCont.dfx(3,:,:)=d1p;
@@ -99,14 +84,9 @@ if col> 8
                 [f,w4]=circ_vmpar(chsi2);
                 fprintf('\t\t\t\t Prossecing chsi1,chsi2\n');
                 [p nbins]=circ_vmpdf2(binAng, chsi1, chsi2, w3,w4);
-                %[p nbins]=circ_vmpdf2(binAng, chsi1, chsi2, w3,w4,p);
                 aminoCont.f(4,:,:)=-log(p);
                 
                 fprintf('\t\t\t\t Prossecing Grad(chsi1,chsi2)\n');
-                %[d1 nbins] = circ_d1vmpdf2(binAng, chsi1, chsi2, w3,w4);
-                %[d1 nbins] = circ_d1vmpdf2(binAng, chsi1, chsi2, w3,w4,p);
-                %[d2 nbins] = circ_d2vmpdf2(binAng, chsi1, chsi2, w3,w4);
-                %[d2 nbins] = circ_d2vmpdf2(binAng, chsi1, chsi2, w3,w4,p);
                 
                 [d1p,d2p] = imgradientxy(-log(p));
                 aminoCont.dfx(4,:,:)=d1p;
@@ -120,15 +100,9 @@ if col> 8
                     [f,w5]=circ_vmpar(chsi3);
                     fprintf('\t\t\t\t Prossecing chsi2,chsi3\n');
                     [p nbins]=circ_vmpdf2(binAng, chsi2, chsi3, w4,w5);
-                    %[p nbins]=circ_vmpdf2(binAng, chsi2, chsi3, w4,w5,p);
                     aminoCont.f(5,:,:)=-log(p);
 
                     fprintf('\t\t\t\t Prossecing Grad(chsi2,chsi3)\n');
-                    %[d1 nbins] = circ_d1vmpdf2(binAng, chsi2, chsi3, w4,w5);
-                    %[d1 nbins] = circ_d1vmpdf2(binAng, chsi2, chsi3, w4,w5,p);
-                    
-                    %[d2 nbins] = circ_d2vmpdf2(binAng, chsi2, chsi3, w4,w5);
-                    %[d2 nbins] = circ_d2vmpdf2(binAng, chsi2, chsi3, w4,w5,p);
                     
                     [d1p,d2p] = imgradientxy(-log(p));
                     aminoCont.dfx(5,:,:)=d1p;
@@ -141,13 +115,8 @@ if col> 8
                         fprintf('\t\t\t\t Prossecing chsi3,chsi4\n');
                         [f,w6]=circ_vmpar(chsi4);
                         [p nbins]=circ_vmpdf2(binAng, chsi3, chsi4, w5,w6);
-                        %[p nbins]=circ_vmpdf2(binAng, chsi3, chsi4, w5,w6,p);
                         aminoCont.f(6,:,:)=-log(p);
                         fprintf('\t\t\t\t Prossecing Grad(chsi3,chsi4)\n');
-                        %[d1 nbins] = circ_d1vmpdf2(binAng, chsi3, chsi4, w5,w6);
-                        %[d1 nbins] = circ_d1vmpdf2(binAng, chsi3, chsi4, w5,w6,p);
-                        %[d2 nbins] = circ_d2vmpdf2(binAng, chsi3, chsi4, w5,w6);
-                        %[d2 nbins] = circ_d2vmpdf2(binAng, chsi3, chsi4, w5,w6,p);
                         
                         [d1p,d2p] = imgradientxy(-log(p));
                         aminoCont.dfx(6,:,:)=d1p;

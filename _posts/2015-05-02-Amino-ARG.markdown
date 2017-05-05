@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Amino ARG"
+date:   2015-05-03 15:03:4 +0100
+categories: update
+---
+# Amino ARG
+
+
+ ## PHI & PSI
+![Image](../../../../images/ARG_Rama_phipsi.jpg)
+![Image](../../../../images/ARG_Rama_phipsiGrad.jpg)
+
+
+## CHI_1
+![Image](../../../../images/ARG_Rama_phichi1.jpg)
+![Image](../../../../images/ARG_Rama_Grad_psichi1.jpg)
+![Image](../../../../images/ARG_Rama_psichi1.jpg)
+![Image](../../../../images/ARG_Rama_Grad_phichi1.jpg)
+
+
+## CHI_2
+![Image](../../../../images/ARG_Rama_chi1chi2.jpg)
+![Image](../../../../images/ARG_Rama_Gradchi1chi2.jpg)
+
+
+## CHI_3
+![Image](../../../../images/ARG_Rama_chsi2chi3.jpg)
+![Image](../../../../images/ARG_Rama_Gradchsi2chi3.jpg)
+
+
+## CHI_4
+![Image](../../../../images/ARG_Rama_chi3chi4.jpg
+![Image](../../../../images/ARG_Rama_Gradchi3chi4.jpg)

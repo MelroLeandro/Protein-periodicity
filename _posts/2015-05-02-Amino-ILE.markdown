@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Amino ILE"
+date:   2015-05-03 15:03:18 +0100
+categories: update
+---
+# Amino ILE
+
+
+ ## PHI & PSI
+![Image](../../../../images/ILE_Rama_phipsi.jpg)
+![Image](../../../../images/ILE_Rama_phipsiGrad.jpg)
+
+
+## CHI_1
+![Image](../../../../images/ILE_Rama_phichi1.jpg)
+![Image](../../../../images/ILE_Rama_Grad_psichi1.jpg)
+![Image](../../../../images/ILE_Rama_psichi1.jpg)
+![Image](../../../../images/ILE_Rama_Grad_phichi1.jpg)
+
+
+## CHI_2
+![Image](../../../../images/ILE_Rama_chi1chi2.jpg)
+![Image](../../../../images/ILE_Rama_Gradchi1chi2.jpg)

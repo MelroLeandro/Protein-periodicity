@@ -29,16 +29,14 @@ NumBins=round(2*pi/bin)+1;
 
 bins=@(omega) round((pi+omega)/bin)+1;
 
-filter=@(dC_CA,dN_CA,dP_plane,Bfactor) not(abs(dC_CA-1.99)>1.18 || abs(dN_CA-1.78)>0.91 || abs(dP_plane-1.47)>0.55);
+%filter=@(dC_CA,dN_CA,dP_plane,Bfactor) not(abs(dC_CA-1.99)>1.18 || abs(dN_CA-1.78)>0.91 || abs(dP_plane-1.47)>0.55);
 %filter=@(dC_CA,dN_CA,dP_plane,Bfactor) not(dC_CA<2*1.76 || dN_CA<2*1.7 || dP_plane<2*1.7);
 %filter=@(dC_CA,dN_CA,dP_plane)1;
-%filter=@(dC_CA,dN_CA,dP_plane,Bfactor) 1;
+filter=@(dC_CA,dN_CA,dP_plane,Bfactor) 1;
 
 %aminos={'PHE'; 'ASP'; 'THR'; 'ARG'; 'TRP'; 'VAL'; 'CYS'; 'SER'; 'ALA'; 'GLY'; 'MET'; 'TYR'; 'ASN'; 'PRO'; 'LYS'; 'HIS'; 'GLN'; 'ILE'; 'LEU'; 'GLU'};
-%aminos={'ASN'}
-%aminos={'ALA'}
-aminos={'THR'}
-%aminos={'ASP'}
+aminos={'PHE'; 'ASP'}
+
 
 % Attributes extrated from the protein db:
 % dihedral angles............. phi, psi
@@ -58,7 +56,8 @@ for i=1:length(aminos)
     fprintf(file,'---\n');
     fprintf(file,'layout: post\n');
     fprintf(file,['title:  "Amino ' aminoName '"\n']);
-    fprintf(file,['date:   2015-05-03 15:03:' num2str(i) ' +0100\n']);
+    %fprintf(file,['date:   2015-05-03 15:03:' num2str(i) ' +0100\n']);
+    fprintf(file,['date:   2015-05-03 15:03:' num2str(1) ' +0100\n']);
     fprintf(file,'categories: update\n');
     fprintf(file,'---\n');
     
@@ -278,7 +277,7 @@ for i=1:length(aminos)
                                 title([aminoName ':norm(Grad) chi3 vs chi4']);
                                 xlabel('chi4');
                                 ylabel('chi3');
-                                axis([-180 180 -180 180]);
+                                %axis([-180 180 -180 180]);
                                 colorbar;
                                 
                                 print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_Gradchi3chi4.jpg'))
