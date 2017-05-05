@@ -116,11 +116,17 @@ Circ-circ corr psi-chi1 coeff/pval:	-0.02	 0.587
 Tests for Uniformity
 
 Rayleigh Test, 	 P = 0.00
+
 Omnibus Test, 	 P = 0.00
+
 Rao Spacing Test, 	 P = 0.00
+
 Circ-circ corr phi-chi2 coeff/pval:	-0.20	 0.000
+
 Circ-circ corr psi-chi2 coeff/pval:	-0.04	 0.309
+
 Circ-circ corr chi1-chi2 coeff/pval:	0.02	 0.603
+
 
 
  
@@ -145,12 +151,19 @@ Circ-circ corr chi1-chi2 coeff/pval:	0.02	 0.603
 Tests for Uniformity
 
 Rayleigh Test, 	 P = 0.00
+
 Omnibus Test, 	 P = 0.00
+
 Rao Spacing Test, 	 P = 0.00
+
 Circ-circ corr phi-chi3 coeff/pval:	0.10	 0.005
+
 Circ-circ corr psi-chi3 coeff/pval:	-0.03	 0.451
+
 Circ-circ corr chi1-chi3 coeff/pval:	-0.03	 0.387
+
 Circ-circ corr chi2-chi3 coeff/pval:	-0.34	 0.000
+
 
 # $$\phi$$ & $$\psi$$
 ![Image](../../../../images/PHE_Rama_phipsi.jpg)

@@ -295,23 +295,24 @@ for i=1:length(aminos)
                         % Rayleigh test
                         p_chsi2 = circ_rtest(chsi2);
                         fprintf(file,'\nRayleigh Test, \t P = %.2f',p_chsi2);
+                        fprintf(file,'\n');
                         % Omnibus test
                         p_chsi2 = circ_otest(chsi2);
                         fprintf(file,'\nOmnibus Test, \t P = %.2f',p_chsi2);
+                        fprintf(file,'\n');
                         % Rao's spacing test
                         p_chsi2 = circ_raotest(chsi2);
                         fprintf(file,'\nRao Spacing Test, \t P = %.2f',p_chsi2);
-
-                        
+                        fprintf(file,'\n');
                         [c p] = circ_corrcc(phi,chsi2);
                         fprintf(file,'\nCirc-circ corr phi-chi2 coeff/pval:\t%.2f\t %.3f',c,p);
-        
+                        fprintf(file,'\n');
                         [c p] = circ_corrcc(psi,chsi2);
                         fprintf(file,'\nCirc-circ corr psi-chi2 coeff/pval:\t%.2f\t %.3f',c,p);
-                        
+                        fprintf(file,'\n');                       
                         [c p] = circ_corrcc(chsi1,chsi2);
                         fprintf(file,'\nCirc-circ corr chi1-chi2 coeff/pval:\t%.2f\t %.3f\n\n',c,p);
-        
+                        fprintf(file,'\n');
                         
                         if col > 9
                             
@@ -344,24 +345,31 @@ for i=1:length(aminos)
                             % Rayleigh test
                             p_chsi3 = circ_rtest(chsi3);
                             fprintf(file,'\nRayleigh Test, \t P = %.2f',p_chsi3);
+                            fprintf(file,'\n');
                             % Omnibus test
                             p_chsi3 = circ_otest(chsi3);
                             fprintf(file,'\nOmnibus Test, \t P = %.2f',p_chsi3);
+                            fprintf(file,'\n');
                             % Rao's spacing test
                             p_chsi3 = circ_raotest(chsi3);
                             fprintf(file,'\nRao Spacing Test, \t P = %.2f',p_chsi3);
+                            fprintf(file,'\n');
 
                             [c p] = circ_corrcc(phi,chsi3);
                             fprintf(file,'\nCirc-circ corr phi-chi3 coeff/pval:\t%.2f\t %.3f',c,p);
+                            fprintf(file,'\n');
         
                             [c p] = circ_corrcc(psi,chsi3);
                             fprintf(file,'\nCirc-circ corr psi-chi3 coeff/pval:\t%.2f\t %.3f',c,p);
+                            fprintf(file,'\n');
                         
                             [c p] = circ_corrcc(chsi1,chsi3);
                             fprintf(file,'\nCirc-circ corr chi1-chi3 coeff/pval:\t%.2f\t %.3f',c,p);
+                            fprintf(file,'\n');
                             
                             [c p] = circ_corrcc(chsi2,chsi3);
                             fprintf(file,'\nCirc-circ corr chi2-chi3 coeff/pval:\t%.2f\t %.3f',c,p);
+                            fprintf(file,'\n');
         
                             
                             if col > 10
@@ -394,28 +402,36 @@ for i=1:length(aminos)
                                 % Rayleigh test
                                 p_chsi4 = circ_rtest(chsi4);
                                 fprintf(file,'\nRayleigh Test, \t P = %.2f',p_chsi4);
+                                fprintf(file,'\n');
                                 % Omnibus test
                                 p_chsi4 = circ_otest(chsi4);
                                 fprintf(file,'\nOmnibus Test, \t P = %.2f',p_chsi4);
+                                fprintf(file,'\n');
                                 % Rao's spacing test
                                 p_chsi4 = circ_raotest(chsi4);
                                 fprintf(file,'\nRao Spacing Test, \t P = %.2f',p_chsi4);
+                                fprintf(file,'\n');
 
                             
                                 [c p] = circ_corrcc(phi,chsi4);
                                 fprintf(file,'\nCirc-circ corr phi-chi4 coeff/pval:\t%.2f\t %.3f',c,p);
+                                fprintf(file,'\n');
         
                                 [c p] = circ_corrcc(psi,chsi4);
                                 fprintf(file,'\nCirc-circ corr psi-chi4 coeff/pval:\t%.2f\t %.3f',c,p);
+                                fprintf(file,'\n');
                         
                                 [c p] = circ_corrcc(chsi1,chsi4);
                                 fprintf(file,'\nCirc-circ corr chi1-chi4 coeff/pval:\t%.2f\t %.3f',c,p);
+                                fprintf(file,'\n');
                             
                                 [c p] = circ_corrcc(chsi2,chsi4);
                                 fprintf(file,'\nCirc-circ corr chi2-chi4 coeff/pval:\t%.2f\t %.3f',c,p);
+                                fprintf(file,'\n');
                                 
                                 [c p] = circ_corrcc(chsi3,chsi4);
                                 fprintf(file,'\nCirc-circ corr chi3-chi4 coeff/pval:\t%.2f\t %.3f\n',c,p);
+                                fprintf(file,'\n');
         
                             end
                         end
