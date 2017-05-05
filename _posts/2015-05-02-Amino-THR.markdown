@@ -8,12 +8,12 @@ categories: update
 
 
  ## PHI & PSI
-![Image](.../../../../../images/images/THR_Rama_phipsi.jpg)
+![Image](../../../../../images/images/THR_Rama_phipsi.jpg)
 ![Image](../../../../../images/images/THR_Rama_phipsiGrad.jpg)
 
 
 ## CHI_1
-![Image](.../../../../../images/images/THR_Rama_phichi1.jpg)
-![Image](.../../../../../images/images/THR_Rama_Grad_psichi1.jpg)
-![Image](.../../../../../images/images/THR_Rama_psichi1.jpg)
-![Image](.../../../../../images/images/THR_Rama_Grad_phichi1.jpg)
+![Image](../../../../../images/images/THR_Rama_phichi1.jpg)
+![Image](../../../../../images/images/THR_Rama_Grad_psichi1.jpg)
+![Image](../../../../../images/images/THR_Rama_psichi1.jpg)
+![Image](../../../../../images/images/THR_Rama_Grad_phichi1.jpg)
