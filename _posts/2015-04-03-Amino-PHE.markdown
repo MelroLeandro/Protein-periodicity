@@ -66,11 +66,11 @@ V Test (r = 0),  P = 0.05 1.00
 ### Measures of Association $$\phi$$-$$\psi$$
 
 Circular-Circular Association
-Circ-circ corr phi-psi coeff/pval:	-0.13	 0.000
-Circ-line corr phi-C-CA coeff/pval:	0.68	 0.000
-Circ-line corr phi-N-CA coeff/pval:	0.43	 0.000
-Circ-line corr psi-C-CA coeff/pval:	0.32	 0.000
-Circ-line corr psi-N-CA coeff/pval:	0.15	 0.000
+- Circ-circ corr phi-psi coeff/pval:	-0.13	 0.000
+- Circ-line corr phi-C-CA coeff/pval:	0.68	 0.000
+- Circ-line corr phi-N-CA coeff/pval:	0.43	 0.000
+- Circ-line corr psi-C-CA coeff/pval:	0.32	 0.000
+- Circ-line corr psi-N-CA coeff/pval:	0.15	 0.000
 ### Statistics $$\chi_1$$
 
 |     | CHI_1 |
@@ -89,11 +89,11 @@ Circ-line corr psi-N-CA coeff/pval:	0.15	 0.000
 ### Inferential Statistics $$\chi_1$$
 Tests for Uniformity
 
-Rayleigh Test, 	 P = 0.00
-Omnibus Test, 	 P = 0.00
-Rao Spacing Test, 	 P = 0.00
-Circ-circ corr phi-chi1 coeff/pval:	0.02	 0.578
-Circ-circ corr psi-chi1 coeff/pval:	-0.02	 0.587
+- Rayleigh Test, 	 P = 0.00
+- Omnibus Test, 	 P = 0.00
+- Rao Spacing Test, 	 P = 0.00
+- Circ-circ corr phi-chi1 coeff/pval:	0.02	 0.578
+- Circ-circ corr psi-chi1 coeff/pval:	-0.02	 0.587
 
  
 
@@ -115,17 +115,17 @@ Circ-circ corr psi-chi1 coeff/pval:	-0.02	 0.587
 
 Tests for Uniformity
 
-Rayleigh Test, 	 P = 0.00
+- Rayleigh Test, 	 P = 0.00
 
-Omnibus Test, 	 P = 0.00
+- Omnibus Test, 	 P = 0.00
 
-Rao Spacing Test, 	 P = 0.00
+- Rao Spacing Test, 	 P = 0.00
 
-Circ-circ corr phi-chi2 coeff/pval:	-0.20	 0.000
+- Circ-circ corr phi-chi2 coeff/pval:	-0.20	 0.000
 
-Circ-circ corr psi-chi2 coeff/pval:	-0.04	 0.309
+- Circ-circ corr psi-chi2 coeff/pval:	-0.04	 0.309
 
-Circ-circ corr chi1-chi2 coeff/pval:	0.02	 0.603
+- Circ-circ corr chi1-chi2 coeff/pval:	0.02	 0.603
 
 
 
@@ -146,23 +146,23 @@ Circ-circ corr chi1-chi2 coeff/pval:	0.02	 0.603
 
 
 
-### Inferential Statistics $$\chsi_3$$
+### Inferential Statistics $$\chi_3$$
 
 Tests for Uniformity
 
-Rayleigh Test, 	 P = 0.00
+- Rayleigh Test, 	 P = 0.00
 
-Omnibus Test, 	 P = 0.00
+- Omnibus Test, 	 P = 0.00
 
-Rao Spacing Test, 	 P = 0.00
+- Rao Spacing Test, 	 P = 0.00
 
-Circ-circ corr phi-chi3 coeff/pval:	0.10	 0.005
+- Circ-circ corr phi-chi3 coeff/pval:	0.10	 0.005
 
-Circ-circ corr psi-chi3 coeff/pval:	-0.03	 0.451
+- Circ-circ corr psi-chi3 coeff/pval:	-0.03	 0.451
 
-Circ-circ corr chi1-chi3 coeff/pval:	-0.03	 0.387
+- Circ-circ corr chi1-chi3 coeff/pval:	-0.03	 0.387
 
-Circ-circ corr chi2-chi3 coeff/pval:	-0.34	 0.000
+- Circ-circ corr chi2-chi3 coeff/pval:	-0.34	 0.000
 
 
 # $$\phi$$ & $$\psi$$
