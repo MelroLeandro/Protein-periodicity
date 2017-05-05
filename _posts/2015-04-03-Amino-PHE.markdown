@@ -22,7 +22,9 @@ categories: update
 | Kurtosis | 38.82 |
 
 
-	 SAMPLE SIZE having B-factor <= 15: 779
+
+ SAMPLE SIZE having B-factor <= 15: 779
+
 |    | C-CA | N-CA | peptid plane |
 |--- | --- | --- | --- |
 | Mean | 2.18 | 1.89 | 1.54 |
@@ -102,6 +104,7 @@ Rao Spacing Test, 	 P = 0.00
 Circ-circ corr phi-chsi2 coeff/pval:	-0.20	 0.000
 Circ-circ corr psi-chsi2 coeff/pval:	-0.04	 0.309
 Circ-circ corr chsi1-chsi2 coeff/pval:	0.02	 0.603
+
 |    | CHI_3 |
 | --- | --- |
 | Mean resultant vector | 27.08 |

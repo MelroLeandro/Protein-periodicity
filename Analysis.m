@@ -97,7 +97,7 @@ for i=1:length(aminos)
         data=removenan(Data,filter); % clean and select data
         
         [c2,att]=size(data);
-        fprintf(file,'\n\t SAMPLE SIZE having B-factor <= 15: %d\n',c2);
+        fprintf(file,'\n\n SAMPLE SIZE having B-factor <= 15: %d\n\n',c2);
         
         % query points
         phi= data(:,1);
@@ -299,7 +299,7 @@ for i=1:length(aminos)
                         fprintf(file,'Circ-circ corr psi-chsi2 coeff/pval:\t%.2f\t %.3f\n',c,p);
                         
                         [c p] = circ_corrcc(chsi1,chsi2);
-                        fprintf(file,'Circ-circ corr chsi1-chsi2 coeff/pval:\t%.2f\t %.3f\n',c,p);
+                        fprintf(file,'Circ-circ corr chsi1-chsi2 coeff/pval:\t%.2f\t %.3f\n\n',c,p);
         
                         
                         if col > 9
