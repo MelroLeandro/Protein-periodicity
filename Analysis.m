@@ -179,116 +179,119 @@ for i=1:length(aminos)
         
         %% part 4: inferential statistics
 
-        fprintf(file,'\n### Inferential Statistics for phi-psi \n\nTests for Uniformity\n');
-
+        fprintf(file,'\n### Inferential Statistics for phi-psi \n');
+        fprintf(file,'\nTests for Uniformity\n');
         % Rayleigh test
         p_alpha = circ_rtest(phi);
         p_beta = circ_rtest(psi);
-        fprintf(file,'Rayleigh Test, P = %.2f %.2f\n',[p_alpha p_beta]);
+        fprintf(file,'\nRayleigh Test, P = %.2f %.2f',[p_alpha p_beta]);
 
         % Omnibus test
         p_alpha = circ_otest(phi);
         p_beta = circ_otest(psi);
-        fprintf(file,'Omnibus Test,  P = %.2f %.2f\n',[p_alpha p_beta]);
+        fprintf(file,'\nOmnibus Test,  P = %.2f %.2f',[p_alpha p_beta]);
 
         % Rao's spacing test
         p_alpha = circ_raotest(phi);
         p_beta = circ_raotest(psi);
-        fprintf(file,'Rao Spacing Test,  P = %.2f %.2f\n',[p_alpha p_beta]);
+        fprintf(file,'\nRao Spacing Test,  P = %.2f %.2f',[p_alpha p_beta]);
 
         % V test
         p_alpha = circ_vtest(phi,circ_ang2rad(0));
         p_beta = circ_vtest(psi,circ_ang2rad(0));
-        fprintf(file,'V Test (r = 0),  P = %.2f %.2f\n',[p_alpha p_beta]);
+        fprintf(file,'\nV Test (r = 0),  P = %.2f %.2f',[p_alpha p_beta]);
 
 
         %% part 4: association
-        fprintf(file,'\n### Measures of Association $$\\phi$$-$$\\psi$$\n\nCircular-Circular Association\n');
+        fprintf(file,'\n### Measures of Association $$\\phi$$-$$\\psi$$\n')
+        fprintf(file,'\nCircular-Circular Association');
         
         % compute circular - circular correlations
         [c p] = circ_corrcc(phi,psi);
-        fprintf(file,'Circ-circ corr phi-psi coeff/pval:\t%.2f\t %.3f\n',c,p);
+        fprintf(file,'\nCirc-circ corr phi-psi coeff/pval:\t%.2f\t %.3f',c,p);
         
         % compute circular - linear correlations
         [c p] = circ_corrcl(phi,C_CA);
-        fprintf(file,'Circ-line corr phi-C-CA coeff/pval:\t%.2f\t %.3f\n',c,p);
+        fprintf(file,'\nCirc-line corr phi-C-CA coeff/pval:\t%.2f\t %.3f',c,p);
         
         [c p] = circ_corrcl(phi,N_CA);
-        fprintf(file,'Circ-line corr phi-N-CA coeff/pval:\t%.2f\t %.3f\n',c,p);
+        fprintf(file,'\nCirc-line corr phi-N-CA coeff/pval:\t%.2f\t %.3f',c,p);
         
         [c p] = circ_corrcl(psi,C_CA);
-        fprintf(file,'Circ-line corr psi-C-CA coeff/pval:\t%.2f\t %.3f\n',c,p);
+        fprintf(file,'\nCirc-line corr psi-C-CA coeff/pval:\t%.2f\t %.3f',c,p);
         
         [c p] = circ_corrcl(psi,N_CA);
-        fprintf(file,'Circ-line corr psi-N-CA coeff/pval:\t%.2f\t %.3f\n',c,p);
+        fprintf(file,'\nCirc-line corr psi-N-CA coeff/pval:\t%.2f\t %.3f',c,p);
              
         
         if col> 7
                     chsi1= data(:,8);
-                    fprintf(file,'\n### Statistics $$\\chsi_1$$');
-                    fprintf(file,'\n|     | CHI_1 |\n');
-                    fprintf(file,'| --- | --- |\n');
+                    fprintf(file,'\n### Statistics $$\\chsi_1$$\n');
+                    fprintf(file,'\n|     | CHI_1 |');
+                    fprintf(file,'\n| --- | --- |');
                     chsi1_bar = circ_mean(chsi1);
-                    fprintf(file,'| Mean resultant vector | %.2f |\n', circ_rad2ang(chsi1_bar));
+                    fprintf(file,'\n| Mean resultant vector | %.2f |', circ_rad2ang(chsi1_bar));
                     chsi1_hat = circ_median(chsi1);
-                    fprintf(file,'| Median | %.2f | %.2f |\n', circ_rad2ang(chsi1_bar));
+                    fprintf(file,'\n| Median | %.2f | %.2f |', circ_rad2ang(chsi1_bar));
                     R_chsi1 = circ_r(chsi1);
-                    fprintf(file,'| R Length | %.2f | %.2f |\n',R_chsi1);
+                    fprintf(file,'\n| R Length | %.2f | %.2f |',R_chsi1);
                     S_chsi1 = circ_var(chsi1);
-                    fprintf(file,'| Variance | %.2f | %.2f |\n',S_chsi1);
+                    fprintf(file,'\n| Variance | %.2f | %.2f |',S_chsi1);
                     [s_chsi1 s0_chsi1] = circ_std(chsi1);
-                    fprintf(file,'| Standard deviation | %.2f |\n',s_chsi1);
-                    fprintf(file,'| Standard deviation 0| %.2f |\n',s0_chsi1);
+                    fprintf(file,'\n| Standard deviation | %.2f |',s_chsi1);
+                    fprintf(file,'\n| Standard deviation 0| %.2f |',s0_chsi1);
                     b_chsi1 = circ_skewness(chsi1);
-                    fprintf(file,'| Skewness | %.2f |\n',b_chsi1);
+                    fprintf(file,'\n| Skewness | %.2f |',b_chsi1);
                     k_chsi1 = circ_kurtosis(chsi1);
-                    fprintf(file,'| Kurtosis | %.2f |\n',k_chsi1);
+                    fprintf(file,'\n| Kurtosis | %.2f |\n',k_chsi1);
                     
                     fprintf(file,'\n \n');
                     %% part 4: inferential statistics
-                    fprintf(file,'\n### Inferential Statistics $$\\chsi_1$$\n\nTests for Uniformity\n');
+                    fprintf(file,'\n### Inferential Statistics $$\\chsi_1$$');
+                    fprintf(file,'\nTests for Uniformity\n');
                     % Rayleigh test
                     p_chsi1 = circ_rtest(chsi1);
-                    fprintf(file,'Rayleigh Test, \t P = %.2f\n',p_chsi1);
+                    fprintf(file,'\nRayleigh Test, \t P = %.2f',p_chsi1);
                     % Omnibus test
                     p_chsi1 = circ_otest(chsi1);
-                    fprintf(file,'Omnibus Test, \t P = %.2f\n',p_chsi1);
+                    fprintf(file,'\nOmnibus Test, \t P = %.2f',p_chsi1);
                     % Rao's spacing test
                     p_chsi1 = circ_raotest(chsi1);
-                    fprintf(file,'Rao Spacing Test, \t P = %.2f\n',p_chsi1);
+                    fprintf(file,'\nRao Spacing Test, \t P = %.2f',p_chsi1);
                     
                     [c p] = circ_corrcc(phi,chsi1);
-                    fprintf(file,'Circ-circ corr phi-chsi1 coeff/pval:\t%.2f\t %.3f\n',c,p);
+                    fprintf(file,'\nCirc-circ corr phi-chsi1 coeff/pval:\t%.2f\t %.3f',c,p);
                     [c p] = circ_corrcc(psi,chsi1);
-                    fprintf(file,'Circ-circ corr psi-chsi1 coeff/pval:\t%.2f\t %.3f\n',c,p);
+                    fprintf(file,'\nCirc-circ corr psi-chsi1 coeff/pval:\t%.2f\t %.3f\n',c,p);
                     
                     if col > 8                        
                         chsi2= data(:,9);
                         
                         fprintf(file,'\n \n');
-                        fprintf(file,'\n### Statistics $$\\chsi_2$$');
+                        fprintf(file,'\n### Statistics $$\\chsi_2$$\n');
                         
-                        fprintf(file,'\n|     | CHI_2 |\n');
-                        fprintf(file,'| --- | --- |\n');
+                        fprintf(file,'\n|     | CHI_2 |');
+                        fprintf(file,'\n| --- | --- |');
                     
                         chsi2_bar = circ_mean(chsi2);
-                        fprintf(file,'| Mean resultant vector | %.2f |\n', circ_rad2ang(chsi2_bar));
+                        fprintf(file,'\n| Mean resultant vector | %.2f |', circ_rad2ang(chsi2_bar));
                         chsi2_hat = circ_median(chsi2);
-                        fprintf(file,'| Median | %.2f |\n', circ_rad2ang(chsi2_bar));
+                        fprintf(file,'\n| Median | %.2f |', circ_rad2ang(chsi2_bar));
                         R_chsi2 = circ_r(chsi2);
-                        fprintf(file,'| R Length | %.2f |\n',R_chsi2);
+                        fprintf(file,'\n| R Length | %.2f |',R_chsi2);
                         S_chsi2 = circ_var(chsi2);
-                        fprintf(file,'| Variance | %.2f |\n',S_chsi2);
+                        fprintf(file,'\n| Variance | %.2f |',S_chsi2);
                         [s_chsi2 s0_chsi2] = circ_std(chsi2);
-                        fprintf(file,'| Standard deviation | %.2f |\n',s_chsi2);
-                        fprintf(file,'| Standard deviation 0 | %.2f |\n',s0_chsi2);
+                        fprintf(file,'\n| Standard deviation | %.2f |',s_chsi2);
+                        fprintf(file,'\n| Standard deviation 0 | %.2f |',s0_chsi2);
                         b_chsi2 = circ_skewness(chsi2);
-                        fprintf(file,'| Skewness | %.2f |\n',b_chsi2);
+                        fprintf(file,'\n| Skewness | %.2f |',b_chsi2);
                         k_chsi2 = circ_kurtosis(chsi2);
-                        fprintf(file,'| Kurtosis | %.2f |\n',k_chsi2);
+                        fprintf(file,'\n| Kurtosis | %.2f |',k_chsi2);
                         fprintf(file,'\n\n');
                         %% part 4: inferential statistics
-                        fprintf(file,'\n### Inferential Statistics $$\\chsi_2$$ \n\nTests for Uniformity\n');
+                        fprintf(file,'\n### Inferential Statistics $$\\chsi_2$$ \n');
+                        fprintf(file,'\nTests for Uniformity\n');
                         % Rayleigh test
                         p_chsi2 = circ_rtest(chsi2);
                         fprintf(file,'\nRayleigh Test, \t P = %.2f',p_chsi2);
@@ -315,102 +318,104 @@ for i=1:length(aminos)
                             chsi3= data(:,10);
                             
                             fprintf(file,'\n \n');
-                            fprintf(file,'\n### Statistics $$\\chsi_3$$');
+                            fprintf(file,'\n### Statistics $$\\chsi_3$$\n');
                             
-                            fprintf(file,'\n|    | CHI_3 |\n');
-                            fprintf(file,'| --- | --- |\n');
+                            fprintf(file,'\n|    | CHI_3 |');
+                            fprintf(file,'\n| --- | --- |');
                             chsi3_bar = circ_mean(chsi3);
-                            fprintf(file,'| Mean resultant vector | %.2f |\n', circ_rad2ang(chsi3_bar));
+                            fprintf(file,'\n| Mean resultant vector | %.2f |', circ_rad2ang(chsi3_bar));
                             chsi3_hat = circ_median(chsi3);
-                            fprintf(file,'| Median | %.2f |\n', circ_rad2ang(chsi3_bar));
+                            fprintf(file,'\n| Median | %.2f |', circ_rad2ang(chsi3_bar));
                             R_chsi3 = circ_r(chsi3);
-                            fprintf(file,'| R Length | %.2f |\n',R_chsi3);
+                            fprintf(file,'\n| R Length | %.2f |',R_chsi3);
                             S_chsi3 = circ_var(chsi3);
-                            fprintf(file,'| Variance | %.2f |\n',S_chsi3);
+                            fprintf(file,'\n| Variance | %.2f |',S_chsi3);
                             [s_chsi3 s0_chsi3] = circ_std(chsi3);
-                            fprintf(file,'| Standard deviation | %.2f |\n',s_chsi3);
-                            fprintf(file,'| Standard deviation 0 | %.2f |\n',s0_chsi3);
+                            fprintf(file,'\n| Standard deviation | %.2f |',s_chsi3);
+                            fprintf(file,'\n| Standard deviation 0 | %.2f |',s0_chsi3);
                             b_chsi3 = circ_skewness(chsi3);
-                            fprintf(file,'| Skewness | %.2f |\n',b_chsi3);
+                            fprintf(file,'\n| Skewness | %.2f |',b_chsi3);
                             k_chsi3 = circ_kurtosis(chsi3);
-                            fprintf(file,'| Kurtosis | %.2f |\n',k_chsi3);
+                            fprintf(file,'\n| Kurtosis | %.2f |\n',k_chsi3);
                             fprintf(file,'\n\n');
                             %% part 4: inferential statistics
-                            fprintf(file,'\n### Inferential Statistics $$\\chsi_3$$\n\nTests for Uniformity\n');
+                            fprintf(file,'\n### Inferential Statistics $$\\chsi_3$$\n');
+                            fprintf(file,'\nTests for Uniformity\n');
                             % Rayleigh test
                             p_chsi3 = circ_rtest(chsi3);
-                            fprintf(file,'Rayleigh Test, \t P = %.2f\n',p_chsi3);
+                            fprintf(file,'\nRayleigh Test, \t P = %.2f',p_chsi3);
                             % Omnibus test
                             p_chsi3 = circ_otest(chsi3);
-                            fprintf(file,'Omnibus Test, \t P = %.2f\n',p_chsi3);
+                            fprintf(file,'\nOmnibus Test, \t P = %.2f',p_chsi3);
                             % Rao's spacing test
                             p_chsi3 = circ_raotest(chsi3);
-                            fprintf(file,'Rao Spacing Test, \t P = %.2f\n',p_chsi3);
+                            fprintf(file,'\nRao Spacing Test, \t P = %.2f',p_chsi3);
 
                             [c p] = circ_corrcc(phi,chsi3);
-                            fprintf(file,'Circ-circ corr phi-chsi3 coeff/pval:\t%.2f\t %.3f\n',c,p);
+                            fprintf(file,'\nCirc-circ corr phi-chsi3 coeff/pval:\t%.2f\t %.3f',c,p);
         
                             [c p] = circ_corrcc(psi,chsi3);
-                            fprintf(file,'Circ-circ corr psi-chsi3 coeff/pval:\t%.2f\t %.3f\n',c,p);
+                            fprintf(file,'\nCirc-circ corr psi-chsi3 coeff/pval:\t%.2f\t %.3f',c,p);
                         
                             [c p] = circ_corrcc(chsi1,chsi3);
-                            fprintf(file,'Circ-circ corr chsi1-chsi3 coeff/pval:\t%.2f\t %.3f\n',c,p);
+                            fprintf(file,'\nCirc-circ corr chsi1-chsi3 coeff/pval:\t%.2f\t %.3f',c,p);
                             
                             [c p] = circ_corrcc(chsi2,chsi3);
-                            fprintf(file,'Circ-circ corr chsi2-chsi3 coeff/pval:\t%.2f\t %.3f\n',c,p);
+                            fprintf(file,'\nCirc-circ corr chsi2-chsi3 coeff/pval:\t%.2f\t %.3f',c,p);
         
                             
                             if col > 10
                                 
                                 chsi4= data(:,11);
                                 
-                                fprintf(file,'\n### Statistics $$\\chsi_4$$');
+                                fprintf(file,'\n### Statistics $$\\chsi_4$$\n');
                                 
-                                fprintf(file,'\n|     | CHI_4 |\n');
-                                fprintf(file,'| --- | --- |\n');
+                                fprintf(file,'\n|     | CHI_4 |');
+                                fprintf(file,'\n| --- | --- |');
                                 chsi4_bar = circ_mean(chsi4);
-                                fprintf(file,'| Mean resultant vector | %.2f |\n', circ_rad2ang(chsi4_bar));
+                                fprintf(file,'\n| Mean resultant vector | %.2f |', circ_rad2ang(chsi4_bar));
                                 chsi4_hat = circ_median(chsi4);
-                                fprintf(file,'| Median | %.2f |\n', circ_rad2ang(chsi4_bar));
+                                fprintf(file,'\n| Median | %.2f |', circ_rad2ang(chsi4_bar));
                                 R_chsi4 = circ_r(chsi4);
-                                fprintf(file,'| R Length | %.2f |\n',R_chsi4);
+                                fprintf(file,'\n| R Length | %.2f |',R_chsi4);
                                 S_chsi4 = circ_var(chsi4);
-                                fprintf(file,'| Variance | %.2f |\n',S_chsi4);
+                                fprintf(file,'\n| Variance | %.2f |',S_chsi4);
                                 [s_chsi4 s0_chsi4] = circ_std(chsi4);
-                                fprintf(file,'| Standard deviation | %.2f |\n',s_chsi4);
-                                fprintf(file,'| Standard deviation 0 | %.2f |\n',s0_chsi4);
+                                fprintf(file,'\n| Standard deviation | %.2f |',s_chsi4);
+                                fprintf(file,'\n| Standard deviation 0 | %.2f |',s0_chsi4);
                                 b_chsi4 = circ_skewness(chsi4);
-                                fprintf(file,'| Skewness | %.2f |\n',b_chsi4);
+                                fprintf(file,'\n| Skewness | %.2f |',b_chsi4);
                                 k_chsi4 = circ_kurtosis(chsi4);
-                                fprintf(file,'| Kurtosis | %.2f |\n',k_chsi4);
+                                fprintf(file,'\n| Kurtosis | %.2f |',k_chsi4);
                                 fprintf(file,'\n\n');
                                 %% part 4: inferential statistics
-                                fprintf(file,'\n## Inferential Statistics $$\\chsi_4$$\n\nTests for Uniformity\n');
+                                fprintf(file,'\n## Inferential Statistics $$\\chsi_4$$\n');
+                                fprintf(file,'\nTests for Uniformity\n');
                                 % Rayleigh test
                                 p_chsi4 = circ_rtest(chsi4);
-                                fprintf(file,'Rayleigh Test, \t P = %.2f\n',p_chsi4);
+                                fprintf(file,'\nRayleigh Test, \t P = %.2f',p_chsi4);
                                 % Omnibus test
                                 p_chsi4 = circ_otest(chsi4);
-                                fprintf(file,'Omnibus Test, \t P = %.2f\n',p_chsi4);
+                                fprintf(file,'\nOmnibus Test, \t P = %.2f',p_chsi4);
                                 % Rao's spacing test
                                 p_chsi4 = circ_raotest(chsi4);
-                                fprintf(file,'Rao Spacing Test, \t P = %.2f\n',p_chsi4);
+                                fprintf(file,'\nRao Spacing Test, \t P = %.2f',p_chsi4);
 
                             
                                 [c p] = circ_corrcc(phi,chsi4);
-                                fprintf(file,'Circ-circ corr phi-chsi4 coeff/pval:\t%.2f\t %.3f\n',c,p);
+                                fprintf(file,'\nCirc-circ corr phi-chsi4 coeff/pval:\t%.2f\t %.3f',c,p);
         
                                 [c p] = circ_corrcc(psi,chsi4);
-                                fprintf(file,'Circ-circ corr psi-chsi4 coeff/pval:\t%.2f\t %.3f\n',c,p);
+                                fprintf(file,'\nCirc-circ corr psi-chsi4 coeff/pval:\t%.2f\t %.3f',c,p);
                         
                                 [c p] = circ_corrcc(chsi1,chsi4);
-                                fprintf(file,'Circ-circ corr chsi1-chsi4 coeff/pval:\t%.2f\t %.3f\n',c,p);
+                                fprintf(file,'\nCirc-circ corr chsi1-chsi4 coeff/pval:\t%.2f\t %.3f',c,p);
                             
                                 [c p] = circ_corrcc(chsi2,chsi4);
-                                fprintf(file,'Circ-circ corr chsi2-chsi4 coeff/pval:\t%.2f\t %.3f\n',c,p);
+                                fprintf(file,'\nCirc-circ corr chsi2-chsi4 coeff/pval:\t%.2f\t %.3f',c,p);
                                 
                                 [c p] = circ_corrcc(chsi3,chsi4);
-                                fprintf(file,'Circ-circ corr chsi3-chsi4 coeff/pval:\t%.2f\t %.3f\n',c,p);
+                                fprintf(file,'\nCirc-circ corr chsi3-chsi4 coeff/pval:\t%.2f\t %.3f\n',c,p);
         
                             end
                         end
