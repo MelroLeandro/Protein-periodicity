@@ -83,8 +83,8 @@ for i=1:length(aminos)
         
         % B-factor
         
-        fprintf(file,'| B-factor |    |\n');
-        fprintf(file,'|---|---|\n');
+        fprintf(file,'|     | B-factor |\n');
+        fprintf(file,'| --- | --- |\n');
         fprintf(file,'| Mean | %.2f |\n',BFactor_bar);
         fprintf(file,'| Median | %.2f |\n',median(BFactor));
         fprintf(file,'| Variance | %.2f |\n',var(BFactor));
@@ -97,7 +97,7 @@ for i=1:length(aminos)
         data=removenan(Data,filter); % clean and select data
         
         [c2,att]=size(data);
-        fprintf(file,'\n\n SAMPLE SIZE having B-factor <= 15: %d\n\n',c2);
+        fprintf(file,'\n\n\n SAMPLE SIZE having B-factor <= 15: %d \n\n',c2);
         
         % query points
         phi= data(:,1);
@@ -108,8 +108,8 @@ for i=1:length(aminos)
         N_CA= data(:,4);
         dplane= data(:,6);
         
-        fprintf(file,'|    | C-CA | N-CA | peptid plane |\n');
-        fprintf(file,'|--- | --- | --- | --- |\n');
+        fprintf(file,'|     | C-CA | N-CA | peptid plane |\n');
+        fprintf(file,'| --- | --- | --- | --- |\n');
         
         C_CA_bar= mean(C_CA);
         N_CA_bar= mean(N_CA);
@@ -132,7 +132,8 @@ for i=1:length(aminos)
         
         %% part 1: descriptive statistics
 
-        fprintf(file,'|    | tPHI | PSI |\n');
+        fprintf(file,'\n|    | PHI | PSI |\n');
+        fprintf(file,'| --- | --- | --- |\n');
 
         alpha_bar = circ_mean(phi);
         beta_bar = circ_mean(psi);
