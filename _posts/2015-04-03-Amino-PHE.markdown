@@ -53,16 +53,14 @@ SAMPLE SIZE having B-factor <= 15: 779
 | Standard deviation 0 | 1.22 | 2.08 |
 | Skewness | -0.11 | 0.21 |
 | Kurtosis | 0.33 | 0.43 |
-
-Inferential Statistics for phi-psi 
+## Inferential Statistics for phi-psi 
 
 Tests for Uniformity
 Rayleigh Test, P = 0.00 0.00
 Omnibus Test,  P = 0.00 0.00
 Rao Spacing Test,  P = 0.00 0.00
 V Test (r = 0),  P = 0.05 1.00
-
-Measures of Association phi-psi
+## Measures of Association phi-psi
 
 Circular-Circular Association
 Circ-circ corr phi-psi coeff/pval:	-0.13	 0.000
@@ -80,8 +78,7 @@ Circ-line corr psi-N-CA coeff/pval:	0.15	 0.000
 | Kurtosis | -0.02 |
 
  
-
-Inferential Statistics chsi_1
+## Inferential Statistics chsi_1
 
 Tests for Uniformity
 Rayleigh Test, 	 P = 0.00
@@ -104,15 +101,21 @@ Circ-circ corr psi-chsi1 coeff/pval:	-0.02	 0.587
 | Kurtosis | 0.03 |
 
 
-Inferential Statistics chsi2 
+## Inferential Statistics chsi2 
 
 Tests for Uniformity
+
 Rayleigh Test, 	 P = 0.00
 Omnibus Test, 	 P = 0.00
 Rao Spacing Test, 	 P = 0.00
 Circ-circ corr phi-chsi2 coeff/pval:	-0.20	 0.000
+
 Circ-circ corr psi-chsi2 coeff/pval:	-0.04	 0.309
+
 Circ-circ corr chsi1-chsi2 coeff/pval:	0.02	 0.603
+
+
+ 
 
 |    | CHI_3 |
 | --- | --- |
@@ -126,7 +129,7 @@ Circ-circ corr chsi1-chsi2 coeff/pval:	0.02	 0.603
 | Kurtosis | -0.40 |
 
 
-Inferential Statistics chsi3
+## Inferential Statistics chsi3
 
 Tests for Uniformity
 Rayleigh Test, 	 P = 0.00

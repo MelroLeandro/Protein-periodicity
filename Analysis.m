@@ -177,7 +177,7 @@ for i=1:length(aminos)
         
         %% part 4: inferential statistics
 
-        fprintf(file,'\nInferential Statistics for phi-psi \n\nTests for Uniformity\n');
+        fprintf(file,'## Inferential Statistics for phi-psi \n\nTests for Uniformity\n');
 
         % Rayleigh test
         p_alpha = circ_rtest(phi);
@@ -201,7 +201,7 @@ for i=1:length(aminos)
 
 
         %% part 4: association
-        fprintf(file,'\nMeasures of Association phi-psi\n\nCircular-Circular Association\n');
+        fprintf(file,'## Measures of Association phi-psi\n\nCircular-Circular Association\n');
         
         % compute circular - circular correlations
         [c p] = circ_corrcc(phi,psi);
@@ -244,7 +244,7 @@ for i=1:length(aminos)
                     
                     fprintf(file,'\n \n');
                     %% part 4: inferential statistics
-                    fprintf(file,'\nInferential Statistics chsi_1\n\nTests for Uniformity\n');
+                    fprintf(file,'## Inferential Statistics chsi_1\n\nTests for Uniformity\n');
                     % Rayleigh test
                     p_chsi1 = circ_rtest(chsi1);
                     fprintf(file,'Rayleigh Test, \t P = %.2f\n',p_chsi1);
@@ -285,33 +285,35 @@ for i=1:length(aminos)
                         fprintf(file,'| Kurtosis | %.2f |\n',k_chsi2);
                         fprintf(file,'\n\n');
                         %% part 4: inferential statistics
-                        fprintf(file,'Inferential Statistics chsi2 \n\nTests for Uniformity\n');
+                        fprintf(file,'## Inferential Statistics chsi2 \n\nTests for Uniformity\n');
                         % Rayleigh test
                         p_chsi2 = circ_rtest(chsi2);
-                        fprintf(file,'Rayleigh Test, \t P = %.2f\n',p_chsi2);
+                        fprintf(file,'\nRayleigh Test, \t P = %.2f',p_chsi2);
                         % Omnibus test
                         p_chsi2 = circ_otest(chsi2);
-                        fprintf(file,'Omnibus Test, \t P = %.2f\n',p_chsi2);
+                        fprintf(file,'\nOmnibus Test, \t P = %.2f',p_chsi2);
                         % Rao's spacing test
                         p_chsi2 = circ_raotest(chsi2);
-                        fprintf(file,'Rao Spacing Test, \t P = %.2f\n',p_chsi2);
+                        fprintf(file,'\nRao Spacing Test, \t P = %.2f',p_chsi2);
 
                         
                         [c p] = circ_corrcc(phi,chsi2);
-                        fprintf(file,'Circ-circ corr phi-chsi2 coeff/pval:\t%.2f\t %.3f\n',c,p);
+                        fprintf(file,'\nCirc-circ corr phi-chsi2 coeff/pval:\t%.2f\t %.3f\n',c,p);
         
                         [c p] = circ_corrcc(psi,chsi2);
-                        fprintf(file,'Circ-circ corr psi-chsi2 coeff/pval:\t%.2f\t %.3f\n',c,p);
+                        fprintf(file,'\nCirc-circ corr psi-chsi2 coeff/pval:\t%.2f\t %.3f\n',c,p);
                         
                         [c p] = circ_corrcc(chsi1,chsi2);
-                        fprintf(file,'Circ-circ corr chsi1-chsi2 coeff/pval:\t%.2f\t %.3f\n\n',c,p);
+                        fprintf(file,'\nCirc-circ corr chsi1-chsi2 coeff/pval:\t%.2f\t %.3f\n\n',c,p);
         
                         
                         if col > 9
                             
                             chsi3= data(:,10);
                             
-                            fprintf(file,'|    | CHI_3 |\n');
+                            fprintf(file,'\n \n');
+                            
+                            fprintf(file,'\n|    | CHI_3 |\n');
                             fprintf(file,'| --- | --- |\n');
                             chsi3_bar = circ_mean(chsi3);
                             fprintf(file,'| Mean resultant vector | %.2f |\n', circ_rad2ang(chsi3_bar));
@@ -330,7 +332,7 @@ for i=1:length(aminos)
                             fprintf(file,'| Kurtosis | %.2f |\n',k_chsi3);
                             fprintf(file,'\n\n');
                             %% part 4: inferential statistics
-                            fprintf(file,'Inferential Statistics chsi3\n\nTests for Uniformity\n');
+                            fprintf(file,'## Inferential Statistics chsi3\n\nTests for Uniformity\n');
                             % Rayleigh test
                             p_chsi3 = circ_rtest(chsi3);
                             fprintf(file,'Rayleigh Test, \t P = %.2f\n',p_chsi3);
@@ -377,7 +379,7 @@ for i=1:length(aminos)
                                 fprintf(file,'| Kurtosis | %.2f |\n',k_chsi4);
                                 fprintf(file,'\n\n');
                                 %% part 4: inferential statistics
-                                fprintf(file,'Inferential Statistics chsi\n\nTests for Uniformity\n');
+                                fprintf(file,'## Inferential Statistics chsi\n\nTests for Uniformity\n');
                                 % Rayleigh test
                                 p_chsi4 = circ_rtest(chsi4);
                                 fprintf(file,'Rayleigh Test, \t P = %.2f\n',p_chsi4);
