@@ -8,7 +8,7 @@ categories: update
 
 
  ## PHI & PSI
-![Image](../../../../../images/images/THR_Rama_phipsi.jpg)
+![Image](../../../../images/images/THR_Rama_phipsi.jpg)
 ![Image](../../../../../images/images/THR_Rama_phipsiGrad.jpg)
 
 
