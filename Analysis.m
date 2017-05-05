@@ -78,9 +78,9 @@ for i=1:length(aminos)
         
         [c1,att]=size(Data);
         
-        fprintf(file,'\n SAMPLE SIZE: %d\n\n',c1);
+        fprintf(file,'\n SAMPLE SIZE: %d\n',c1);
         
-        
+        fprintf(file,' \n \n \n');
         % B-factor
         
         fprintf(file,'|     | B-factor |\n');
@@ -91,9 +91,9 @@ for i=1:length(aminos)
         
         fprintf(file,'| Standard deviation | %.2f |\n',std(BFactor));
         fprintf(file,'| Skewness | %.2f |\n',skewness(BFactor));
-        fprintf(file,'| Kurtosis | %.2f |\n\n',kurtosis(BFactor));
+        fprintf(file,'| Kurtosis | %.2f |\n',kurtosis(BFactor));
 
-        fprintf(file,'\n\n\n');
+        fprintf(file,' \n \n \n');
         % Filter Data
         data=removenan(Data,filter); % clean and select data
         
@@ -109,7 +109,7 @@ for i=1:length(aminos)
         N_CA= data(:,4);
         dplane= data(:,6);
         
-        fprintf(file,'|     | C-CA | N-CA | peptid plane |\n');
+        fprintf(file,'\n|     | C-CA | N-CA | peptid plane |\n');
         fprintf(file,'| --- | --- | --- | --- |\n');
         
         C_CA_bar= mean(C_CA);
@@ -129,12 +129,12 @@ for i=1:length(aminos)
         
         fprintf(file,'| corrcoef | %.2f | %.2f | %.2f |\n',R(1,1),R(1,2),R(1,3));
         fprintf(file,'| corrcoef | %.2f | %.2f | %.2f |\n',R(2,1),R(2,2),R(2,3));
-        fprintf(file,'| corrcoef | %.2f | %.2f | %.2f |\n\n',R(3,1),R(3,2),R(3,3));
+        fprintf(file,'| corrcoef | %.2f | %.2f | %.2f |\n',R(3,1),R(3,2),R(3,3));
         
         %% part 1: descriptive statistics
-        fprintf(file,'\n\n\n');
+        fprintf(file,' \n \n \n');
 
-        fprintf(file,'|     | PHI | PSI |\n');
+        fprintf(file,'\n|     | PHI | PSI |\n');
         fprintf(file,'| --- | --- | --- |\n');
 
         alpha_bar = circ_mean(phi);
@@ -173,31 +173,31 @@ for i=1:length(aminos)
 
         fprintf(file,'| Kurtosis | %.2f | %.2f |\n',[k_alpha k_beta]);
 
-        fprintf('\n\n\n')
+        fprintf(' \n \n \n')
         
         %% part 4: inferential statistics
 
-        fprintf(file,'Inferential Statistics for phi-psi \n\nTests for Uniformity\n');
+        fprintf(file,'\nInferential Statistics for phi-psi \n\nTests for Uniformity\n');
 
         % Rayleigh test
         p_alpha = circ_rtest(phi);
         p_beta = circ_rtest(psi);
-        fprintf(file,'Rayleigh Test, \t\t P = %.2f \t%.2f\n',[p_alpha p_beta]);
+        fprintf(file,'Rayleigh Test, P = %.2f %.2f\n',[p_alpha p_beta]);
 
         % Omnibus test
         p_alpha = circ_otest(phi);
         p_beta = circ_otest(psi);
-        fprintf(file,'Omnibus Test, \t\t P = %.2f \t%.2f\n',[p_alpha p_beta]);
+        fprintf(file,'Omnibus Test,  P = %.2f %.2f\n',[p_alpha p_beta]);
 
         % Rao's spacing test
         p_alpha = circ_raotest(phi);
         p_beta = circ_raotest(psi);
-        fprintf(file,'Rao Spacing Test, \t P = %.2f \t%.2f\n',[p_alpha p_beta]);
+        fprintf(file,'Rao Spacing Test,  P = %.2f %.2f\n',[p_alpha p_beta]);
 
         % V test
         p_alpha = circ_vtest(phi,circ_ang2rad(0));
         p_beta = circ_vtest(psi,circ_ang2rad(0));
-        fprintf(file,'V Test (r = 0), \t P = %.2f \t%.2f\n',[p_alpha p_beta]);
+        fprintf(file,'V Test (r = 0),  P = %.2f %.2f\n',[p_alpha p_beta]);
 
 
         %% part 4: association
@@ -207,7 +207,6 @@ for i=1:length(aminos)
         [c p] = circ_corrcc(phi,psi);
         fprintf(file,'Circ-circ corr phi-psi coeff/pval:\t%.2f\t %.3f\n',c,p);
         
-        fprintf(file,'\nMeasures of Association \n\nCircular-Circular Association\n');
         % compute circular - linear correlations
         [c p] = circ_corrcl(phi,C_CA);
         fprintf(file,'Circ-line corr phi-C-CA coeff/pval:\t%.2f\t %.3f\n',c,p);
@@ -225,7 +224,7 @@ for i=1:length(aminos)
         if col> 7
                     chsi1= data(:,8);
                     
-                    fprintf(file,'|     | CHI_1 |\n');
+                    fprintf(file,'\n|     | CHI_1 |\n');
                     fprintf(file,'| --- | --- |\n');
                     chsi1_bar = circ_mean(chsi1);
                     fprintf(file,'| Mean resultant vector | %.2f |\n', circ_rad2ang(chsi1_bar));
@@ -242,9 +241,10 @@ for i=1:length(aminos)
                     fprintf(file,'| Skewness | %.2f |\n',b_chsi1);
                     k_chsi1 = circ_kurtosis(chsi1);
                     fprintf(file,'| Kurtosis | %.2f |\n',k_chsi1);
-                    fprintf(file,'\n\n');
+                    
+                    fprintf(file,'\n \n');
                     %% part 4: inferential statistics
-                    fprintf(file,'Inferential Statistics chsi_1\n\nTests for Uniformity\n');
+                    fprintf(file,'\nInferential Statistics chsi_1\n\nTests for Uniformity\n');
                     % Rayleigh test
                     p_chsi1 = circ_rtest(chsi1);
                     fprintf(file,'Rayleigh Test, \t P = %.2f\n',p_chsi1);
@@ -263,7 +263,9 @@ for i=1:length(aminos)
                     if col > 8                        
                         chsi2= data(:,9);
                         
-                        fprintf(file,'|     | CHI_2 |\n');
+                        fprintf(file,'\n \n');
+                        
+                        fprintf(file,'\n|     | CHI_2 |\n');
                         fprintf(file,'| --- | --- |\n');
                     
                         chsi2_bar = circ_mean(chsi2);
