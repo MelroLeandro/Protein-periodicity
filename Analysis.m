@@ -144,7 +144,7 @@ for i=1:length(aminos)
                     %axis([-180 180 -180 180]);
                     colorbar;
                                      
-                    print(gcf,'-dpsc2',strcat('images/',aminoName,'_Rama_Grad_psichi1.jpg'))
+                    print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_Grad_psichi1.jpg'))
                     fprintf(file,['![Image](../../../../images/' aminoName '_Rama_Grad_psichi1.jpg)\n']);
 
                     
