@@ -56,10 +56,12 @@ for i=1:length(aminos)
     fprintf(file,'---\n');
     fprintf(file,'layout: post\n');
     fprintf(file,['title:  "Amino ' aminoName '"\n']);
-    %fprintf(file,['date:   2015-05-03 15:03:' num2str(i) ' +0100\n']);
-    fprintf(file,['date:   2015-05-03 15:03:' num2str(1) ' +0100\n']);
+    fprintf(file,['date:   2015-04-03 15:01:' num2str(i) ' +0100\n']);
+    %fprintf(file,['date:   2015-04-03 15:01:' num2str(1) ' +0100\n']);
     fprintf(file,'categories: update\n');
     fprintf(file,'---\n');
+    
+    fprintf(file,'\n\n![Image](../../../../images/aadensity.png)\n');
     
     fprintf(file,['# Amino ' aminoName '\n']);
     
@@ -80,7 +82,7 @@ for i=1:length(aminos)
         N_CA= data(:,4);
         dplane= data(:,6);
         
-        fprintf(file,'\n\n ## PHI & PSI\n')
+        fprintf(file,'\n\n # $$\\phi$$ & $$\\psi$$\n')
                 
         figure
         [f,w1]=circ_vmpar(phi);
@@ -116,7 +118,7 @@ for i=1:length(aminos)
         if col> 8
                     chsi1= data(:,9);
                     
-                    fprintf(file,'\n\n## CHI_1\n')
+                    fprintf(file,'\n\n# $$\\chi_1$$\n')
                     
                     figure
                     [f,w3]=circ_vmpar(chsi1);
@@ -183,7 +185,7 @@ for i=1:length(aminos)
                     if col > 9                        
                         chsi2= data(:,10);
                         
-                        fprintf(file,'\n\n## CHI_2\n')
+                        fprintf(file,'\n\n# $$\\chi_2$$\n')
                         
                         figure
                         [f,w4]=circ_vmpar(chsi2);
@@ -218,7 +220,7 @@ for i=1:length(aminos)
                             
                             chsi3= data(:,11);
                             
-                            fprintf(file,'\n\n## CHI_3\n')
+                            fprintf(file,'\n\n# $$\\chi_3$$\n')
 
                             figure
                             [f,w5]=circ_vmpar(chsi3);
@@ -254,7 +256,7 @@ for i=1:length(aminos)
                                 figure
                                 chsi4= data(:,12);
 
-                                fprintf(file,'\n\n## CHI_4\n')
+                                fprintf(file,'\n\n# $$\\chi_4$$\n')
                                 [f,w6]=circ_vmpar(chsi4);
                                 [p nbins]=circ_vmpdf2(binAng, chsi3, chsi4, w5,w6);
                                 p=Rmatrix(p');
@@ -266,7 +268,7 @@ for i=1:length(aminos)
                                 colorbar;
                                 
                                 print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_chi3chi4.jpg'))
-                                fprintf(file,['![Image](../../../../images/' aminoName '_Rama_chi3chi4.jpg\n']);
+                                fprintf(file,['![Image](../../../../images/' aminoName '_Rama_chi3chi4.jpg)\n']);
                     
 
 

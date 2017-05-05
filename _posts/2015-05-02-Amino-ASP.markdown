@@ -1,24 +1,27 @@
 ---
 layout: post
 title:  "Amino ASP"
-date:   2015-05-03 15:03:1 +0100
+date:   2015-04-03 15:01:2 +0100
 categories: update
 ---
+
+
+![Image](../../../../images/aadensity.png)
 # Amino ASP
 
 
- ## PHI & PSI
+ # $$\phi$$ & $$\psi$$
 ![Image](../../../../images/ASP_Rama_phipsi.jpg)
 ![Image](../../../../images/ASP_Rama_phipsiGrad.jpg)
 
 
-## CHI_1
+# $$\chi_1$$
 ![Image](../../../../images/ASP_Rama_phichi1.jpg)
 ![Image](../../../../images/ASP_Rama_Grad_psichi1.jpg)
 ![Image](../../../../images/ASP_Rama_psichi1.jpg)
 ![Image](../../../../images/ASP_Rama_Grad_phichi1.jpg)
 
 
-## CHI_2
+# $$\chi_2$$
 ![Image](../../../../images/ASP_Rama_chi1chi2.jpg)
 ![Image](../../../../images/ASP_Rama_Gradchi1chi2.jpg)
