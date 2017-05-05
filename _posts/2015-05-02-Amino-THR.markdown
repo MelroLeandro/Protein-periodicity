@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Amino THR"
-date:   2015-05-03 15:03: +0100
+date:   2015-05-03 15:03:1 +0100
 categories: update
 ---
 # Amino THR

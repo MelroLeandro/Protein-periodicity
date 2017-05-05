@@ -58,7 +58,7 @@ for i=1:length(aminos)
     fprintf(file,'---\n');
     fprintf(file,'layout: post\n');
     fprintf(file,['title:  "Amino ' aminoName '"\n']);
-    fprintf(file,['date:   2015-05-03 15:03:' i ' +0100\n']);
+    fprintf(file,['date:   2015-05-03 15:03:' num2str(i) ' +0100\n']);
     fprintf(file,'categories: update\n');
     fprintf(file,'---\n');
     
