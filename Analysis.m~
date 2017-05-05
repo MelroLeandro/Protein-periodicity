@@ -97,7 +97,7 @@ for i=1:length(aminos)
        
         print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_phipsi.jpg'));
         
-        fprintf(file,['![Image](.../../../../../images/images/' aminoName '_Rama_phipsi.jpg)\n']);
+        fprintf(file,['![Image](../../../../../images/' aminoName '_Rama_phipsi.jpg)\n']);
                     
         figure
         
@@ -110,7 +110,7 @@ for i=1:length(aminos)
         colorbar;
              
         print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_phipsiGrad.jpg'))
-        fprintf(file,['../../../../../images/images/' aminoName '_Rama_phipsiGrad.jpg\n']);
+        fprintf(file,['![Image](../../../../../images/' aminoName '_Rama_phipsiGrad.jpg)\n']);
     
         
         
@@ -131,7 +131,7 @@ for i=1:length(aminos)
                     colorbar;
                     
                     print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_phichi1.jpg'))
-                    fprintf(file,['![Image](.../../../../../images/images/' aminoName '_Rama_phichi1.jpg)\n']);
+                    fprintf(file,['![Image](.../../../../../images/' aminoName '_Rama_phichi1.jpg)\n']);
                     
         
                     figure
@@ -145,7 +145,7 @@ for i=1:length(aminos)
                     colorbar;
                                      
                     print(gcf,'-dpsc2',strcat('images/',aminoName,'_Rama_Grad_psichi1.jpg'))
-                    fprintf(file,['![Image](.../../../../../images/images/' aminoName '_Rama_Grad_psichi1.jpg)\n']);
+                    fprintf(file,['![Image](.../../../../../images/ima' aminoName '_Rama_Grad_psichi1.jpg)\n']);
 
                     
                     figure
@@ -212,7 +212,7 @@ for i=1:length(aminos)
                         colorbar;
                         
                         print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_Gradchi1chi2.jpg'))
-                        fprintf(file,['../../../../../images/images/' aminoName '_Rama_Gradchi1chi2.jpg\n']);
+                        fprintf(file,['![Image](.../../../../../images/images/' aminoName '_Rama_Gradchi1chi2.jpg)\n']);
                     
                     
                         if col > 10
@@ -233,7 +233,7 @@ for i=1:length(aminos)
                             colorbar;
                             
                             print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_chsi2chi3.jpg'))
-                            fprintf(file,['../../../../../images/images/' aminoName '_Rama_chsi2chi3.jpg\n']);
+                            fprintf(file,['![Image](.../../../../../images/images/' aminoName '_Rama_chsi2chi3.jpg)\n']);
                     
 
                             figure
@@ -247,7 +247,7 @@ for i=1:length(aminos)
                             colorbar;    
                             
                             print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_Gradchsi2chi3.jpg'))
-                            fprintf(file,['../../../../../images/images/' aminoName '_Rama_Gradchsi2chi3.jpg\n']);
+                            fprintf(file,['![Image](.../../../../../images/images/' aminoName '_Rama_Gradchsi2chi3.jpg)\n']);
                     
                             
                             if col > 11
@@ -267,7 +267,7 @@ for i=1:length(aminos)
                                 colorbar;
                                 
                                 print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_chi3chi4.jpg'))
-                                fprintf(file,['../../../../../images/images/' aminoName '_Rama_chi3chi4.jpg\n']);
+                                fprintf(file,['![Image](.../../../../../images/images/' aminoName '_Rama_chi3chi4.jpg\n']);
                     
 
 
@@ -282,7 +282,7 @@ for i=1:length(aminos)
                                 colorbar;
                                 
                                 print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_Gradchi3chi4.jpg'))
-                                fprintf(file,['../../../../../images/images/' aminoName '_Rama_Gradchi3chi4.jpg\n']);
+                                fprintf(file,['![Image](.../../../../../images/images/' aminoName '_Rama_Gradchi3chi4.jpg)\n']);
                     
                                 
                             end
