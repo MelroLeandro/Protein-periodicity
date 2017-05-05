@@ -20,7 +20,7 @@ KN_C = 250;
 MeandC_CA= 1.52;
 MeandN_CA= 1.45;
 
-binAng = 180;
+binAng = 360;
 
 bin=pi/binAng*8.6;
 kappa=5;
@@ -29,14 +29,16 @@ NumBins=round(2*pi/bin)+1;
 
 bins=@(omega) round((pi+omega)/bin)+1;
 
-%filter=@(dC_CA,dN_CA,dP_plane) not(abs(dC_CA-1.99)>1.18 || abs(dN_CA-1.78)>0.91 || abs(dP_plane-1.47)>0.55);
-%filter=@(dC_CA,dN_CA,dP_plane) not(dC_CA<2*1.76 || dN_CA<2*1.7 || dP_plane<2*1.7);
+filter=@(dC_CA,dN_CA,dP_plane,Bfactor) not(abs(dC_CA-1.99)>1.18 || abs(dN_CA-1.78)>0.91 || abs(dP_plane-1.47)>0.55);
+%filter=@(dC_CA,dN_CA,dP_plane,Bfactor) not(dC_CA<2*1.76 || dN_CA<2*1.7 || dP_plane<2*1.7);
 %filter=@(dC_CA,dN_CA,dP_plane)1;
-filter=@(dC_CA,dN_CA,dP_plane,Bfactor) 1;
+%filter=@(dC_CA,dN_CA,dP_plane,Bfactor) 1;
 
-aminos={'PHE'; 'ASP'; 'THR'; 'ARG'; 'TRP'; 'VAL'; 'CYS'; 'SER'; 'ALA'; 'GLY'; 'MET'; 'TYR'; 'ASN'; 'PRO'; 'LYS'; 'HIS'; 'GLN'; 'ILE'; 'LEU'; 'GLU'};
-%aminos={'ARG'}
-%aminos={'THR'}
+%aminos={'PHE'; 'ASP'; 'THR'; 'ARG'; 'TRP'; 'VAL'; 'CYS'; 'SER'; 'ALA'; 'GLY'; 'MET'; 'TYR'; 'ASN'; 'PRO'; 'LYS'; 'HIS'; 'GLN'; 'ILE'; 'LEU'; 'GLU'};
+%aminos={'ASN'}
+%aminos={'ALA'}
+aminos={'THR'}
+%aminos={'ASP'}
 
 % Attributes extrated from the protein db:
 % dihedral angles............. phi, psi
@@ -51,6 +53,16 @@ for i=1:length(aminos)
     % import the data in CSV format used to the statistical analysies
     %
     Data=importdata(['aminoData/' aminoName '.cvs']);
+    file = fopen(['_posts/2015-05-02-Amino-' aminoName  '.markdown'],'w');
+    
+    fprintf(file,'---\n');
+    fprintf(file,'layout: post\n');
+    fprintf(file,['title:  "Amino ' aminoName '"\n']);
+    fprintf(file,['date:   2015-05-03 15:03:' i ' +0100\n']);
+    fprintf(file,'categories: update\n');
+    fprintf(file,'---\n');
+    
+    fprintf(file,['# Amino ' aminoName '\n']);
     
     if ~isempty(Data)
         
@@ -68,55 +80,58 @@ for i=1:length(aminos)
         C_CA= data(:,3);
         N_CA= data(:,4);
         dplane= data(:,6);
+        
+        fprintf(file,'\n\n ## PHI & PSI\n')
                 
         figure
-        [f,xi,w1]=ksdensity(phi);
-        [f,xi,w2]=ksdensity(psi);
-        kappa=min([w1,w2]);
+        [f,w1]=circ_vmpar(phi);
+        [f,w2]=circ_vmpar(psi);
         [p nbins]=circ_vmpdf2(binAng, phi, psi, w1, w2);
-        [p nbins]=circ_vmpdf2(binAng, phi, psi, w1, w2,p);
-        
+        p=Rmatrix(p');
         imagesc(-log(p));
-        title([aminoName ': phi vs psi']);
-        xlabel('phi');
-        ylabel('psi');
-        %%axis([-180 180 -180 180]);
+        title([aminoName ': psi vs phi']);
+        xlabel('psi');
+        ylabel('phi');
+        %axis([-180 180 -180 180]);
         colorbar;
        
         print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_phipsi.jpg'));
+        
+        fprintf(file,['../../../../../images/images/' aminoName '_Rama_phipsi.jpg\n']);
                     
         figure
         
         [d1p,d2p] = imgradientxy(-log(p));
         imagesc(sqrt(d1p.^2+d2p.^2));
         title([aminoName ':norm(Grad) phi vs psi']);
-        xlabel('phi');
-        ylabel('psi');
-        %%axis([-180 180 -180 180]);
+        xlabel('psi');
+        ylabel('phi');
+        %axis([-180 180 -180 180]);
         colorbar;
              
         print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_phipsiGrad.jpg'))
-        
-        %aminoCont.dphi_psi=d1p:            
-        %aminoCont.phi_dpsi=d2p:
+        fprintf(file,['../../../../../images/images/' aminoName '_Rama_phipsiGrad.jpg\n']);
+    
         
         
         if col> 8
                     chsi1= data(:,9);
                     
-                    fprintf('\t\t\tCHI_1\n')
+                    fprintf(file,'\n\n## CHI_1\n')
                     
                     figure
                     [f,w3]=circ_vmpar(chsi1);
-                    [p nbins]=circ_vmpdf2(binAng, phi, chsi1, w1,w3);        
+                    [p nbins]=circ_vmpdf2(binAng, phi, chsi1, w1,w3);
+                    p=Rmatrix(p');
                     imagesc(-log(p));
                     title([aminoName ':phi vs chi1']);
-                    xlabel('phi');
-                    ylabel('chi1');
-                    %%axis([-180 180 -180 180]);
+                    xlabel('chi1');
+                    ylabel('phi');
+                    %axis([-180 180 -180 180]);
                     colorbar;
                     
                     print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_phichi1.jpg'))
+                    fprintf(file,['../../../../../images/images/' aminoName '_Rama_phichi1.jpg\n']);
                     
         
                     figure
@@ -124,115 +139,115 @@ for i=1:length(aminos)
                     [d1p,d2p] = imgradientxy(-log(p));
                     imagesc(sqrt(d1p.^2+d2p.^2));
                     title([aminoName ':norm(Grad) phi vs chi1']);
-                    xlabel('phi');
-                    ylabel('chi1');
-                    %%axis([-180 180 -180 180]);
+                    xlabel('chi1');
+                    ylabel('phi');
+                    %axis([-180 180 -180 180]);
                     colorbar;
                                      
                     print(gcf,'-dpsc2',strcat('images/',aminoName,'_Rama_Grad_psichi1.jpg'))
+                    fprintf(file,['../../../../../images/images/' aminoName '_Rama_Grad_psichi1.jpg\n']);
 
                     
                     figure
                     
-                    fprintf('\t\t\t\t Prossecing psi,chsi1\n');
                     [p nbins]=circ_vmpdf2(binAng, psi, chsi1, w2,w3);
-                    [p nbins]=circ_vmpdf2(binAng, psi, chsi1, w2,w3,p);
-                    
+                    %[p nbins]=circ_vmpdf2(binAng, psi, chsi1, w2,w3,p);
+                    p=Rmatrix(p');
                     imagesc(-log(p));
                     title([aminoName ':psi vs chi1']);
-                    xlabel('psi');
-                    ylabel('chi1');
-                    %%axis([-180 180 -180 180]);
+                    xlabel('chi1');
+                    ylabel('psi');
+                    %axes('Position',[-180 180 -180 180]);
                     colorbar;
                     
                     print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_psichi1.jpg'))
+                    fprintf(file,['../../../../../images/images/' aminoName '_Rama_psichi1.jpg\n']);
                     
         
                     figure
-                    fprintf('\t\t\t\t Prossecing Grad(psi,chsi1)\n');
 
                     [d1p,d2p] = imgradientxy(-log(p));
                     aminoCont.dfx(3,:,:)=d1p;
                     aminoCont.dfy(3,:,:)=d2p;
                     imagesc(sqrt(d1p.^2+d2p.^2));
                     title([aminoName ':norm(Grad) psi vs chi1']);
-                    xlabel('chi1');
-                    ylabel('psi');
-                    %%axis([-180 180 -180 180]);
+                    xlabel('psi');
+                    ylabel('chi1');
+                    %axis([-180 180 -180 180]);
                     colorbar;
                     
                     
                     print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_Grad_phichi1.jpg'))
+                    fprintf(file,['../../../../../images/images/' aminoName '_Rama_Grad_phichi1.jpg\n']);
 
                     
                     if col > 9                        
                         chsi2= data(:,10);
                         
-                        fprintf('\t\t\tCHI_2\n')
+                        fprintf(file,'\n\n## CHI_2\n')
                         
                         figure
                         [f,w4]=circ_vmpar(chsi2);
-                        fprintf('\t\t\t\t Prossecing chsi1,chsi2\n');
                         [p nbins]=circ_vmpdf2(binAng, chsi1, chsi2, w3,w4);
-                        [p nbins]=circ_vmpdf2(binAng, chsi1, chsi2, w3,w4,p);
-                        aminoCont.f(4,:,:)=-log(p);
+                        p=Rmatrix(p');
                         imagesc(-log(p));
                         title([aminoName ':chi1 vs chi2']);
-                        xlabel('chi1');
-                        ylabel('chi2');
-                        %%axis([-180 180 -180 180]);
+                        xlabel('chi2');
+                        ylabel('chi1');
+                        %axis([-180 180 -180 180]);
                         colorbar;    
                         
                         print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_chi1chi2.jpg'))
+                        fprintf(file,['../../../../../images/images/' aminoName '_Rama_chi1chi2.jpg\n']);
                    
 
                         figure
-                        fprintf('\t\t\t\t Prossecing Grad(chsi1,chsi2)\n');
 
                         [d1p,d2p] = imgradientxy(-log(p));
                         imagesc(sqrt(d1p.^2+d2p.^2));
                         title([aminoName ':norm(Grad) chi1 vs chi2']);
-                        xlabel('chi1');
-                        ylabel('chi2');
-                        %%axis([-180 180 -180 180]);
+                        xlabel('chi2');
+                        ylabel('chi1');
+                        %axis([-180 180 -180 180]);
                         colorbar;
                         
                         print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_Gradchi1chi2.jpg'))
+                        fprintf(file,['../../../../../images/images/' aminoName '_Rama_Gradchi1chi2.jpg\n']);
                     
                     
                         if col > 10
                             
                             chsi3= data(:,11);
                             
-                            fprintf('\t\t\tCHI_3\n')
+                            fprintf(file,'\n\n## CHI_3\n')
 
                             figure
                             [f,w5]=circ_vmpar(chsi3);
-                            fprintf('\t\t\t\t Prossecing chsi2,chsi3\n');
                             [p nbins]=circ_vmpdf2(binAng, chsi2, chsi3, w4,w5);
-                            [p nbins]=circ_vmpdf2(binAng, chsi2, chsi3, w4,w5,p);
+                            p=Rmatrix(p');
                             imagesc(-log(p))
                             title([aminoName ':chi2 vs chi3']);
-                            xlabel('chi2');
-                            ylabel('chi3');
-                            %%axis([-180 180 -180 180]);
+                            xlabel('chi3');
+                            ylabel('chi2');
+                            %axis([-180 180 -180 180]);
                             colorbar;
                             
                             print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_chsi2chi3.jpg'))
+                            fprintf(file,['../../../../../images/images/' aminoName '_Rama_chsi2chi3.jpg\n']);
                     
 
                             figure
-                            fprintf('\t\t\t\t Prossecing Grad(chsi2,chsi3)\n');
 
                             [d1p,d2p] = imgradientxy(-log(p));
                             imagesc(sqrt(d1p.^2+d2p.^2));
                             title([aminoName ':norm(Grad) chi2 vs chi3']);
-                            xlabel('chi2');
-                            ylabel('chi3');
-                            %%axis([-180 180 -180 180]);
+                            xlabel('chi3');
+                            ylabel('chi2');
+                            %axis([-180 180 -180 180]);
                             colorbar;    
                             
                             print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_Gradchsi2chi3.jpg'))
+                            fprintf(file,['../../../../../images/images/' aminoName '_Rama_Gradchsi2chi3.jpg\n']);
                     
                             
                             if col > 11
@@ -240,40 +255,40 @@ for i=1:length(aminos)
                                 figure
                                 chsi4= data(:,12);
 
-                                fprintf('\t\t\t\t Prossecing chsi3,chsi4\n');
+                                fprintf(file,'\n\n## CHI_4\n')
                                 [f,w6]=circ_vmpar(chsi4);
                                 [p nbins]=circ_vmpdf2(binAng, chsi3, chsi4, w5,w6);
-                                [p nbins]=circ_vmpdf2(binAng, chsi3, chsi4, w5,w6,p);
+                                p=Rmatrix(p');
                                 imagesc(-log(p));
                                 title([aminoName ':chi3 vs chi4']);
-                                xlabel('chi3');
-                                ylabel('chi4');
-                                %%axis([-180 180 -180 180]);
+                                xlabel('chi4');
+                                ylabel('chi3');
+                                %axis([-180 180 -180 180]);
                                 colorbar;
                                 
-                                print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_chi4.jpg'))
+                                print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_chi3chi4.jpg'))
+                                fprintf(file,['../../../../../images/images/' aminoName '_Rama_chi3chi4.jpg\n']);
                     
 
 
                                 figure
-                                fprintf('\t\t\t\t Prossecing Grad(chsi3,chsi4)\n');
 
                                 [d1p,d2p] = imgradientxy(-log(p));
                                 imagesc(sqrt(d1p.^2+d2p.^2));
                                 title([aminoName ':norm(Grad) chi3 vs chi4']);
-                                xlabel('chi3');
-                                ylabel('chi4');
-                                %%axis([-180 180 -180 180]);
+                                xlabel('chi4');
+                                ylabel('chi3');
+                                axis([-180 180 -180 180]);
                                 colorbar;
                                 
-                                print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_Gradchi4.jpg'))
+                                print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_Gradchi3chi4.jpg'))
+                                fprintf(file,['../../../../../images/images/' aminoName '_Rama_Gradchi3chi4.jpg\n']);
                     
                                 
                             end
                         end
                     end
         end
-        
         
         
 %         %%
@@ -407,7 +422,7 @@ for i=1:length(aminos)
 %         end
     end
     
-        
+        fclose('all');
 end
 
 

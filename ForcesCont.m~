@@ -40,7 +40,7 @@ dplane= data(:,6);
 fprintf('\t\t\t\t Prossecing phi,psi\n');
 [p nbins]=circ_vmpdf2(binAng, phi, psi, w1, w2);
 
-[p nbins]=circ_vmpdf2(binAng, phi, psi, w1, w2,p);
+%[p nbins]=circ_vmpdf2(binAng, phi, psi, w1, w2,p);
 
 aminoCont.f(1,:,:)=-log(p);
 
@@ -78,7 +78,7 @@ if col> 8
             
             fprintf('\t\t\t\t Prossecing psi,chsi1\n');
             [p nbins]=circ_vmpdf2(binAng, psi, chsi1, w2,w3);
-            [p nbins]=circ_vmpdf2(binAng, psi, chsi1, w2,w3,p);
+            %[p nbins]=circ_vmpdf2(binAng, psi, chsi1, w2,w3,p);
             aminoCont.f(3,:,:)=-log(p);
             
             fprintf('\t\t\t\t Prossecing Grad(psi,chsi1)\n');
@@ -99,7 +99,7 @@ if col> 8
                 [f,w4]=circ_vmpar(chsi2);
                 fprintf('\t\t\t\t Prossecing chsi1,chsi2\n');
                 [p nbins]=circ_vmpdf2(binAng, chsi1, chsi2, w3,w4);
-                [p nbins]=circ_vmpdf2(binAng, chsi1, chsi2, w3,w4,p);
+                %[p nbins]=circ_vmpdf2(binAng, chsi1, chsi2, w3,w4,p);
                 aminoCont.f(4,:,:)=-log(p);
                 
                 fprintf('\t\t\t\t Prossecing Grad(chsi1,chsi2)\n');
@@ -120,7 +120,7 @@ if col> 8
                     [f,w5]=circ_vmpar(chsi3);
                     fprintf('\t\t\t\t Prossecing chsi2,chsi3\n');
                     [p nbins]=circ_vmpdf2(binAng, chsi2, chsi3, w4,w5);
-                    [p nbins]=circ_vmpdf2(binAng, chsi2, chsi3, w4,w5,p);
+                    %[p nbins]=circ_vmpdf2(binAng, chsi2, chsi3, w4,w5,p);
                     aminoCont.f(5,:,:)=-log(p);
 
                     fprintf('\t\t\t\t Prossecing Grad(chsi2,chsi3)\n');

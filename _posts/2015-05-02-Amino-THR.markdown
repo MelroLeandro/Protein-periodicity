@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Amino THR"
+date:   2015-05-03 15:03: +0100
+categories: update
+---
+# Amino THR
+
+
+ ## PHI & PSI
+../../../../../images/images/THR_Rama_phipsi.jpg
+../../../../../images/images/THR_Rama_phipsiGrad.jpg
+
+
+## CHI_1
+../../../../../images/images/THR_Rama_phichi1.jpg
+../../../../../images/images/THR_Rama_Grad_psichi1.jpg
+../../../../../images/images/THR_Rama_psichi1.jpg
+../../../../../images/images/THR_Rama_Grad_phichi1.jpg
