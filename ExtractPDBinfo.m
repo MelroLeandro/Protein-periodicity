@@ -26,7 +26,7 @@ for i=1:4:length(pdb_ids)
     
     if not(strcmp(PDBstruct.Header.classification, 'RNA') || strcmp(PDBstruct.Header.classification, 'DNA') ...
                 || strcmp(PDBstruct.Header.classification,'DNA/RNA HYBRID'))
-         fprintf(logfileID,[id ' - ' PDBstruct.Compound(2,:) '\n']);
+         fprintf(logfileID,['1. ' id ' - ' PDBstruct.Compound(2,:) '\n']);
     end
     
 end
