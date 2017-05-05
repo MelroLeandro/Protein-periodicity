@@ -55,7 +55,7 @@ SAMPLE SIZE having B-factor <= 15: 779
 | Skewness | -0.11 | 0.21 |
 | Kurtosis | 0.33 | 0.43 |
 
-### Inferential Statistics for phi-psi 
+### Inferential Statistics for $$\phi$$-$$\psi$$ 
 
 Tests for Uniformity
 
@@ -71,7 +71,7 @@ Circ-line corr phi-C-CA coeff/pval:	0.68	 0.000
 Circ-line corr phi-N-CA coeff/pval:	0.43	 0.000
 Circ-line corr psi-C-CA coeff/pval:	0.32	 0.000
 Circ-line corr psi-N-CA coeff/pval:	0.15	 0.000
-### Statistics $$\chsi_1$$
+### Statistics $$\chi_1$$
 
 |     | CHI_1 |
 | --- | --- |
@@ -86,18 +86,18 @@ Circ-line corr psi-N-CA coeff/pval:	0.15	 0.000
 
  
 
-### Inferential Statistics $$\chsi_1$$
+### Inferential Statistics $$\chi_1$$
 Tests for Uniformity
 
 Rayleigh Test, 	 P = 0.00
 Omnibus Test, 	 P = 0.00
 Rao Spacing Test, 	 P = 0.00
-Circ-circ corr phi-chsi1 coeff/pval:	0.02	 0.578
-Circ-circ corr psi-chsi1 coeff/pval:	-0.02	 0.587
+Circ-circ corr phi-chi1 coeff/pval:	0.02	 0.578
+Circ-circ corr psi-chi1 coeff/pval:	-0.02	 0.587
 
  
 
-### Statistics $$\chsi_2$$
+### Statistics $$\chi_2$$
 
 |     | CHI_2 |
 | --- | --- |
@@ -111,23 +111,21 @@ Circ-circ corr psi-chsi1 coeff/pval:	-0.02	 0.587
 | Kurtosis | 0.03 |
 
 
-### Inferential Statistics $$\chsi_2$$ 
+### Inferential Statistics $$\chi_2$$ 
 
 Tests for Uniformity
 
 Rayleigh Test, 	 P = 0.00
 Omnibus Test, 	 P = 0.00
 Rao Spacing Test, 	 P = 0.00
-Circ-circ corr phi-chsi2 coeff/pval:	-0.20	 0.000
-
-Circ-circ corr psi-chsi2 coeff/pval:	-0.04	 0.309
-
-Circ-circ corr chsi1-chsi2 coeff/pval:	0.02	 0.603
+Circ-circ corr phi-chi2 coeff/pval:	-0.20	 0.000
+Circ-circ corr psi-chi2 coeff/pval:	-0.04	 0.309
+Circ-circ corr chi1-chi2 coeff/pval:	0.02	 0.603
 
 
  
 
-### Statistics $$\chsi_3$$
+### Statistics $$\chi_3$$
 
 |    | CHI_3 |
 | --- | --- |
@@ -149,10 +147,10 @@ Tests for Uniformity
 Rayleigh Test, 	 P = 0.00
 Omnibus Test, 	 P = 0.00
 Rao Spacing Test, 	 P = 0.00
-Circ-circ corr phi-chsi3 coeff/pval:	0.10	 0.005
-Circ-circ corr psi-chsi3 coeff/pval:	-0.03	 0.451
-Circ-circ corr chsi1-chsi3 coeff/pval:	-0.03	 0.387
-Circ-circ corr chsi2-chsi3 coeff/pval:	-0.34	 0.000
+Circ-circ corr phi-chi3 coeff/pval:	0.10	 0.005
+Circ-circ corr psi-chi3 coeff/pval:	-0.03	 0.451
+Circ-circ corr chi1-chi3 coeff/pval:	-0.03	 0.387
+Circ-circ corr chi2-chi3 coeff/pval:	-0.34	 0.000
 
 # $$\phi$$ & $$\psi$$
 ![Image](../../../../images/PHE_Rama_phipsi.jpg)

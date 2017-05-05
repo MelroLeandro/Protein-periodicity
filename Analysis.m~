@@ -179,7 +179,7 @@ for i=1:length(aminos)
         
         %% part 4: inferential statistics
 
-        fprintf(file,'\n### Inferential Statistics for phi-psi \n');
+        fprintf(file,'\n### Inferential Statistics for $$\\phi$$-$$\\psi$$ \n');
         fprintf(file,'\nTests for Uniformity\n');
         % Rayleigh test
         p_alpha = circ_rtest(phi);
@@ -226,7 +226,7 @@ for i=1:length(aminos)
         
         if col> 7
                     chsi1= data(:,8);
-                    fprintf(file,'\n### Statistics $$\\chsi_1$$');
+                    fprintf(file,'\n### Statistics $$\\chi_1$$\n');
                     fprintf(file,'\n|     | CHI_1 |');
                     fprintf(file,'\n| --- | --- |');
                     chsi1_bar = circ_mean(chsi1);
@@ -247,7 +247,7 @@ for i=1:length(aminos)
                     
                     fprintf(file,'\n \n');
                     %% part 4: inferential statistics
-                    fprintf(file,'\n### Inferential Statistics $$\\chsi_1$$');
+                    fprintf(file,'\n### Inferential Statistics $$\\chi_1$$');
                     fprintf(file,'\nTests for Uniformity\n');
                     % Rayleigh test
                     p_chsi1 = circ_rtest(chsi1);
@@ -260,9 +260,9 @@ for i=1:length(aminos)
                     fprintf(file,'\nRao Spacing Test, \t P = %.2f',p_chsi1);
                     
                     [c p] = circ_corrcc(phi,chsi1);
-                    fprintf(file,'\nCirc-circ corr phi-chsi1 coeff/pval:\t%.2f\t %.3f',c,p);
+                    fprintf(file,'\nCirc-circ corr phi-chi1 coeff/pval:\t%.2f\t %.3f',c,p);
                     [c p] = circ_corrcc(psi,chsi1);
-                    fprintf(file,'\nCirc-circ corr psi-chsi1 coeff/pval:\t%.2f\t %.3f\n',c,p);
+                    fprintf(file,'\nCirc-circ corr psi-chi1 coeff/pval:\t%.2f\t %.3f\n',c,p);
                     
                     if col > 8                        
                         chsi2= data(:,9);
