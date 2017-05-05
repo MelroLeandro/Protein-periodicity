@@ -58,7 +58,7 @@ for i=1:length(aminos)
     fprintf(file,'---\n');
     fprintf(file,'layout: post\n');
     fprintf(file,['title:  "Amino ' aminoName '"\n']);
-    fprintf(file,['date:   2015-05-03 15:03:' i ' +0100\n']);
+    fprintf(file,['date:   2015-05-03 15:03:' num2str(i) ' +0100\n']);
     fprintf(file,'categories: update\n');
     fprintf(file,'---\n');
     
@@ -97,7 +97,7 @@ for i=1:length(aminos)
        
         print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_phipsi.jpg'));
         
-        fprintf(file,['../../../../../images/images/' aminoName '_Rama_phipsi.jpg\n']);
+        fprintf(file,['![Image](.../../../../../images/images/' aminoName '_Rama_phipsi.jpg)\n']);
                     
         figure
         
@@ -131,7 +131,7 @@ for i=1:length(aminos)
                     colorbar;
                     
                     print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_phichi1.jpg'))
-                    fprintf(file,['../../../../../images/images/' aminoName '_Rama_phichi1.jpg\n']);
+                    fprintf(file,['![Image](.../../../../../images/images/' aminoName '_Rama_phichi1.jpg)\n']);
                     
         
                     figure
@@ -145,7 +145,7 @@ for i=1:length(aminos)
                     colorbar;
                                      
                     print(gcf,'-dpsc2',strcat('images/',aminoName,'_Rama_Grad_psichi1.jpg'))
-                    fprintf(file,['../../../../../images/images/' aminoName '_Rama_Grad_psichi1.jpg\n']);
+                    fprintf(file,['![Image](.../../../../../images/images/' aminoName '_Rama_Grad_psichi1.jpg)\n']);
 
                     
                     figure
@@ -161,7 +161,7 @@ for i=1:length(aminos)
                     colorbar;
                     
                     print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_psichi1.jpg'))
-                    fprintf(file,['../../../../../images/images/' aminoName '_Rama_psichi1.jpg\n']);
+                    fprintf(file,['![Image](.../../../../../images/images/' aminoName '_Rama_psichi1.jpg)\n']);
                     
         
                     figure
@@ -178,13 +178,13 @@ for i=1:length(aminos)
                     
                     
                     print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_Grad_phichi1.jpg'))
-                    fprintf(file,['../../../../../images/images/' aminoName '_Rama_Grad_phichi1.jpg\n']);
+                    fprintf(file,['![Image](.../../../../../images/images/' aminoName '_Rama_Grad_phichi1.jpg)\n']);
 
                     
                     if col > 9                        
                         chsi2= data(:,10);
                         
-                        fprintf(file,'\n\n\t\t\tCHI_2\n')
+                        fprintf(file,'\n\n## CHI_2\n')
                         
                         figure
                         [f,w4]=circ_vmpar(chsi2);
@@ -198,7 +198,7 @@ for i=1:length(aminos)
                         colorbar;    
                         
                         print(gcf,'-djpeg',strcat('images/',aminoName,'_Rama_chi1chi2.jpg'))
-                        fprintf(file,['../../../../../images/images/' aminoName '_Rama_chi1chi2.jpg\n']);
+                        fprintf(file,['![Image](.../../../../../images/images/' aminoName '_Rama_chi1chi2.jpg)\n']);
                    
 
                         figure
@@ -219,7 +219,7 @@ for i=1:length(aminos)
                             
                             chsi3= data(:,11);
                             
-                            fprintf(file,'\n\n\t\t\tCHI_3\n')
+                            fprintf(file,'\n\n## CHI_3\n')
 
                             figure
                             [f,w5]=circ_vmpar(chsi3);
@@ -255,7 +255,7 @@ for i=1:length(aminos)
                                 figure
                                 chsi4= data(:,12);
 
-                                fprintf(file,'\n\n\t\t\tCHI_4\n')
+                                fprintf(file,'\n\n## CHI_4\n')
                                 [f,w6]=circ_vmpar(chsi4);
                                 [p nbins]=circ_vmpdf2(binAng, chsi3, chsi4, w5,w6);
                                 p=Rmatrix(p');
