@@ -12,8 +12,8 @@ categories: update
 
  SAMPLE SIZE: 2525
 
-| B-factor |    |
-|---|---|
+|     | B-factor |
+| --- | --- |
 | Mean | 23.23 |
 | Median | 18.86 |
 | Variance | 262.24 |
@@ -23,10 +23,11 @@ categories: update
 
 
 
- SAMPLE SIZE having B-factor <= 15: 840
 
-|    | C-CA | N-CA | peptid plane |
-|--- | --- | --- | --- |
+ SAMPLE SIZE having B-factor <= 15: 840 
+
+|     | C-CA | N-CA | peptid plane |
+| --- | --- | --- | --- |
 | Mean | 2.10 | 1.78 | 1.55 |
 | Median | 1.53 | 1.46 | 1.33 |
 | Variance | 1.50 | 0.73 | 0.37 |
@@ -37,7 +38,9 @@ categories: update
 | corrcoef | 0.62 | 1.00 | 0.16 |
 | corrcoef | 0.26 | 0.16 | 1.00 |
 
-|    | tPHI | PSI |
+
+|    | PHI | PSI |
+| --- | --- | --- |
 | Mean | -70.38 | 35.11 |
 | Median | -66.79 | 96.68 |
 | R Length | 0.44 | 0.10 |
