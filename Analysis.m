@@ -20,7 +20,7 @@ KN_C = 250;
 MeandC_CA= 1.52;
 MeandN_CA= 1.45;
 
-binAng = 360;
+binAng = 180;
 
 bin=pi/binAng*8.6;
 kappa=5;
@@ -33,10 +33,10 @@ bins=@(omega) round((pi+omega)/bin)+1;
 %filter=@(dC_CA,dN_CA,dP_plane,Bfactor) not(dC_CA<2*1.76 || dN_CA<2*1.7 || dP_plane<2*1.7);
 %filter=@(dC_CA,dN_CA,dP_plane)1;
 %filter=@(dC_CA,dN_CA,dP_plane,Bfactor) 1;
-filter=@(dC_CA,dN_CA,dP_plane,Bfactor)not(Bfactor>15);
+filter=@(dC_CA,dN_CA,dP_plane,Bfactor)not(Bfactor>16);
 
-%aminos={'PHE'; 'ASP'; 'THR'; 'ARG'; 'TRP'; 'VAL'; 'CYS'; 'SER'; 'ALA'; 'GLY'; 'MET'; 'TYR'; 'ASN'; 'PRO'; 'LYS'; 'HIS'; 'GLN'; 'ILE'; 'LEU'; 'GLU'};
-aminos={'PHE'}
+aminos={'PHE'; 'ASP'; 'THR'; 'ARG'; 'TRP'; 'VAL'; 'CYS'; 'SER'; 'ALA'; 'GLY'; 'MET'; 'TYR'; 'ASN'; 'PRO'; 'LYS'; 'HIS'; 'GLN'; 'ILE'; 'LEU'; 'GLU'};
+%aminos={'PHE'}
 
 
 % Attributes extrated from the protein db:
@@ -100,7 +100,7 @@ for i=1:length(aminos)
         data=removenan(Data,filter); % clean and select data
         
         [c2,att]=size(data);
-        fprintf(file,'SAMPLE SIZE having B-factor <= 15: %d \n\n',c2);
+        fprintf(file,'SAMPLE SIZE having B-factor <= 16: %d \n\n',c2);
         
         % query points
         phi= data(:,1);
@@ -184,22 +184,22 @@ for i=1:length(aminos)
         % Rayleigh test
         p_alpha = circ_rtest(phi);
         p_beta = circ_rtest(psi);
-        fprintf(file,'\nRayleigh Test, P = %.2f %.2f',[p_alpha p_beta]);
+        fprintf(file,'\n- Rayleigh Test, P = %.2f %.2f',[p_alpha p_beta]);
 
         % Omnibus test
         p_alpha = circ_otest(phi);
         p_beta = circ_otest(psi);
-        fprintf(file,'\nOmnibus Test,  P = %.2f %.2f',[p_alpha p_beta]);
+        fprintf(file,'\n- Omnibus Test,  P = %.2f %.2f',[p_alpha p_beta]);
 
         % Rao's spacing test
         p_alpha = circ_raotest(phi);
         p_beta = circ_raotest(psi);
-        fprintf(file,'\nRao Spacing Test,  P = %.2f %.2f',[p_alpha p_beta]);
+        fprintf(file,'\n- Rao Spacing Test,  P = %.2f %.2f',[p_alpha p_beta]);
 
         % V test
         p_alpha = circ_vtest(phi,circ_ang2rad(0));
         p_beta = circ_vtest(psi,circ_ang2rad(0));
-        fprintf(file,'\nV Test (r = 0),  P = %.2f %.2f',[p_alpha p_beta]);
+        fprintf(file,'\n- V Test (r = 0),  P = %.2f %.2f',[p_alpha p_beta]);
 
 
         %% part 4: association

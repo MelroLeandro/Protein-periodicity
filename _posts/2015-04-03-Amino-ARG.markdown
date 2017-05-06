@@ -1,0 +1,206 @@
+---
+layout: post
+title:  "Amino ARG"
+date:   2015-04-03 15:01:4 +0100
+categories: update
+---
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+![Image](../../../../images/aadensity.png)
+
+# Amino ARG
+
+
+ SAMPLE SIZE: 1685
+ 
+ 
+ 
+|     | B-factor |
+| --- | --- |
+| Mean | 25.07 |
+| Median | 20.13 |
+| Variance | 306.61 |
+| Standard deviation | 17.51 |
+| Skewness | 2.92 |
+| Kurtosis | 18.67 |
+ 
+ 
+ 
+SAMPLE SIZE having B-factor <= 16: 584 
+
+
+|     | C-CA | N-CA | peptid plane |
+| --- | --- | --- | --- |
+| Mean | 2.20 | 1.93 | 1.59 |
+| Median | 1.53 | 1.46 | 1.33 |
+| Variance | 1.83 | 1.05 | 0.48 |
+| Standard deviation | 1.35 | 1.02 | 0.69 |
+| Skewness | 1.67 | 2.22 | 2.84 |
+| Kurtosis | 4.13 | 6.86 | 10.79 |
+| corrcoef | 1.00 | 0.69 | 0.13 |
+| corrcoef | 0.69 | 1.00 | 0.27 |
+| corrcoef | 0.13 | 0.27 | 1.00 |
+ 
+ 
+ 
+
+|     | PHI | PSI |
+| --- | --- | --- |
+| Mean | -77.32 | 50.89 |
+| Median | -68.85 | 356.66 |
+| R Length | 0.43 | 0.04 |
+| Variance | 0.57 | 0.96 |
+| Standard deviation | 1.07 | 1.38 |
+| Standard deviation 0 | 1.30 | 2.52 |
+| Skewness | -0.19 | -0.09 |
+| Kurtosis | 0.30 | -0.49 |
+
+### Inferential Statistics for $$\phi$$-$$\psi$$ 
+
+Tests for Uniformity
+
+- Rayleigh Test, P = 0.00 0.35
+- Omnibus Test,  P = 0.00 0.00
+- Rao Spacing Test,  P = 0.00 0.00
+- V Test (r = 0),  P = 0.00 0.18
+### Measures of Association $$\phi$$-$$\psi$$
+
+Circular-Circular Association
+- Circ-circ corr phi-psi coeff/pval:	-0.37	 0.000
+- Circ-line corr phi-C-CA coeff/pval:	0.70	 0.000
+- Circ-line corr phi-N-CA coeff/pval:	0.49	 0.000
+- Circ-line corr psi-C-CA coeff/pval:	0.38	 0.000
+- Circ-line corr psi-N-CA coeff/pval:	0.16	 0.001
+### Statistics $$\chi_1$$
+
+|     | CHI_1 |
+| --- | --- |
+| Mean resultant vector | 121.48 |
+| Median | 121.48 | 
+| R Length | 0.09 | 
+| Variance | 0.91 | 
+| Standard deviation | 1.35 |
+| Standard deviation 0| 2.18 |
+| Skewness | -0.02 |
+| Kurtosis | 0.02 |
+
+ 
+
+### Inferential Statistics $$\chi_1$$
+Tests for Uniformity
+
+- Rayleigh Test, 	 P = 0.01
+- Omnibus Test, 	 P = 0.00
+- Rao Spacing Test, 	 P = 0.00
+- Circ-circ corr phi-chi1 coeff/pval:	0.02	 0.543
+- Circ-circ corr psi-chi1 coeff/pval:	0.06	 0.139
+
+ 
+
+### Statistics $$\chi_2$$
+
+|     | CHI_2 |
+| --- | --- |
+| Mean resultant vector | -93.61 |
+| Median | -93.61 |
+| R Length | 0.43 |
+| Variance | 0.57 |
+| Standard deviation | 1.07 |
+| Standard deviation 0 | 1.30 |
+| Skewness | 0.32 |
+| Kurtosis | 0.06 |
+
+
+### Inferential Statistics $$\chi_2$$ 
+
+Tests for Uniformity
+
+- Rayleigh Test, 	 P = 0.00
+- Omnibus Test, 	 P = 0.00
+- Rao Spacing Test, 	 P = 0.00
+- Circ-circ corr phi-chi2 coeff/pval:	-0.11	 0.004
+- Circ-circ corr psi-chi2 coeff/pval:	0.05	 0.190
+- Circ-circ corr chi1-chi2 coeff/pval:	0.06	 0.125
+
+
+ 
+
+### Statistics $$\chi_3$$
+
+|    | CHI_3 |
+| --- | --- |
+| Mean resultant vector | -169.33 |
+| Median | -169.33 |
+| R Length | 0.58 |
+| Variance | 0.42 |
+| Standard deviation | 0.92 |
+| Standard deviation 0 | 1.05 |
+| Skewness | -0.19 |
+| Kurtosis | 0.36 |
+
+
+
+### Inferential Statistics $$\chi_3$$
+
+Tests for Uniformity
+
+- Rayleigh Test, 	 P = 0.00
+- Omnibus Test, 	 P = 0.00
+- Rao Spacing Test, 	 P = 0.00
+- Circ-circ corr phi-chi3 coeff/pval:	-0.10	 0.016
+- Circ-circ corr psi-chi3 coeff/pval:	0.04	 0.279
+- Circ-circ corr chi1-chi3 coeff/pval:	-0.06	 0.160
+- Circ-circ corr chi2-chi3 coeff/pval:	0.43	 0.000
+### Statistics $$\chi_4$$
+
+|     | CHI_4 |
+| --- | --- |
+| Mean resultant vector | -170.23 |
+| Median | -170.23 |
+| R Length | 0.27 |
+| Variance | 0.73 |
+| Standard deviation | 1.21 |
+| Standard deviation 0 | 1.63 |
+| Skewness | -0.09 |
+| Kurtosis | 0.10 |
+
+
+## Inferential Statistics $$\chsi_4$$
+
+Tests for Uniformity
+
+Rayleigh Test, 	 P = 0.00
+Omnibus Test, 	 P = 0.00
+Rao Spacing Test, 	 P = 0.00
+- Circ-circ corr phi-chi4 coeff/pval:	0.08	 0.053
+- Circ-circ corr psi-chi4 coeff/pval:	-0.05	 0.200
+- Circ-circ corr chi1-chi4 coeff/pval:	0.02	 0.637
+- Circ-circ corr chi2-chi4 coeff/pval:	0.23	 0.000
+- Circ-circ corr chi3-chi4 coeff/pval:	0.21	 0.000
+
+
+# $$\phi$$ & $$\psi$$
+![Image](../../../../images/ARG_Rama_phipsi.jpg)
+![Image](../../../../images/ARG_Rama_phipsiGrad.jpg)
+
+
+# $$\chi_1$$
+![Image](../../../../images/ARG_Rama_phichi1.jpg)
+![Image](../../../../images/ARG_Rama_Grad_psichi1.jpg)
+![Image](../../../../images/ARG_Rama_psichi1.jpg)
+![Image](../../../../images/ARG_Rama_Grad_phichi1.jpg)
+
+
+# $$\chi_2$$
+![Image](../../../../images/ARG_Rama_chi1chi2.jpg)
+![Image](../../../../images/ARG_Rama_Gradchi1chi2.jpg)
+
+
+# $$\chi_3$$
+![Image](../../../../images/ARG_Rama_chsi2chi3.jpg)
+![Image](../../../../images/ARG_Rama_Gradchsi2chi3.jpg)
+
+
+# $$\chi_4$$
+![Image](../../../../images/ARG_Rama_chi3chi4.jpg)
+![Image](../../../../images/ARG_Rama_Gradchi3chi4.jpg)

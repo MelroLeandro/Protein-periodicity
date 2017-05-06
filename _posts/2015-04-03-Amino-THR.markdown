@@ -1,0 +1,136 @@
+---
+layout: post
+title:  "Amino THR"
+date:   2015-04-03 15:01:3 +0100
+categories: update
+---
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+![Image](../../../../images/aadensity.png)
+
+# Amino THR
+
+
+ SAMPLE SIZE: 2932
+ 
+ 
+ 
+|     | B-factor |
+| --- | --- |
+| Mean | 18.79 |
+| Median | 15.41 |
+| Variance | 175.86 |
+| Standard deviation | 13.26 |
+| Skewness | 3.58 |
+| Kurtosis | 26.30 |
+ 
+ 
+ 
+SAMPLE SIZE having B-factor <= 16: 1557 
+
+
+|     | C-CA | N-CA | peptid plane |
+| --- | --- | --- | --- |
+| Mean | 2.04 | 1.84 | 1.59 |
+| Median | 1.53 | 1.46 | 1.33 |
+| Variance | 1.42 | 0.87 | 0.53 |
+| Standard deviation | 1.19 | 0.93 | 0.73 |
+| Skewness | 2.04 | 2.54 | 3.12 |
+| Kurtosis | 5.55 | 8.26 | 12.69 |
+| corrcoef | 1.00 | 0.60 | 0.21 |
+| corrcoef | 0.60 | 1.00 | 0.33 |
+| corrcoef | 0.21 | 0.33 | 1.00 |
+ 
+ 
+ 
+
+|     | PHI | PSI |
+| --- | --- | --- |
+| Mean | -87.73 | 107.52 |
+| Median | -83.73 | 120.58 |
+| R Length | 0.54 | 0.14 |
+| Variance | 0.46 | 0.86 |
+| Standard deviation | 0.96 | 1.31 |
+| Standard deviation 0 | 1.11 | 1.99 |
+| Skewness | -0.12 | 0.53 |
+| Kurtosis | 0.38 | 0.06 |
+
+### Inferential Statistics for $$\phi$$-$$\psi$$ 
+
+Tests for Uniformity
+
+- Rayleigh Test, P = 0.00 0.00
+- Omnibus Test,  P = 0.00 0.00
+- Rao Spacing Test,  P = 0.50 0.50
+- V Test (r = 0),  P = 0.12 0.99
+### Measures of Association $$\phi$$-$$\psi$$
+
+Circular-Circular Association
+- Circ-circ corr phi-psi coeff/pval:	-0.35	 0.000
+- Circ-line corr phi-C-CA coeff/pval:	0.69	 0.000
+- Circ-line corr phi-N-CA coeff/pval:	0.47	 0.000
+- Circ-line corr psi-C-CA coeff/pval:	0.28	 0.000
+- Circ-line corr psi-N-CA coeff/pval:	0.19	 0.000
+### Statistics $$\chi_1$$
+
+|     | CHI_1 |
+| --- | --- |
+| Mean resultant vector | 127.72 |
+| Median | 127.72 | 
+| R Length | 0.13 | 
+| Variance | 0.87 | 
+| Standard deviation | 1.32 |
+| Standard deviation 0| 2.03 |
+| Skewness | 0.01 |
+| Kurtosis | 0.06 |
+
+ 
+
+### Inferential Statistics $$\chi_1$$
+Tests for Uniformity
+
+- Rayleigh Test, 	 P = 0.00
+- Omnibus Test, 	 P = 0.00
+- Rao Spacing Test, 	 P = 0.50
+- Circ-circ corr phi-chi1 coeff/pval:	0.06	 0.019
+- Circ-circ corr psi-chi1 coeff/pval:	-0.04	 0.113
+
+ 
+
+### Statistics $$\chi_2$$
+
+|     | CHI_2 |
+| --- | --- |
+| Mean resultant vector | -2.66 |
+| Median | -2.66 |
+| R Length | 0.35 |
+| Variance | 0.65 |
+| Standard deviation | 1.14 |
+| Standard deviation 0 | 1.45 |
+| Skewness | -0.04 |
+| Kurtosis | -0.38 |
+
+
+### Inferential Statistics $$\chi_2$$ 
+
+Tests for Uniformity
+
+- Rayleigh Test, 	 P = 0.00
+- Omnibus Test, 	 P = 0.00
+- Rao Spacing Test, 	 P = 0.50
+- Circ-circ corr phi-chi2 coeff/pval:	-0.06	 0.011
+- Circ-circ corr psi-chi2 coeff/pval:	-0.03	 0.174
+- Circ-circ corr chi1-chi2 coeff/pval:	-0.01	 0.753
+
+
+
+# $$\phi$$ & $$\psi$$
+![Image](../../../../images/THR_Rama_phipsi.jpg)
+![Image](../../../../images/THR_Rama_phipsiGrad.jpg)
+
+
+# $$\chi_1$$
+![Image](../../../../images/THR_Rama_phichi1.jpg)
+![Image](../../../../images/THR_Rama_Grad_psichi1.jpg)
+![Image](../../../../images/THR_Rama_psichi1.jpg)
+![Image](../../../../images/THR_Rama_Grad_phichi1.jpg)

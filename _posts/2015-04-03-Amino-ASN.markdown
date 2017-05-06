@@ -1,0 +1,169 @@
+---
+layout: post
+title:  "Amino ASN"
+date:   2015-04-03 15:01:13 +0100
+categories: update
+---
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+![Image](../../../../images/aadensity.png)
+
+# Amino ASN
+
+
+ SAMPLE SIZE: 2257
+ 
+ 
+ 
+|     | B-factor |
+| --- | --- |
+| Mean | 20.29 |
+| Median | 16.52 |
+| Variance | 179.54 |
+| Standard deviation | 13.40 |
+| Skewness | 3.03 |
+| Kurtosis | 20.85 |
+ 
+ 
+ 
+SAMPLE SIZE having B-factor <= 16: 1071 
+
+
+|     | C-CA | N-CA | peptid plane |
+| --- | --- | --- | --- |
+| Mean | 2.08 | 1.79 | 1.55 |
+| Median | 1.53 | 1.46 | 1.33 |
+| Variance | 1.50 | 0.74 | 0.39 |
+| Standard deviation | 1.23 | 0.86 | 0.62 |
+| Skewness | 1.93 | 2.85 | 3.39 |
+| Kurtosis | 5.11 | 10.32 | 15.90 |
+| corrcoef | 1.00 | 0.66 | 0.25 |
+| corrcoef | 0.66 | 1.00 | 0.24 |
+| corrcoef | 0.25 | 0.24 | 1.00 |
+ 
+ 
+ 
+
+|     | PHI | PSI |
+| --- | --- | --- |
+| Mean | -80.67 | 46.56 |
+| Median | -78.27 | 34.27 |
+| R Length | 0.46 | 0.19 |
+| Variance | 0.54 | 0.81 |
+| Standard deviation | 1.04 | 1.27 |
+| Standard deviation 0 | 1.25 | 1.82 |
+| Skewness | -0.20 | -0.14 |
+| Kurtosis | 0.36 | -0.28 |
+
+### Inferential Statistics for $$\phi$$-$$\psi$$ 
+
+Tests for Uniformity
+
+- Rayleigh Test, P = 0.00 0.00
+- Omnibus Test,  P = 0.00 0.00
+- Rao Spacing Test,  P = 0.50 0.50
+- V Test (r = 0),  P = 0.00 0.00
+### Measures of Association $$\phi$$-$$\psi$$
+
+Circular-Circular Association
+- Circ-circ corr phi-psi coeff/pval:	-0.23	 0.000
+- Circ-line corr phi-C-CA coeff/pval:	0.54	 0.000
+- Circ-line corr phi-N-CA coeff/pval:	0.41	 0.000
+- Circ-line corr psi-C-CA coeff/pval:	0.43	 0.000
+- Circ-line corr psi-N-CA coeff/pval:	0.26	 0.000
+### Statistics $$\chi_1$$
+
+|     | CHI_1 |
+| --- | --- |
+| Mean resultant vector | 111.83 |
+| Median | 111.83 | 
+| R Length | 0.22 | 
+| Variance | 0.78 | 
+| Standard deviation | 1.25 |
+| Standard deviation 0| 1.75 |
+| Skewness | 0.09 |
+| Kurtosis | 0.04 |
+
+ 
+
+### Inferential Statistics $$\chi_1$$
+Tests for Uniformity
+
+- Rayleigh Test, 	 P = 0.00
+- Omnibus Test, 	 P = 0.00
+- Rao Spacing Test, 	 P = 0.50
+- Circ-circ corr phi-chi1 coeff/pval:	0.01	 0.837
+- Circ-circ corr psi-chi1 coeff/pval:	0.02	 0.620
+
+ 
+
+### Statistics $$\chi_2$$
+
+|     | CHI_2 |
+| --- | --- |
+| Mean resultant vector | -94.92 |
+| Median | -94.92 |
+| R Length | 0.35 |
+| Variance | 0.65 |
+| Standard deviation | 1.14 |
+| Standard deviation 0 | 1.45 |
+| Skewness | 0.16 |
+| Kurtosis | 0.15 |
+
+
+### Inferential Statistics $$\chi_2$$ 
+
+Tests for Uniformity
+
+- Rayleigh Test, 	 P = 0.00
+- Omnibus Test, 	 P = 0.00
+- Rao Spacing Test, 	 P = 0.50
+- Circ-circ corr phi-chi2 coeff/pval:	0.07	 0.020
+- Circ-circ corr psi-chi2 coeff/pval:	-0.19	 0.000
+- Circ-circ corr chi1-chi2 coeff/pval:	0.02	 0.428
+
+
+ 
+
+### Statistics $$\chi_3$$
+
+|    | CHI_3 |
+| --- | --- |
+| Mean resultant vector | -18.39 |
+| Median | -18.39 |
+| R Length | 0.51 |
+| Variance | 0.49 |
+| Standard deviation | 0.99 |
+| Standard deviation 0 | 1.16 |
+| Skewness | -0.12 |
+| Kurtosis | 0.27 |
+
+
+
+### Inferential Statistics $$\chi_3$$
+
+Tests for Uniformity
+
+- Rayleigh Test, 	 P = 0.00
+- Omnibus Test, 	 P = 0.00
+- Rao Spacing Test, 	 P = 0.50
+- Circ-circ corr phi-chi3 coeff/pval:	-0.05	 0.140
+- Circ-circ corr psi-chi3 coeff/pval:	-0.02	 0.617
+- Circ-circ corr chi1-chi3 coeff/pval:	0.06	 0.065
+- Circ-circ corr chi2-chi3 coeff/pval:	-0.15	 0.000
+
+# $$\phi$$ & $$\psi$$
+![Image](../../../../images/ASN_Rama_phipsi.jpg)
+![Image](../../../../images/ASN_Rama_phipsiGrad.jpg)
+
+
+# $$\chi_1$$
+![Image](../../../../images/ASN_Rama_phichi1.jpg)
+![Image](../../../../images/ASN_Rama_Grad_psichi1.jpg)
+![Image](../../../../images/ASN_Rama_psichi1.jpg)
+![Image](../../../../images/ASN_Rama_Grad_phichi1.jpg)
+
+
+# $$\chi_2$$
+![Image](../../../../images/ASN_Rama_chi1chi2.jpg)
+![Image](../../../../images/ASN_Rama_Gradchi1chi2.jpg)
