@@ -26,74 +26,72 @@ categories: update
  
  
  
-SAMPLE SIZE having B-factor <= 16: 417 
-
 
 |     | C-CA | N-CA | peptid plane |
 | --- | --- | --- | --- |
-| Mean | 1.90 | 1.71 | 1.67 |
+| Mean | 1.95 | 1.78 | 1.72 |
 | Median | 1.53 | 1.46 | 1.33 |
-| Variance | 0.96 | 0.61 | 0.73 |
-| Standard deviation | 0.98 | 0.78 | 0.85 |
-| Skewness | 2.73 | 3.44 | 2.44 |
-| Kurtosis | 9.39 | 14.38 | 7.55 |
-| corrcoef | 1.00 | 0.57 | 0.21 |
-| corrcoef | 0.57 | 1.00 | 0.19 |
-| corrcoef | 0.21 | 0.19 | 1.00 |
+| Variance | 1.13 | 0.75 | 0.83 |
+| Standard deviation | 1.06 | 0.87 | 0.91 |
+| Skewness | 2.43 | 2.94 | 2.33 |
+| Kurtosis | 7.57 | 10.80 | 7.43 |
+| corrcoef | 1.00 | 0.60 | 0.20 |
+| corrcoef | 0.60 | 1.00 | 0.27 |
+| corrcoef | 0.20 | 0.27 | 1.00 |
  
  
  
 
 |     | PHI | PSI |
 | --- | --- | --- |
-| Mean | -91.10 | 121.01 |
-| Median | -83.95 | 128.99 |
-| R Length | 0.57 | 0.14 |
-| Variance | 0.43 | 0.86 |
-| Standard deviation | 0.93 | 1.31 |
-| Standard deviation 0 | 1.06 | 1.99 |
-| Skewness | -0.08 | 0.44 |
-| Kurtosis | 0.33 | 0.33 |
+| Mean | -83.85 | 89.05 |
+| Median | -73.50 | 113.50 |
+| R Length | 0.52 | 0.08 |
+| Variance | 0.48 | 0.92 |
+| Standard deviation | 0.98 | 1.35 |
+| Standard deviation 0 | 1.14 | 2.24 |
+| Skewness | -0.12 | 0.44 |
+| Kurtosis | 0.32 | -0.26 |
 
 ### Inferential Statistics for $$\phi$$-$$\psi$$ 
 
 Tests for Uniformity
 
-- Rayleigh Test, P = 0.00 0.00
+- Rayleigh Test, P = 0.00 0.01
 - Omnibus Test,  P = 0.00 0.00
 - Rao Spacing Test,  P = 0.00 0.00
-- V Test (r = 0),  P = 0.62 0.98
+- V Test (r = 0),  P = 0.02 0.48
 ### Measures of Association $$\phi$$-$$\psi$$
 
 Circular-Circular Association
-- Circ-circ corr phi-psi coeff/pval:	-0.33	 0.000
-- Circ-line corr phi-C-CA coeff/pval:	0.61	 0.000
+- Circ-circ corr phi-psi coeff/pval:	-0.41	 0.000
+- Circ-line corr phi-C-CA coeff/pval:	0.54	 0.000
 - Circ-line corr phi-N-CA coeff/pval:	0.37	 0.000
-- Circ-line corr psi-C-CA coeff/pval:	0.22	 0.000
-- Circ-line corr psi-N-CA coeff/pval:	0.10	 0.111
+- Circ-line corr psi-C-CA coeff/pval:	0.28	 0.000
+- Circ-line corr psi-N-CA coeff/pval:	0.10	 0.035
 ### Statistics $$\chi_1$$
 
 |     | CHI_1 |
 | --- | --- |
-| Mean resultant vector | 122.46 |
-| Median | 122.46 | 
-| R Length | 0.07 | 
-| Variance | 0.93 | 
-| Standard deviation | 1.37 |
-| Standard deviation 0| 2.33 |
+| Mean resultant vector | -128.43 |
+| Median | -128.43 | 
+| R Length | 0.01 | 
+| Variance | 0.99 | 
+| Standard deviation | 1.41 |
+| Standard deviation 0| 2.99 |
 | Skewness | 0.04 |
-| Kurtosis | 0.09 |
+| Kurtosis | -0.05 |
 
  
 
 ### Inferential Statistics $$\chi_1$$
 Tests for Uniformity
 
-- Rayleigh Test, 	 P = 0.16
-- Omnibus Test, 	 P = 0.26
+- Rayleigh Test, 	 P = 0.91
+- Omnibus Test, 	 P = 0.97
 - Rao Spacing Test, 	 P = 0.00
-- Circ-circ corr phi-chi1 coeff/pval:	0.03	 0.481
-- Circ-circ corr psi-chi1 coeff/pval:	-0.06	 0.254
+- Circ-circ corr phi-chi1 coeff/pval:	-0.07	 0.057
+- Circ-circ corr psi-chi1 coeff/pval:	0.04	 0.236
 
  
 
@@ -101,14 +99,14 @@ Tests for Uniformity
 
 |     | CHI_2 |
 | --- | --- |
-| Mean resultant vector | -94.14 |
-| Median | -94.14 |
-| R Length | 0.22 |
-| Variance | 0.78 |
-| Standard deviation | 1.25 |
-| Standard deviation 0 | 1.73 |
-| Skewness | 0.14 |
-| Kurtosis | 0.15 |
+| Mean resultant vector | -93.97 |
+| Median | -93.97 |
+| R Length | 0.24 |
+| Variance | 0.76 |
+| Standard deviation | 1.23 |
+| Standard deviation 0 | 1.69 |
+| Skewness | 0.15 |
+| Kurtosis | 0.14 |
 
 
 ### Inferential Statistics $$\chi_2$$ 
@@ -118,9 +116,9 @@ Tests for Uniformity
 - Rayleigh Test, 	 P = 0.00
 - Omnibus Test, 	 P = 0.00
 - Rao Spacing Test, 	 P = 0.00
-- Circ-circ corr phi-chi2 coeff/pval:	-0.14	 0.003
-- Circ-circ corr psi-chi2 coeff/pval:	-0.01	 0.864
-- Circ-circ corr chi1-chi2 coeff/pval:	0.02	 0.693
+- Circ-circ corr phi-chi2 coeff/pval:	-0.11	 0.003
+- Circ-circ corr psi-chi2 coeff/pval:	0.01	 0.887
+- Circ-circ corr chi1-chi2 coeff/pval:	-0.03	 0.362
 
 
  
@@ -129,14 +127,14 @@ Tests for Uniformity
 
 |    | CHI_3 |
 | --- | --- |
-| Mean resultant vector | 59.12 |
-| Median | 59.12 |
-| R Length | 0.10 |
-| Variance | 0.90 |
-| Standard deviation | 1.34 |
-| Standard deviation 0 | 2.13 |
-| Skewness | 0.58 |
-| Kurtosis | 0.39 |
+| Mean resultant vector | 71.69 |
+| Median | 71.69 |
+| R Length | 0.16 |
+| Variance | 0.84 |
+| Standard deviation | 1.30 |
+| Standard deviation 0 | 1.93 |
+| Skewness | 0.39 |
+| Kurtosis | 0.59 |
 
 
 
@@ -144,13 +142,13 @@ Tests for Uniformity
 
 Tests for Uniformity
 
-- Rayleigh Test, 	 P = 0.01
+- Rayleigh Test, 	 P = 0.00
 - Omnibus Test, 	 P = 0.00
 - Rao Spacing Test, 	 P = 0.00
-- Circ-circ corr phi-chi3 coeff/pval:	0.01	 0.836
-- Circ-circ corr psi-chi3 coeff/pval:	-0.10	 0.034
-- Circ-circ corr chi1-chi3 coeff/pval:	-0.06	 0.214
-- Circ-circ corr chi2-chi3 coeff/pval:	0.14	 0.001
+- Circ-circ corr phi-chi3 coeff/pval:	-0.02	 0.507
+- Circ-circ corr psi-chi3 coeff/pval:	-0.11	 0.005
+- Circ-circ corr chi1-chi3 coeff/pval:	-0.06	 0.145
+- Circ-circ corr chi2-chi3 coeff/pval:	0.10	 0.001
 
 # $$\phi$$ & $$\psi$$
 ![Image](../../../../images/TRP_Rama_phipsi.jpg)

@@ -26,74 +26,72 @@ categories: update
  
  
  
-SAMPLE SIZE having B-factor <= 16: 502 
-
 
 |     | C-CA | N-CA | peptid plane |
 | --- | --- | --- | --- |
-| Mean | 2.18 | 1.78 | 1.64 |
+| Mean | 2.12 | 1.78 | 1.61 |
 | Median | 1.53 | 1.46 | 1.33 |
-| Variance | 1.69 | 0.72 | 0.60 |
-| Standard deviation | 1.30 | 0.85 | 0.78 |
-| Skewness | 1.71 | 2.97 | 2.53 |
-| Kurtosis | 4.30 | 11.27 | 8.22 |
-| corrcoef | 1.00 | 0.77 | 0.23 |
-| corrcoef | 0.77 | 1.00 | 0.17 |
-| corrcoef | 0.23 | 0.17 | 1.00 |
+| Variance | 1.58 | 0.73 | 0.53 |
+| Standard deviation | 1.26 | 0.85 | 0.73 |
+| Skewness | 1.88 | 2.90 | 2.72 |
+| Kurtosis | 4.99 | 10.60 | 9.51 |
+| corrcoef | 1.00 | 0.73 | 0.22 |
+| corrcoef | 0.73 | 1.00 | 0.14 |
+| corrcoef | 0.22 | 0.14 | 1.00 |
  
  
  
 
 |     | PHI | PSI |
 | --- | --- | --- |
-| Mean | -80.23 | 108.03 |
-| Median | -69.87 | 118.11 |
-| R Length | 0.50 | 0.07 |
-| Variance | 0.50 | 0.93 |
-| Standard deviation | 1.00 | 1.36 |
-| Standard deviation 0 | 1.18 | 2.30 |
-| Skewness | -0.12 | 0.40 |
-| Kurtosis | 0.29 | 0.12 |
+| Mean | -80.16 | 99.73 |
+| Median | -70.85 | 26.84 |
+| R Length | 0.49 | 0.06 |
+| Variance | 0.51 | 0.94 |
+| Standard deviation | 1.01 | 1.37 |
+| Standard deviation 0 | 1.20 | 2.37 |
+| Skewness | -0.12 | 0.47 |
+| Kurtosis | 0.32 | 0.00 |
 
 ### Inferential Statistics for $$\phi$$-$$\psi$$ 
 
 Tests for Uniformity
 
-- Rayleigh Test, P = 0.00 0.08
-- Omnibus Test,  P = 0.00 0.01
+- Rayleigh Test, P = 0.00 0.05
+- Omnibus Test,  P = 0.00 0.00
 - Rao Spacing Test,  P = 0.00 0.00
-- V Test (r = 0),  P = 0.00 0.76
+- V Test (r = 0),  P = 0.00 0.66
 ### Measures of Association $$\phi$$-$$\psi$$
 
 Circular-Circular Association
-- Circ-circ corr phi-psi coeff/pval:	-0.26	 0.000
-- Circ-line corr phi-C-CA coeff/pval:	0.70	 0.000
-- Circ-line corr phi-N-CA coeff/pval:	0.46	 0.000
-- Circ-line corr psi-C-CA coeff/pval:	0.36	 0.000
-- Circ-line corr psi-N-CA coeff/pval:	0.26	 0.000
+- Circ-circ corr phi-psi coeff/pval:	-0.30	 0.000
+- Circ-line corr phi-C-CA coeff/pval:	0.68	 0.000
+- Circ-line corr phi-N-CA coeff/pval:	0.47	 0.000
+- Circ-line corr psi-C-CA coeff/pval:	0.32	 0.000
+- Circ-line corr psi-N-CA coeff/pval:	0.19	 0.000
 ### Statistics $$\chi_1$$
 
 |     | CHI_1 |
 | --- | --- |
-| Mean resultant vector | 92.00 |
-| Median | 92.00 | 
-| R Length | 0.04 | 
-| Variance | 0.96 | 
-| Standard deviation | 1.39 |
-| Standard deviation 0| 2.59 |
-| Skewness | 0.02 |
-| Kurtosis | 0.01 |
+| Mean resultant vector | -175.58 |
+| Median | -175.58 | 
+| R Length | 0.01 | 
+| Variance | 0.99 | 
+| Standard deviation | 1.41 |
+| Standard deviation 0| 3.07 |
+| Skewness | 0.01 |
+| Kurtosis | -0.01 |
 
  
 
 ### Inferential Statistics $$\chi_1$$
 Tests for Uniformity
 
-- Rayleigh Test, 	 P = 0.53
-- Omnibus Test, 	 P = 0.46
+- Rayleigh Test, 	 P = 0.93
+- Omnibus Test, 	 P = 0.97
 - Rao Spacing Test, 	 P = 0.00
-- Circ-circ corr phi-chi1 coeff/pval:	-0.06	 0.160
-- Circ-circ corr psi-chi1 coeff/pval:	0.07	 0.107
+- Circ-circ corr phi-chi1 coeff/pval:	-0.04	 0.254
+- Circ-circ corr psi-chi1 coeff/pval:	-0.04	 0.276
 
  
 
@@ -101,14 +99,14 @@ Tests for Uniformity
 
 |     | CHI_2 |
 | --- | --- |
-| Mean resultant vector | -70.37 |
-| Median | -70.37 |
-| R Length | 0.44 |
-| Variance | 0.56 |
-| Standard deviation | 1.05 |
-| Standard deviation 0 | 1.27 |
-| Skewness | 0.12 |
-| Kurtosis | 0.39 |
+| Mean resultant vector | -76.00 |
+| Median | -76.00 |
+| R Length | 0.46 |
+| Variance | 0.54 |
+| Standard deviation | 1.04 |
+| Standard deviation 0 | 1.25 |
+| Skewness | 0.21 |
+| Kurtosis | 0.33 |
 
 
 ### Inferential Statistics $$\chi_2$$ 
@@ -118,9 +116,9 @@ Tests for Uniformity
 - Rayleigh Test, 	 P = 0.00
 - Omnibus Test, 	 P = 0.00
 - Rao Spacing Test, 	 P = 0.00
-- Circ-circ corr phi-chi2 coeff/pval:	-0.20	 0.000
-- Circ-circ corr psi-chi2 coeff/pval:	0.06	 0.156
-- Circ-circ corr chi1-chi2 coeff/pval:	-0.01	 0.844
+- Circ-circ corr phi-chi2 coeff/pval:	-0.14	 0.000
+- Circ-circ corr psi-chi2 coeff/pval:	0.04	 0.202
+- Circ-circ corr chi1-chi2 coeff/pval:	-0.01	 0.724
 
 
 

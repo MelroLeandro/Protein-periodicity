@@ -96,11 +96,8 @@ for i=1:length(aminos)
         fprintf(file,'| Kurtosis | %.2f |\n',kurtosis(BFactor));
 
         fprintf(file,' \n \n \n');
-        % Filter Data
-        data=removenan(Data,filter); % clean and select data
         
-        [c2,att]=size(data);
-        fprintf(file,'SAMPLE SIZE having B-factor <= 16: %d \n\n',c2);
+        data=Data;
         
         % query points
         phi= data(:,1);
@@ -384,17 +381,17 @@ for i=1:length(aminos)
                                 fprintf(file,'\n| Kurtosis | %.2f |',k_chsi4);
                                 fprintf(file,'\n\n');
                                 %% part 4: inferential statistics
-                                fprintf(file,'\n## Inferential Statistics $$\\chsi_4$$\n');
+                                fprintf(file,'\n## Inferential Statistics $$\\chi_4$$\n');
                                 fprintf(file,'\nTests for Uniformity\n');
                                 % Rayleigh test
                                 p_chsi4 = circ_rtest(chsi4);
-                                fprintf(file,'\nRayleigh Test, \t P = %.2f',p_chsi4);
+                                fprintf(file,'\n- Rayleigh Test, \t P = %.2f',p_chsi4);
                                 % Omnibus test
                                 p_chsi4 = circ_otest(chsi4);
-                                fprintf(file,'\nOmnibus Test, \t P = %.2f',p_chsi4);
+                                fprintf(file,'\n- Omnibus Test, \t P = %.2f',p_chsi4);
                                 % Rao's spacing test
                                 p_chsi4 = circ_raotest(chsi4);
-                                fprintf(file,'\nRao Spacing Test, \t P = %.2f',p_chsi4);
+                                fprintf(file,'\n- Rao Spacing Test, \t P = %.2f',p_chsi4);
 
                             
                                 [c p] = circ_corrcc(phi,chsi4);
