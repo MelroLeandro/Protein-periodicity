@@ -7,7 +7,7 @@ set of discrete probability distribution, and used to generat
 internal forces multibody systems.
 
 Examples of statistical potentials generated from two dihedral angles on a protein main chain:
-![Image](../images/IAGE2.gif)
+![Image](./images/IAGE2.gif)
 
 Examples of statistical potentials generated between dihedral angles and rotamers in an amino acid:
-![Image](../images/IAGE1.gif)
+![Image](./images/IAGE1.gif)
