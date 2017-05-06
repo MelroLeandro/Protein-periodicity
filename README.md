@@ -161,19 +161,19 @@ Circular-Circular Association
 - Circ-circ corr chi1-chi3 coeff/pval:	0.00	 0.960
 - Circ-circ corr chi2-chi3 coeff/pval:	-0.36	 0.000
 
-# $$\phi$$ & $$\psi$$
+### $$\phi$$ & $$\psi$$
 ![Image](./images/TYR_Rama_phipsi.jpg)
 ![Image](./images/TYR_Rama_phipsiGrad.jpg)
 
 
-# $$\chi_1$$
+### $$\chi_1$$
 ![Image](./images/TYR_Rama_phichi1.jpg)
 ![Image](./images/TYR_Rama_Grad_psichi1.jpg)
 ![Image](./images/TYR_Rama_psichi1.jpg)
 ![Image](./images/TYR_Rama_Grad_phichi1.jpg)
 
 
-# $$\chi_2$$
+### $$\chi_2$$
 ![Image](./images/TYR_Rama_chi1chi2.jpg)
 ![Image](./images/TYR_Rama_Gradchi1chi2.jpg)
 
