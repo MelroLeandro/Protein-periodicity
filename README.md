@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+This is the base for a project on packing charged multibody systems with implicit
+solvation. This scripts are used for the extraction of statistical dada from large samples of 
+crystal structures, selected from the PDB. The generated statistics are used on  two type of libraries
+for multibody dynamics: a library with statistical potentials for pairs of dihedral angles 
+in the main chain local conformation,  and a rotamer libraries. This  libraries are defined as a 
+set of discrete probability distribution, and used to generat
+internal forces multibody systems.
 
-You can use the [editor on GitHub](https://github.com/MelroLeandro/Protein-periodicity/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Examples of statistical potentials generated from two dihedral angles on a protein main chain:
+![Image](../images/IAGE2.gif)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MelroLeandro/Protein-periodicity/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Examples of statistical potentials generated between dihedral angles and rotamers in an amino acid:
+![Image](../images/IAGE1.gif)
