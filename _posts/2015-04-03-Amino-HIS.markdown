@@ -31,27 +31,27 @@ categories: update
 | --- | --- | --- | --- |
 | Mean | 2.16 | 1.85 | 1.67 |
 | Median | 1.53 | 1.46 | 1.33 |
-| Variance | 1.72 | 0.90 | 0.68 |
-| Standard deviation | 1.31 | 0.95 | 0.83 |
-| Skewness | 1.82 | 2.48 | 2.52 |
-| Kurtosis | 4.69 | 8.10 | 8.71 |
+| Variance | 1.73 | 0.91 | 0.68 |
+| Standard deviation | 1.31 | 0.95 | 0.82 |
+| Skewness | 1.81 | 2.49 | 2.54 |
+| Kurtosis | 4.68 | 8.14 | 8.82 |
 | corrcoef | 1.00 | 0.68 | 0.27 |
-| corrcoef | 0.68 | 1.00 | 0.15 |
-| corrcoef | 0.27 | 0.15 | 1.00 |
+| corrcoef | 0.68 | 1.00 | 0.14 |
+| corrcoef | 0.27 | 0.14 | 1.00 |
  
  
  
 
 |     | PHI | PSI |
 | --- | --- | --- |
-| Mean | -77.22 | -1.48 |
-| Median | -66.98 | -1.31 |
+| Mean | -77.52 | -1.85 |
+| Median | -67.08 | -1.50 |
 | R Length | 0.50 | 0.12 |
 | Variance | 0.50 | 0.88 |
 | Standard deviation | 1.00 | 1.33 |
 | Standard deviation 0 | 1.18 | 2.07 |
-| Skewness | -0.06 | -0.40 |
-| Kurtosis | 0.32 | 0.22 |
+| Skewness | -0.06 | -0.39 |
+| Kurtosis | 0.33 | 0.23 |
 
 ### Inferential Statistics for $$\phi$$-$$\psi$$ 
 
@@ -67,18 +67,18 @@ Circular-Circular Association
 - Circ-circ corr phi-psi coeff/pval:	-0.25	 0.000
 - Circ-line corr phi-C-CA coeff/pval:	0.63	 0.000
 - Circ-line corr phi-N-CA coeff/pval:	0.49	 0.000
-- Circ-line corr psi-C-CA coeff/pval:	0.27	 0.000
+- Circ-line corr psi-C-CA coeff/pval:	0.28	 0.000
 - Circ-line corr psi-N-CA coeff/pval:	0.17	 0.000
 ### Statistics $$\chi_1$$
 
 |     | CHI_1 |
 | --- | --- |
-| Mean resultant vector | 155.68 |
-| Median | 155.68 | 
+| Mean resultant vector | 150.67 |
+| Median | 150.67 | 
 | R Length | 0.03 | 
 | Variance | 0.97 | 
-| Standard deviation | 1.40 |
-| Standard deviation 0| 2.71 |
+| Standard deviation | 1.39 |
+| Standard deviation 0| 2.69 |
 | Skewness | -0.01 |
 | Kurtosis | 0.02 |
 
@@ -87,11 +87,11 @@ Circular-Circular Association
 ### Inferential Statistics $$\chi_1$$
 Tests for Uniformity
 
-- Rayleigh Test, 	 P = 0.56
-- Omnibus Test, 	 P = 0.38
+- Rayleigh Test, 	 P = 0.51
+- Omnibus Test, 	 P = 0.36
 - Rao Spacing Test, 	 P = 0.00
-- Circ-circ corr phi-chi1 coeff/pval:	0.03	 0.406
-- Circ-circ corr psi-chi1 coeff/pval:	-0.03	 0.390
+- Circ-circ corr phi-chi1 coeff/pval:	0.02	 0.563
+- Circ-circ corr psi-chi1 coeff/pval:	-0.03	 0.338
 
  
 
@@ -99,26 +99,26 @@ Tests for Uniformity
 
 |     | CHI_2 |
 | --- | --- |
-| Mean resultant vector | NaN |
-| Median | NaN |
-| R Length | NaN |
-| Variance | NaN |
-| Standard deviation | NaN |
-| Standard deviation 0 | NaN |
-| Skewness | NaN |
-| Kurtosis | NaN |
+| Mean resultant vector | -97.31 |
+| Median | -97.31 |
+| R Length | 0.38 |
+| Variance | 0.62 |
+| Standard deviation | 1.11 |
+| Standard deviation 0 | 1.39 |
+| Skewness | 0.27 |
+| Kurtosis | 0.02 |
 
 
 ### Inferential Statistics $$\chi_2$$ 
 
 Tests for Uniformity
 
-- Rayleigh Test, 	 P = NaN
+- Rayleigh Test, 	 P = 0.00
 - Omnibus Test, 	 P = 0.00
-- Rao Spacing Test, 	 P = 0.50
-- Circ-circ corr phi-chi2 coeff/pval:	NaN	 NaN
-- Circ-circ corr psi-chi2 coeff/pval:	NaN	 NaN
-- Circ-circ corr chi1-chi2 coeff/pval:	NaN	 NaN
+- Rao Spacing Test, 	 P = 0.00
+- Circ-circ corr phi-chi2 coeff/pval:	-0.13	 0.000
+- Circ-circ corr psi-chi2 coeff/pval:	0.09	 0.008
+- Circ-circ corr chi1-chi2 coeff/pval:	0.04	 0.194
 
 
  
@@ -127,14 +127,14 @@ Tests for Uniformity
 
 |    | CHI_3 |
 | --- | --- |
-| Mean resultant vector | NaN |
-| Median | NaN |
-| R Length | NaN |
-| Variance | NaN |
-| Standard deviation | NaN |
-| Standard deviation 0 | NaN |
-| Skewness | NaN |
-| Kurtosis | NaN |
+| Mean resultant vector | -102.20 |
+| Median | -102.20 |
+| R Length | 0.16 |
+| Variance | 0.84 |
+| Standard deviation | 1.29 |
+| Standard deviation 0 | 1.90 |
+| Skewness | 0.29 |
+| Kurtosis | 0.43 |
 
 
 
@@ -142,13 +142,13 @@ Tests for Uniformity
 
 Tests for Uniformity
 
-- Rayleigh Test, 	 P = NaN
+- Rayleigh Test, 	 P = 0.00
 - Omnibus Test, 	 P = 0.00
-- Rao Spacing Test, 	 P = 0.50
-- Circ-circ corr phi-chi3 coeff/pval:	NaN	 NaN
-- Circ-circ corr psi-chi3 coeff/pval:	NaN	 NaN
-- Circ-circ corr chi1-chi3 coeff/pval:	NaN	 NaN
-- Circ-circ corr chi2-chi3 coeff/pval:	NaN	 NaN
+- Rao Spacing Test, 	 P = 0.00
+- Circ-circ corr phi-chi3 coeff/pval:	-0.04	 0.214
+- Circ-circ corr psi-chi3 coeff/pval:	0.01	 0.790
+- Circ-circ corr chi1-chi3 coeff/pval:	-0.00	 0.980
+- Circ-circ corr chi2-chi3 coeff/pval:	0.16	 0.000
 
 # $$\phi$$ & $$\psi$$
 ![Image](../../../../images/HIS_Rama_phipsi.jpg)

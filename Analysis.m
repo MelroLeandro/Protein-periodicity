@@ -32,8 +32,8 @@ bins=@(omega) round((pi+omega)/bin)+1;
 %filter=@(dC_CA,dN_CA,dP_plane,Bfactor) not(abs(dC_CA-1.99)>1.18 || abs(dN_CA-1.78)>0.91 || abs(dP_plane-1.47)>0.55);
 %filter=@(dC_CA,dN_CA,dP_plane,Bfactor) not(dC_CA<2*1.76 || dN_CA<2*1.7 || dP_plane<2*1.7);
 %filter=@(dC_CA,dN_CA,dP_plane)1;
-%filter=@(dC_CA,dN_CA,dP_plane,Bfactor) 1;
-filter=@(dC_CA,dN_CA,dP_plane,Bfactor)not(Bfactor>16);
+filter=@(dC_CA,dN_CA,dP_plane,Bfactor) 1;
+%filter=@(dC_CA,dN_CA,dP_plane,Bfactor)not(Bfactor>16);
 
 aminos={'PHE'; 'ASP'; 'THR'; 'ARG'; 'TRP'; 'VAL'; 'CYS'; 'SER'; 'ALA'; 'GLY'; 'MET'; 'TYR'; 'ASN'; 'PRO'; 'LYS'; 'HIS'; 'GLN'; 'ILE'; 'LEU'; 'GLU'};
 %aminos={'PHE'}
@@ -97,7 +97,8 @@ for i=1:length(aminos)
 
         fprintf(file,' \n \n \n');
         
-        data=Data;
+        % Filter Data
+        data=removenan(Data,filter); % clean and select data
         
         % query points
         phi= data(:,1);
