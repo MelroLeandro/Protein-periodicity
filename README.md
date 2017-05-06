@@ -1,6 +1,8 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-# Protein periodicity http://melroleandro.github.io/Protein-periodicity/
+
+# Protein periodicity 
+
+http://melroleandro.github.io/Protein-periodicity/
 
 This is the base for a project on packing charged multibody systems with implicit
 solvation. This scripts are used for the extraction of statistical dada from large samples of 
@@ -18,7 +20,7 @@ internal forces multibody systems.
 
 For more information: http://melroleandro.github.io/Protein-periodicity/
 
-## Extraction Statistic for each amino acid
+## Extraction of Statistic for each amino acid
 
 ![Image](./images/aadensity.png)
 
