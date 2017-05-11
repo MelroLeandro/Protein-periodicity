@@ -4,7 +4,7 @@ description: "<b> Statistical Potentials for internal forces to Packing Charged 
 url: "https://melroleandro.github.io"
 
 # Secondary Parameters
-baseurl: "https://melroleandro.github.io/Protein-periodicity"
+baseurl: "https://melroleandro.github.io/Protein-periodicity/"
 header-img: "img/home-bg.jpg"
 headercolor: "#FFFFFF"
 logo: "img/logos/ToyDIM-Logo.png"
@@ -37,7 +37,7 @@ defaults:
 
 # Prose Settings
 prose:
-  ignore: ['feed.xml', '/stl', '/js', '/plugin', '/lib', '/projectors', '_layouts', '/_includes','/ToolsSrc', 'Gruntfile.js', 'package.json', 'proselinks.jsonp', 'ppanchor.matin', '.gitignore', '/search', '/css', '/img', 'favicon.png','_data/*.json','LICENSES.md','README.md','colorscheme.scss','members.html','mentions.html','index.html']
+  ignore: ['feed.xml', '/stl', '/js', '/plugin', '/lib', '/projectors', '_layouts', '/_includes','/images','/ToolsSrc', 'Gruntfile.js', 'package.json', 'proselinks.jsonp', 'ppanchor.matin', '.gitignore', '/search', '/css', '/img', 'favicon.png','_data/*.json','LICENSES.md','README.md','colorscheme.scss','members.html','mentions.html','index.html']
   siteurl: 'https://melroleandro.github.io/Protein-periodicity'
   ispp: true
   media: 'img'
