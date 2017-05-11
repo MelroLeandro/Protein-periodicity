@@ -95,5 +95,5 @@ Tests for Uniformity
 
 
 # $$\phi$$ & $$\psi$$
-![Image](../../../../images/ALA_Rama_phipsi.jpg)
-![Image](../../../../images/ALA_Rama_phipsiGrad.jpg)
+![Image](../../../../../images/ALA_Rama_phipsi.jpg){:width="500px"}
+![Image](../../../../../images/ALA_Rama_phipsiGrad.jpg){:width="500px"}
