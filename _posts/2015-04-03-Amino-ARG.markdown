@@ -176,7 +176,7 @@ Tests for Uniformity
 - Circ-circ corr chi2-chi4 coeff/pval:	0.17	 0.000
 - Circ-circ corr chi3-chi4 coeff/pval:	0.21	 0.000
 
-![Image](../../../../../images/peptide1.gif ){:width="500px"}
+
 # $$\phi$$ & $$\psi$$
 ![Image](../../../../../images/ARG_Rama_phipsi.jpg){:width="500px"}
 ![Image](../../../../../images/ARG_Rama_phipsiGrad.jpg){:width="500px"}
