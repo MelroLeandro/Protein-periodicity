@@ -1,7 +1,8 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: "About"
+description: "<b>What is Protein-periodicity?</b>"
+header-img: "img/home-bg.jpg"
 ---
 
 This is the base for a project on packing charged multibody systems with implicit
