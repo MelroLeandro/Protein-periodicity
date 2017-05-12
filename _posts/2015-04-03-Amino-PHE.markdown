@@ -6,15 +6,15 @@ categories: update
 ---
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-![Image](../../../../images/aadensity.png)
+![Image](../../../../../images/aadensity.png)
 
 # Amino PHE
 
 
  SAMPLE SIZE: 1553
- 
- 
- 
+
+
+
 |     | B-factor |
 | --- | --- |
 | Mean | 18.06 |
@@ -23,9 +23,9 @@ categories: update
 | Standard deviation | 11.15 |
 | Skewness | 3.66 |
 | Kurtosis | 38.82 |
- 
- 
- 
+
+
+
 
 |     | C-CA | N-CA | peptid plane |
 | --- | --- | --- | --- |
@@ -38,9 +38,9 @@ categories: update
 | corrcoef | 1.00 | 0.66 | 0.22 |
 | corrcoef | 0.66 | 1.00 | 0.26 |
 | corrcoef | 0.22 | 0.26 | 1.00 |
- 
- 
- 
+
+
+
 
 |     | PHI | PSI |
 | --- | --- | --- |
@@ -53,7 +53,7 @@ categories: update
 | Skewness | -0.10 | 0.06 |
 | Kurtosis | 0.34 | -0.49 |
 
-### Inferential Statistics for $$\phi$$-$$\psi$$ 
+### Inferential Statistics for $$\phi$$-$$\psi$$
 
 Tests for Uniformity
 
@@ -74,15 +74,15 @@ Circular-Circular Association
 |     | CHI_1 |
 | --- | --- |
 | Mean resultant vector | -147.32 |
-| Median | -147.32 | 
-| R Length | 0.03 | 
-| Variance | 0.97 | 
+| Median | -147.32 |
+| R Length | 0.03 |
+| Variance | 0.97 |
 | Standard deviation | 1.39 |
 | Standard deviation 0| 2.65 |
 | Skewness | -0.00 |
 | Kurtosis | -0.01 |
 
- 
+
 
 ### Inferential Statistics $$\chi_1$$
 Tests for Uniformity
@@ -93,7 +93,7 @@ Tests for Uniformity
 - Circ-circ corr phi-chi1 coeff/pval:	0.00	 0.960
 - Circ-circ corr psi-chi1 coeff/pval:	0.02	 0.497
 
- 
+
 
 ### Statistics $$\chi_2$$
 
@@ -109,7 +109,7 @@ Tests for Uniformity
 | Kurtosis | 0.08 |
 
 
-### Inferential Statistics $$\chi_2$$ 
+### Inferential Statistics $$\chi_2$$
 
 Tests for Uniformity
 
@@ -121,7 +121,7 @@ Tests for Uniformity
 - Circ-circ corr chi1-chi2 coeff/pval:	-0.03	 0.266
 
 
- 
+
 
 ### Statistics $$\chi_3$$
 
