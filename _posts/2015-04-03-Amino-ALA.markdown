@@ -12,9 +12,9 @@ categories: update
 
 
  SAMPLE SIZE: 3933
- 
- 
- 
+
+
+
 |     | B-factor |
 | --- | --- |
 | Mean | 19.39 |
@@ -23,9 +23,9 @@ categories: update
 | Standard deviation | 15.42 |
 | Skewness | 3.70 |
 | Kurtosis | 25.94 |
- 
- 
- 
+
+
+
 
 |     | C-CA | N-CA | peptid plane |
 | --- | --- | --- | --- |
@@ -38,9 +38,9 @@ categories: update
 | corrcoef | 1.00 | 0.66 | 0.17 |
 | corrcoef | 0.66 | 1.00 | 0.30 |
 | corrcoef | 0.17 | 0.30 | 1.00 |
- 
- 
- 
+
+
+
 
 |     | PHI | PSI |
 | --- | --- | --- |
@@ -53,7 +53,7 @@ categories: update
 | Skewness | -0.12 | -0.52 |
 | Kurtosis | 0.40 | 0.23 |
 
-### Inferential Statistics for $$\phi$$-$$\psi$$ 
+### Inferential Statistics for $$\phi$$-$$\psi$$
 
 Tests for Uniformity
 
@@ -74,15 +74,15 @@ Circular-Circular Association
 |     | CHI_1 |
 | --- | --- |
 | Mean resultant vector | -44.03 |
-| Median | -44.03 | 
-| R Length | 0.02 | 
-| Variance | 0.98 | 
+| Median | -44.03 |
+| R Length | 0.02 |
+| Variance | 0.98 |
 | Standard deviation | 1.40 |
 | Standard deviation 0| 2.86 |
 | Skewness | -0.01 |
 | Kurtosis | -0.02 |
 
- 
+
 
 ### Inferential Statistics $$\chi_1$$
 Tests for Uniformity
@@ -95,5 +95,5 @@ Tests for Uniformity
 
 
 # $$\phi$$ & $$\psi$$
-![Image](../../../../../images/ALA_Rama_phipsi.jpg){:width="500px"}
-![Image](../../../../../images/ALA_Rama_phipsiGrad.jpg){:width="500px"}
+![Image](../../../../../images/ALA_Rama_phipsi.jpg)
+![Image](../../../../../images/ALA_Rama_phipsiGrad.jpg)

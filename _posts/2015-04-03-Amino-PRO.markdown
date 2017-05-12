@@ -6,15 +6,15 @@ categories: update
 ---
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-![Image](../../../../images/aadensity.png)
+![Image](../../../../../images/aadensity.png)
 
 # Amino PRO
 
 
  SAMPLE SIZE: 1999
- 
- 
- 
+
+
+
 |     | B-factor |
 | --- | --- |
 | Mean | 19.91 |
@@ -23,9 +23,9 @@ categories: update
 | Standard deviation | 13.41 |
 | Skewness | 2.78 |
 | Kurtosis | 17.62 |
- 
- 
- 
+
+
+
 
 |     | C-CA | N-CA | peptid plane |
 | --- | --- | --- | --- |
@@ -38,9 +38,9 @@ categories: update
 | corrcoef | 1.00 | 0.65 | 0.24 |
 | corrcoef | 0.65 | 1.00 | 0.24 |
 | corrcoef | 0.24 | 0.24 | 1.00 |
- 
- 
- 
+
+
+
 
 |     | PHI | PSI |
 | --- | --- | --- |
@@ -53,7 +53,7 @@ categories: update
 | Skewness | -0.16 | 0.49 |
 | Kurtosis | 0.42 | -0.23 |
 
-### Inferential Statistics for $$\phi$$-$$\psi$$ 
+### Inferential Statistics for $$\phi$$-$$\psi$$
 
 Tests for Uniformity
 
@@ -74,15 +74,15 @@ Circular-Circular Association
 |     | CHI_1 |
 | --- | --- |
 | Mean resultant vector | -75.05 |
-| Median | -75.05 | 
-| R Length | 0.02 | 
-| Variance | 0.98 | 
+| Median | -75.05 |
+| R Length | 0.02 |
+| Variance | 0.98 |
 | Standard deviation | 1.40 |
 | Standard deviation 0| 2.77 |
 | Skewness | -0.01 |
 | Kurtosis | 0.01 |
 
- 
+
 
 ### Inferential Statistics $$\chi_1$$
 Tests for Uniformity
@@ -93,7 +93,7 @@ Tests for Uniformity
 - Circ-circ corr phi-chi1 coeff/pval:	0.06	 0.004
 - Circ-circ corr psi-chi1 coeff/pval:	-0.02	 0.480
 
- 
+
 
 ### Statistics $$\chi_2$$
 
@@ -109,7 +109,7 @@ Tests for Uniformity
 | Kurtosis | 0.62 |
 
 
-### Inferential Statistics $$\chi_2$$ 
+### Inferential Statistics $$\chi_2$$
 
 Tests for Uniformity
 
@@ -121,7 +121,7 @@ Tests for Uniformity
 - Circ-circ corr chi1-chi2 coeff/pval:	-0.04	 0.089
 
 
- 
+
 
 ### Statistics $$\chi_3$$
 
@@ -157,11 +157,11 @@ Tests for Uniformity
 
 # $$\chi_1$$
 ![Image](../../../../../images/PRO_Rama_phichi1.jpg)
-![Image](../../../../images/PRO_Rama_Grad_psichi1.jpg)
-![Image](../../../../images/PRO_Rama_psichi1.jpg)
-![Image](../../../../images/PRO_Rama_Grad_phichi1.jpg)
+![Image](../../../../../images/PRO_Rama_Grad_psichi1.jpg)
+![Image](../../../../../images/PRO_Rama_psichi1.jpg)
+![Image](../../../../../images/PRO_Rama_Grad_phichi1.jpg)
 
 
 # $$\chi_2$$
-![Image](../../../../images/PRO_Rama_chi1chi2.jpg)
-![Image](../../../../images/PRO_Rama_Gradchi1chi2.jpg)
+![Image](../../../../../images/PRO_Rama_chi1chi2.jpg)
+![Image](../../../../../images/PRO_Rama_Gradchi1chi2.jpg)

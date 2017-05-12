@@ -12,9 +12,9 @@ categories: update
 
 
  SAMPLE SIZE: 2454
- 
- 
- 
+
+
+
 |     | B-factor |
 | --- | --- |
 | Mean | 31.72 |
@@ -23,9 +23,9 @@ categories: update
 | Standard deviation | 22.69 |
 | Skewness | 2.67 |
 | Kurtosis | 14.73 |
- 
- 
- 
+
+
+
 
 |     | C-CA | N-CA | peptid plane |
 | --- | --- | --- | --- |
@@ -38,9 +38,9 @@ categories: update
 | corrcoef | 1.00 | 0.68 | 0.28 |
 | corrcoef | 0.68 | 1.00 | 0.28 |
 | corrcoef | 0.28 | 0.28 | 1.00 |
- 
- 
- 
+
+
+
 
 |     | PHI | PSI |
 | --- | --- | --- |
@@ -53,7 +53,7 @@ categories: update
 | Skewness | -0.16 | -0.50 |
 | Kurtosis | 0.36 | 0.07 |
 
-### Inferential Statistics for $$\phi$$-$$\psi$$ 
+### Inferential Statistics for $$\phi$$-$$\psi$$
 
 Tests for Uniformity
 
@@ -74,15 +74,15 @@ Circular-Circular Association
 |     | CHI_1 |
 | --- | --- |
 | Mean resultant vector | 87.42 |
-| Median | 87.42 | 
-| R Length | 0.03 | 
-| Variance | 0.97 | 
+| Median | 87.42 |
+| R Length | 0.03 |
+| Variance | 0.97 |
 | Standard deviation | 1.39 |
 | Standard deviation 0| 2.59 |
 | Skewness | 0.01 |
 | Kurtosis | 0.01 |
 
- 
+
 
 ### Inferential Statistics $$\chi_1$$
 Tests for Uniformity
@@ -93,7 +93,7 @@ Tests for Uniformity
 - Circ-circ corr phi-chi1 coeff/pval:	-0.01	 0.794
 - Circ-circ corr psi-chi1 coeff/pval:	0.02	 0.261
 
- 
+
 
 ### Statistics $$\chi_2$$
 
@@ -109,7 +109,7 @@ Tests for Uniformity
 | Kurtosis | -0.00 |
 
 
-### Inferential Statistics $$\chi_2$$ 
+### Inferential Statistics $$\chi_2$$
 
 Tests for Uniformity
 
@@ -121,7 +121,7 @@ Tests for Uniformity
 - Circ-circ corr chi1-chi2 coeff/pval:	0.02	 0.297
 
 
- 
+
 
 ### Statistics $$\chi_3$$
 

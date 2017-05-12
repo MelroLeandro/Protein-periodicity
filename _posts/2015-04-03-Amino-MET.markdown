@@ -6,15 +6,15 @@ categories: update
 ---
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-![Image](../../../../images/aadensity.png)
+![Image](../../../../../images/aadensity.png)
 
 # Amino MET
 
 
  SAMPLE SIZE: 683
- 
- 
- 
+
+
+
 |     | B-factor |
 | --- | --- |
 | Mean | 22.29 |
@@ -23,9 +23,9 @@ categories: update
 | Standard deviation | 16.06 |
 | Skewness | 3.05 |
 | Kurtosis | 21.45 |
- 
- 
- 
+
+
+
 
 |     | C-CA | N-CA | peptid plane |
 | --- | --- | --- | --- |
@@ -38,9 +38,9 @@ categories: update
 | corrcoef | 1.00 | 0.66 | 0.25 |
 | corrcoef | 0.66 | 1.00 | 0.24 |
 | corrcoef | 0.25 | 0.24 | 1.00 |
- 
- 
- 
+
+
+
 
 |     | PHI | PSI |
 | --- | --- | --- |
@@ -53,7 +53,7 @@ categories: update
 | Skewness | -0.17 | -0.29 |
 | Kurtosis | 0.38 | -0.44 |
 
-### Inferential Statistics for $$\phi$$-$$\psi$$ 
+### Inferential Statistics for $$\phi$$-$$\psi$$
 
 Tests for Uniformity
 
@@ -74,15 +74,15 @@ Circular-Circular Association
 |     | CHI_1 |
 | --- | --- |
 | Mean resultant vector | 130.20 |
-| Median | 130.20 | 
-| R Length | 0.03 | 
-| Variance | 0.97 | 
+| Median | 130.20 |
+| R Length | 0.03 |
+| Variance | 0.97 |
 | Standard deviation | 1.40 |
 | Standard deviation 0| 2.69 |
 | Skewness | 0.02 |
 | Kurtosis | 0.02 |
 
- 
+
 
 ### Inferential Statistics $$\chi_1$$
 Tests for Uniformity
@@ -93,7 +93,7 @@ Tests for Uniformity
 - Circ-circ corr phi-chi1 coeff/pval:	0.01	 0.851
 - Circ-circ corr psi-chi1 coeff/pval:	-0.05	 0.158
 
- 
+
 
 ### Statistics $$\chi_2$$
 
@@ -109,7 +109,7 @@ Tests for Uniformity
 | Kurtosis | 0.10 |
 
 
-### Inferential Statistics $$\chi_2$$ 
+### Inferential Statistics $$\chi_2$$
 
 Tests for Uniformity
 
@@ -121,7 +121,7 @@ Tests for Uniformity
 - Circ-circ corr chi1-chi2 coeff/pval:	0.11	 0.004
 
 
- 
+
 
 ### Statistics $$\chi_3$$
 
@@ -195,5 +195,5 @@ Tests for Uniformity
 
 
 # $$\chi_3$$
-![Image](../../../../images/MET_Rama_chsi2chi3.jpg)
-![Image](../../../../images/MET_Rama_Gradchsi2chi3.jpg)
+![Image](../../../../../images/MET_Rama_chsi2chi3.jpg)
+![Image](../../../../../images/MET_Rama_Gradchsi2chi3.jpg)
