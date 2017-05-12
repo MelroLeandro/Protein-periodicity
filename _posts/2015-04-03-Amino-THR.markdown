@@ -123,12 +123,12 @@ Tests for Uniformity
 
 
 # $$\phi$$ & $$\psi$$
-![Image](../../../../images/THR_Rama_phipsi.jpg)
-![Image](../../../../images/THR_Rama_phipsiGrad.jpg)
+![Image](../../../../../images/THR_Rama_phipsi.jpg)
+![Image](../../../../../images/THR_Rama_phipsiGrad.jpg)
 
 
 # $$\chi_1$$
-![Image](../../../../images/THR_Rama_phichi1.jpg)
-![Image](../../../../images/THR_Rama_Grad_psichi1.jpg)
-![Image](../../../../images/THR_Rama_psichi1.jpg)
-![Image](../../../../images/THR_Rama_Grad_phichi1.jpg)
+![Image](../../../../../images/THR_Rama_phichi1.jpg)
+![Image](../../../../../images/THR_Rama_Grad_psichi1.jpg)
+![Image](../../../../../images/THR_Rama_psichi1.jpg)
+![Image](../../../../../images/THR_Rama_Grad_phichi1.jpg)
