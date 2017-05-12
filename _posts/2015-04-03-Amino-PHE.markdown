@@ -151,17 +151,17 @@ Tests for Uniformity
 - Circ-circ corr chi2-chi3 coeff/pval:	NaN	 NaN
 
 # $$\phi$$ & $$\psi$$
-![Image](../../../../images/PHE_Rama_phipsi.jpg)
-![Image](../../../../images/PHE_Rama_phipsiGrad.jpg)
+![Image](../../../../../images/PHE_Rama_phipsi.jpg)
+![Image](../../../../../images/PHE_Rama_phipsiGrad.jpg)
 
 
 # $$\chi_1$$
-![Image](../../../../images/PHE_Rama_phichi1.jpg)
-![Image](../../../../images/PHE_Rama_Grad_psichi1.jpg)
-![Image](../../../../images/PHE_Rama_psichi1.jpg)
-![Image](../../../../images/PHE_Rama_Grad_phichi1.jpg)
+![Image](../../../../../images/PHE_Rama_phichi1.jpg)
+![Image](../../../../../images/PHE_Rama_Grad_psichi1.jpg)
+![Image](../../../../../images/PHE_Rama_psichi1.jpg)
+![Image](../../../../../images/PHE_Rama_Grad_phichi1.jpg)
 
 
 # $$\chi_2$$
-![Image](../../../../images/PHE_Rama_chi1chi2.jpg)
-![Image](../../../../images/PHE_Rama_Gradchi1chi2.jpg)
+![Image](../../../../../images/PHE_Rama_chi1chi2.jpg)
+![Image](../../../../../images/PHE_Rama_Gradchi1chi2.jpg)
