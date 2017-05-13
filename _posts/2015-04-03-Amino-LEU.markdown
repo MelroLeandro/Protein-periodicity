@@ -1,8 +1,11 @@
 ---
 layout: post
 title:  "Amino LEU"
-date:   2015-04-03 15:01:19 +0100
-categories: update
+author:  Mellean
+subtitle: "The free-energy"
+tags: amino-acid
+category: amino
+visualworkflow: false
 ---
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 

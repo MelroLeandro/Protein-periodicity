@@ -1,8 +1,11 @@
 ---
 layout: post
 title:  "Selected Protein"
-date:   2015-05-02 15:04:31 +0100
-categories: update
+subtitle: "The data for the statistical microscope"
+author:  Mellean
+tags:   libraries
+category: free-energy
+visualworkflow: false
 ---
 
 # Selected Protein for analysis

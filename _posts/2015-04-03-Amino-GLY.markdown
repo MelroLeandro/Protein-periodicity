@@ -1,8 +1,11 @@
 ---
 layout: post
 title:  "Amino GLY"
-date:   2015-04-03 15:01:10 +0100
-categories: update
+author:  Mellean
+subtitle: "The free-energy"
+tags: amino-acid
+category: amino
+visualworkflow: false
 ---
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
@@ -12,9 +15,9 @@ categories: update
 
 
  SAMPLE SIZE: 4066
- 
- 
- 
+
+
+
 |     | B-factor |
 | --- | --- |
 | Mean | 19.58 |
@@ -23,9 +26,9 @@ categories: update
 | Standard deviation | 14.51 |
 | Skewness | 3.22 |
 | Kurtosis | 21.47 |
- 
- 
- 
+
+
+
 
 |     | C-CA | N-CA | peptid plane |
 | --- | --- | --- | --- |
@@ -38,9 +41,9 @@ categories: update
 | corrcoef | 1.00 | 0.65 | 0.14 |
 | corrcoef | 0.65 | 1.00 | 0.24 |
 | corrcoef | 0.14 | 0.24 | 1.00 |
- 
- 
- 
+
+
+
 
 |     | PHI | PSI |
 | --- | --- | --- |
@@ -53,7 +56,7 @@ categories: update
 | Skewness | -0.23 | -0.44 |
 | Kurtosis | 0.35 | 0.01 |
 
-### Inferential Statistics for $$\phi$$-$$\psi$$ 
+### Inferential Statistics for $$\phi$$-$$\psi$$
 
 Tests for Uniformity
 
@@ -74,15 +77,15 @@ Circular-Circular Association
 |     | CHI_1 |
 | --- | --- |
 | Mean resultant vector | 112.81 |
-| Median | 112.81 | 
-| R Length | 0.02 | 
-| Variance | 0.98 | 
+| Median | 112.81 |
+| R Length | 0.02 |
+| Variance | 0.98 |
 | Standard deviation | 1.40 |
 | Standard deviation 0| 2.77 |
 | Skewness | -0.01 |
 | Kurtosis | 0.01 |
 
- 
+
 
 ### Inferential Statistics $$\chi_1$$
 Tests for Uniformity

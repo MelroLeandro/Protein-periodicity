@@ -1,8 +1,11 @@
 ---
 layout: post
-title:  "Circular Statistics"
-date:   2015-05-02 20:03:31 +0100
-categories: update
+title:  "Circular Statisticsn"
+subtitle: "The math for the statistical microscope"
+author:  Mellean
+tags:   libraries
+category: free-energy
+visualworkflow: false
 ---
 
 # Circular Statistics
