@@ -1,6 +1,6 @@
 
 
-# Protein periodicity 
+# Protein periodicity ---
 
 http://melroleandro.github.io/Protein-periodicity/
 
